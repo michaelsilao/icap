@@ -1,0 +1,20 @@
+body{background: none; background-color: #fff;}
+#subscribeForm {/*width: 280px;*/width: 100%; font-size: 1.2em; padding: 0 35px; margin: 0 auto; }
+#subscribeForm label{ font-weight: bold; width: 95px; float: left; display: block; padding-top: 5px;}
+#subscribeForm form label{ font-weight: bold; width: 95px; float: left; display: block; padding-top: 5px;}
+
+#subscribeForm input[type="text"]{ margin-bottom: 10px; background: none repeat scroll 0 0 #f3f0f0;border: 1px solid #d8d8d8; border-radius: 3px; padding: 8px 8px 8px 0; width:170px; }
+
+#subscribeForm form input[type="text"]{ margin-bottom: 10px; background: none repeat scroll 0 0 #f3f0f0;border: 1px solid #d8d8d8; border-radius: 3px; padding: 8px 8px 8px 0;}
+
+#subscribeForm form input[type=checkbox] { float: left; margin-top: 7px;}
+#subscribeForm input[type=checkbox] { float: left; margin-top: 0px; background: none; border: none;}
+#subscribeForm form #checkboxes {width: 385px; float: left;}
+#subscribeForm form #checkboxes label{ width: 245px !important; height: 35px; float: left; display: block; padding-top: 5px;}
+
+#subscribeForm #checkboxes label{ width: 255px !important; height: 35px; float: left; display: block; padding-top: 5px;}
+
+input.sefSubmit{background-color: #BE0027 !important; border: 0 none;color: #fff;cursor: pointer;font-size: 1.2em;min-width: 130px;padding: 5px 20px;text-align: center; float: left; clear: both; }
+
+.main-content {  float: left;  width: 94%;  background-color: #fff;  padding: 0 20px 25px 20px;}
+span.error { border: 1px solid red; background: #FFCECE; padding: 5px; margin-bottom: 10px; float: left; clear: both; width: 255px; }

@@ -1,0 +1,15 @@
+
+/*---- print-----*/
+.top-row, .shareBar, .main-navigation, .contact-container, .content-leftcol, .news-back a, .footer-wrapper, .downloadPage{display:none}
+.content-rightcol{width:100%;}
+.main-content{width:96%;}
+.logo{border:0 none;}
+body{background:none;}
+
+
+
+.newscontent h1 {font-family: Arial !important;}
+
+.newscontent {font-family: Arial !important;}
+
+

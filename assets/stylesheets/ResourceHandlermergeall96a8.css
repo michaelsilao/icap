@@ -1,0 +1,3444 @@
+
+/*---- jquery-ui-----*/
+/*! jQuery UI - v1.10.2 - 2013-03-14
+* http://jqueryui.com
+* Includes: jquery.ui.core.css, jquery.ui.accordion.css, jquery.ui.autocomplete.css, jquery.ui.button.css, jquery.ui.datepicker.css, jquery.ui.dialog.css, jquery.ui.menu.css, jquery.ui.progressbar.css, jquery.ui.resizable.css, jquery.ui.selectable.css, jquery.ui.slider.css, jquery.ui.spinner.css, jquery.ui.tabs.css, jquery.ui.tooltip.css
+* To view and modify this theme, visit http://jqueryui.com/themeroller/?ffDefault=Verdana%2CArial%2Csans-serif&fwDefault=normal&fsDefault=1.1em&cornerRadius=4px&bgColorHeader=cccccc&bgTextureHeader=highlight_soft&bgImgOpacityHeader=75&borderColorHeader=aaaaaa&fcHeader=222222&iconColorHeader=222222&bgColorContent=ffffff&bgTextureContent=flat&bgImgOpacityContent=75&borderColorContent=aaaaaa&fcContent=222222&iconColorContent=222222&bgColorDefault=e6e6e6&bgTextureDefault=glass&bgImgOpacityDefault=75&borderColorDefault=d3d3d3&fcDefault=555555&iconColorDefault=888888&bgColorHover=dadada&bgTextureHover=glass&bgImgOpacityHover=75&borderColorHover=999999&fcHover=212121&iconColorHover=454545&bgColorActive=ffffff&bgTextureActive=glass&bgImgOpacityActive=65&borderColorActive=aaaaaa&fcActive=212121&iconColorActive=454545&bgColorHighlight=fbf9ee&bgTextureHighlight=glass&bgImgOpacityHighlight=55&borderColorHighlight=fcefa1&fcHighlight=363636&iconColorHighlight=2e83ff&bgColorError=fef1ec&bgTextureError=glass&bgImgOpacityError=95&borderColorError=cd0a0a&fcError=cd0a0a&iconColorError=cd0a0a&bgColorOverlay=aaaaaa&bgTextureOverlay=flat&bgImgOpacityOverlay=0&opacityOverlay=30&bgColorShadow=aaaaaa&bgTextureShadow=flat&bgImgOpacityShadow=0&opacityShadow=30&thicknessShadow=8px&offsetTopShadow=-8px&offsetLeftShadow=-8px&cornerRadiusShadow=8px
+* Copyright 2013 jQuery Foundation and other contributors Licensed MIT */
+
+/* Layout helpers
+----------------------------------*/
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-accordion .ui-accordion-header {
+	display: block;
+	cursor: pointer;
+	position: relative;
+	margin-top: 2px;
+	padding: .5em .5em .5em .7em;
+	min-height: 0; /* support: IE7 */
+}
+.ui-accordion .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-noicons {
+	padding-left: .7em;
+}
+.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	padding-left: 2.2em;
+}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+	position: absolute;
+	left: .5em;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-accordion .ui-accordion-content {
+	padding: 1em 2.2em;
+	border-top: 0;
+	overflow: auto;
+}
+.ui-autocomplete {
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: default;
+}
+.ui-button {
+	display: inline-block;
+	position: relative;
+	padding: 0;
+	line-height: normal;
+	margin-right: .1em;
+	cursor: pointer;
+	vertical-align: middle;
+	text-align: center;
+	overflow: visible; /* removes extra width in IE */
+}
+.ui-button,
+.ui-button:link,
+.ui-button:visited,
+.ui-button:hover,
+.ui-button:active {
+	text-decoration: none;
+}
+/* to make room for the icon, a width needs to be set here */
+.ui-button-icon-only {
+	width: 2.2em;
+}
+/* button elements seem to need a little more width */
+button.ui-button-icon-only {
+	width: 2.4em;
+}
+.ui-button-icons-only {
+	width: 3.4em;
+}
+button.ui-button-icons-only {
+	width: 3.7em;
+}
+
+/* button text element */
+.ui-button .ui-button-text {
+	display: block;
+	line-height: normal;
+}
+.ui-button-text-only .ui-button-text {
+	padding: .4em 1em;
+}
+.ui-button-icon-only .ui-button-text,
+.ui-button-icons-only .ui-button-text {
+	padding: .4em;
+	text-indent: -9999999px;
+}
+.ui-button-text-icon-primary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 1em .4em 2.1em;
+}
+.ui-button-text-icon-secondary .ui-button-text,
+.ui-button-text-icons .ui-button-text {
+	padding: .4em 2.1em .4em 1em;
+}
+.ui-button-text-icons .ui-button-text {
+	padding-left: 2.1em;
+	padding-right: 2.1em;
+}
+/* no icon support for input elements, provide padding by default */
+input.ui-button {
+	padding: .4em 1em;
+}
+
+/* button icon element(s) */
+.ui-button-icon-only .ui-icon,
+.ui-button-text-icon-primary .ui-icon,
+.ui-button-text-icon-secondary .ui-icon,
+.ui-button-text-icons .ui-icon,
+.ui-button-icons-only .ui-icon {
+	position: absolute;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-button-icon-only .ui-icon {
+	left: 50%;
+	margin-left: -8px;
+}
+.ui-button-text-icon-primary .ui-button-icon-primary,
+.ui-button-text-icons .ui-button-icon-primary,
+.ui-button-icons-only .ui-button-icon-primary {
+	left: .5em;
+}
+.ui-button-text-icon-secondary .ui-button-icon-secondary,
+.ui-button-text-icons .ui-button-icon-secondary,
+.ui-button-icons-only .ui-button-icon-secondary {
+	right: .5em;
+}
+
+/* button sets */
+.ui-buttonset {
+	margin-right: 7px;
+}
+.ui-buttonset .ui-button {
+	margin-left: 0;
+	margin-right: -.3em;
+}
+
+/* workarounds */
+/* reset extra padding in Firefox, see h5bp.com/l */
+input.ui-button::-moz-focus-inner,
+button.ui-button::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+.ui-datepicker {
+	width: 17em;
+	padding: .2em .2em 0;
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+	padding: .2em 0;
+}
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+	position: absolute;
+	top: 2px;
+	width: 1.8em;
+	height: 1.8em;
+}
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-next {
+	right: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title select {
+	font-size: 1em;
+	margin: 1px 0;
+}
+.ui-datepicker select.ui-datepicker-month-year {
+	width: 100%;
+}
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+	width: 49%;
+}
+.ui-datepicker table {
+	width: 100%;
+	font-size: .9em;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker th {
+	padding: .7em .3em;
+	text-align: center;
+	font-weight: bold;
+	border: 0;
+}
+.ui-datepicker td {
+	border: 0;
+	padding: 1px;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	padding: .2em;
+	text-align: right;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+
+/* RTL support */
+.ui-datepicker-rtl {
+	direction: rtl;
+}
+.ui-datepicker-rtl .ui-datepicker-prev {
+	right: 2px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next {
+	left: 2px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-prev:hover {
+	right: 1px;
+	left: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-next:hover {
+	left: 1px;
+	right: auto;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+	clear: right;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+	float: left;
+}
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+	float: right;
+}
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+	border-right-width: 0;
+	border-left-width: 1px;
+}
+.ui-dialog {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: .2em;
+	outline: 0;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: .4em 1em;
+	position: relative;
+}
+.ui-dialog .ui-dialog-title {
+	float: left;
+	margin: .1em 0;
+	white-space: nowrap;
+	width: 90%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	position: absolute;
+	right: .3em;
+	top: 50%;
+	width: 21px;
+	margin: -10px 0 0 0;
+	padding: 1px;
+	height: 20px;
+}
+.ui-dialog .ui-dialog-content {
+	position: relative;
+	border: 0;
+	padding: .5em 1em;
+	background: none;
+	overflow: auto;
+}
+.ui-dialog .ui-dialog-buttonpane {
+	text-align: left;
+	border-width: 1px 0 0 0;
+	background-image: none;
+	margin-top: .5em;
+	padding: .3em 1em .5em .4em;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+	float: right;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	margin: .5em .4em .5em 0;
+	cursor: pointer;
+}
+.ui-dialog .ui-resizable-se {
+	width: 12px;
+	height: 12px;
+	right: -5px;
+	bottom: -5px;
+	background-position: 16px 16px;
+}
+.ui-draggable .ui-dialog-titlebar {
+	cursor: move;
+}
+.ui-menu {
+	list-style: none;
+	padding: 2px;
+	margin: 0;
+	display: block;
+	outline: none;
+}
+.ui-menu .ui-menu {
+	margin-top: -3px;
+	position: absolute;
+}
+.ui-menu .ui-menu-item {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+.ui-menu-item:hover {
+        /*background-color:#999999;*/
+}
+.ui-menu .ui-menu-divider {
+	margin: 5px -2px 5px -2px;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	border-width: 1px 0 0 0;
+}
+.ui-menu .ui-menu-item a {
+	text-decoration: none;
+	display: block;
+	/*padding: 2px .4em;*/
+	line-height: 1.5;
+	min-height: 0; /* support: IE7 */
+	font-weight: normal;
+}
+.ui-menu .ui-menu-item a.ui-state-focus, .ui-menu .ui-menu-item a.ui-state-active {
+	font-weight: normal;
+	/*margin: -1px;*/
+}
+
+.ui-menu .ui-state-disabled {
+	font-weight: normal;
+	margin: .4em 0 .2em;
+	line-height: 1.5;
+}
+.ui-menu .ui-state-disabled a {
+	cursor: default;
+}
+
+/* icon support */
+.ui-menu-icons {
+	position: relative;
+}
+.ui-menu-icons .ui-menu-item a {
+	position: relative;
+	padding-left: 2em;
+}
+
+/* left-aligned */
+.ui-menu .ui-icon {
+	position: absolute;
+	top: .2em;
+	left: .2em;
+}
+
+/* right-aligned */
+.ui-menu .ui-menu-icon {
+	position: static;
+	float: right;
+}
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+	overflow: hidden;
+}
+.ui-progressbar .ui-progressbar-value {
+	margin: -1px;
+	height: 100%;
+}
+.ui-progressbar .ui-progressbar-overlay {
+/*	background: url("images/animated-overlay.gif");*/
+	height: 100%;
+	filter: alpha(opacity=25);
+	opacity: 0.25;
+}
+.ui-progressbar-indeterminate .ui-progressbar-value {
+	background-image: none;
+}
+.ui-resizable {
+	position: relative;
+}
+.ui-resizable-handle {
+	position: absolute;
+	font-size: 0.1px;
+	display: block;
+}
+.ui-resizable-disabled .ui-resizable-handle,
+.ui-resizable-autohide .ui-resizable-handle {
+	display: none;
+}
+.ui-resizable-n {
+	cursor: n-resize;
+	height: 7px;
+	width: 100%;
+	top: -5px;
+	left: 0;
+}
+.ui-resizable-s {
+	cursor: s-resize;
+	height: 7px;
+	width: 100%;
+	bottom: -5px;
+	left: 0;
+}
+.ui-resizable-e {
+	cursor: e-resize;
+	width: 7px;
+	right: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-w {
+	cursor: w-resize;
+	width: 7px;
+	left: -5px;
+	top: 0;
+	height: 100%;
+}
+.ui-resizable-se {
+	cursor: se-resize;
+	width: 12px;
+	height: 12px;
+	right: 1px;
+	bottom: 1px;
+}
+.ui-resizable-sw {
+	cursor: sw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	bottom: -5px;
+}
+.ui-resizable-nw {
+	cursor: nw-resize;
+	width: 9px;
+	height: 9px;
+	left: -5px;
+	top: -5px;
+}
+.ui-resizable-ne {
+	cursor: ne-resize;
+	width: 9px;
+	height: 9px;
+	right: -5px;
+	top: -5px;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px dotted black;
+}
+.ui-slider {
+	position: relative;
+	text-align: left;
+}
+.ui-slider .ui-slider-handle {
+	position: absolute;
+	z-index: 2;
+	width: 1.2em;
+	height: 1.2em;
+	cursor: default;
+}
+.ui-slider .ui-slider-range {
+	position: absolute;
+	z-index: 1;
+	font-size: .7em;
+	display: block;
+	border: 0;
+	background-position: 0 0;
+}
+
+/* For IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+	filter: inherit;
+}
+
+.ui-slider-horizontal {
+	height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+	top: -.3em;
+	margin-left: -.6em;
+}
+.ui-slider-horizontal .ui-slider-range {
+	top: 0;
+	height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+	left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+	right: 0;
+}
+
+.ui-slider-vertical {
+	width: .8em;
+	height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+	left: -.3em;
+	margin-left: 0;
+	margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+	left: 0;
+	width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+	bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+	top: 0;
+}
+.ui-spinner {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	padding: 0;
+	vertical-align: middle;
+}
+.ui-spinner-input {
+	border: none;
+	background: none;
+	color: inherit;
+	padding: 0;
+	margin: .2em 0;
+	vertical-align: middle;
+	margin-left: .4em;
+	margin-right: 22px;
+}
+.ui-spinner-button {
+	width: 16px;
+	height: 50%;
+	font-size: .5em;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	cursor: default;
+	display: block;
+	overflow: hidden;
+	right: 0;
+}
+/* more specificity required here to overide default borders */
+.ui-spinner a.ui-spinner-button {
+	border-top: none;
+	border-bottom: none;
+	border-right: none;
+}
+/* vertical centre icon */
+.ui-spinner .ui-icon {
+	position: absolute;
+	margin-top: -8px;
+	top: 50%;
+	left: 0;
+}
+.ui-spinner-up {
+	top: 0;
+}
+.ui-spinner-down {
+	bottom: 0;
+}
+
+/* TR overrides */
+.ui-spinner .ui-icon-triangle-1-s {
+	/* need to fix icons sprite */
+	background-position: -65px -16px;
+}
+.ui-tabs {
+	position: relative;/* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
+	padding: .2em;
+}
+.ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: .2em .2em 0;
+}
+.ui-tabs .ui-tabs-nav li {
+	list-style: none;
+	float: left;
+	position: relative;
+	top: 0;
+	margin: 1px .2em 0 0;
+	border-bottom-width: 0;
+	padding: 0;
+	white-space: nowrap;
+}
+.ui-tabs .ui-tabs-nav li a {
+	float: left;
+	padding: .5em 1em;
+	text-decoration: none;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+.ui-tabs .ui-tabs-nav li.ui-tabs-active a,
+.ui-tabs .ui-tabs-nav li.ui-state-disabled a,
+.ui-tabs .ui-tabs-nav li.ui-tabs-loading a {
+	cursor: text;
+}
+.ui-tabs .ui-tabs-nav li a, /* first selector in group seems obsolete, but required to overcome bug in Opera applying cursor: text overall if defined elsewhere... */
+.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active a {
+	cursor: pointer;
+}
+.ui-tabs .ui-tabs-panel {
+	display: block;
+	border-width: 0;
+	padding: 1em 1.4em;
+	background: none;
+}
+.ui-tooltip {
+	padding: 8px;
+	position: absolute;
+	z-index: 9999;
+	max-width: 300px;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	box-shadow: 0 0 5px #aaa;
+}
+body .ui-tooltip {
+	border-width: 2px;
+}
+
+/* Component containers
+----------------------------------*/
+.ui-widget {
+	/*font-size: 1.1em;*/
+font-size: 1em;
+}
+.ui-widget .ui-widget {
+	font-size: 1em;
+}
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+	font-family: Verdana,Arial,sans-serif;
+	font-size: 1em;
+}
+.ui-widget-content {
+	border: 1px solid #aaaaaa;
+	background: #ffffff 50% 50% repeat-x;
+	color: #222222;
+}
+.ui-widget-content a {
+	color: #000;
+}
+.ui-widget-header {
+	border: 1px solid #aaaaaa;
+	background: #cccccc;/* url(images/ui-bg_highlight-soft_75_cccccc_1x100.png) 50% 50% repeat-x;*/
+	color: #222222;
+	font-weight: bold;
+}
+.ui-widget-header a {
+	color: #222222;
+}
+
+/* Interaction states
+----------------------------------*/
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+	border: 1px solid #d3d3d3;
+	background: #e6e6e6; /*url(images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;*/
+	font-weight: normal;
+	color: #555555;
+}
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+	color: #555555;
+	text-decoration: none;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus a:hover {
+	/*border: 1px solid #999999;
+	background-color: #aaaaaa !important;
+	font-weight: normal;
+	color: #212121;*/
+	background-color:#cccccc;
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus a:focus {
+	/*border: 1px solid #999999;
+	background-color: #aaaaaa;
+	font-weight: normal;
+	color: #212121;*/
+}
+
+.ui-state-hover  a,
+.ui-state-hover  a:hover,
+.ui-state-hover  a:link,
+.ui-state-hover  a:visited {
+/*	color: #212121;
+	text-decoration: none;*/
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 1px solid #aaaaaa;
+	background: #ffffff; /*url(images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;*/
+	font-weight: normal;
+	color: #212121;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #212121;
+	text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #fcefa1;
+	background: #fbf9ee; /*url(images/ui-bg_glass_55_fbf9ee_1x400.png) 50% 50% repeat-x;*/
+	color: #363636;
+}
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+        color: #363636;
+}
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+	border: 1px solid #cd0a0a;
+	background: #fef1ec; /*url(images/ui-bg_glass_95_fef1ec_1x400.png) 50% 50% repeat-x;*/
+	color: #cd0a0a;
+}
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+	color: #cd0a0a;
+}
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+	color: #cd0a0a;
+}
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+	font-weight: bold;
+}
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+	opacity: .7;
+	filter:Alpha(Opacity=70);
+	font-weight: normal;
+}
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+	opacity: .35;
+	filter:Alpha(Opacity=35);
+	background-image: none;
+}
+.ui-state-disabled .ui-icon {
+	filter:Alpha(Opacity=35); /* For IE8 - See #6059 */
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	width: 16px;
+	height: 16px;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	/*background-image: url(images/ui-icons_222222_256x240.png);*/
+}
+.ui-widget-header .ui-icon {
+/*	background-image: url(images/ui-icons_222222_256x240.png);*/
+}
+.ui-state-default .ui-icon {
+/*	background-image: url(images/ui-icons_888888_256x240.png);*/
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	/*background-image: url(images/ui-icons_454545_256x240.png);*/
+}
+.ui-state-active .ui-icon {
+	/*background-image: url(images/ui-icons_454545_256x240.png);*/
+}
+.ui-state-highlight .ui-icon {
+	/*background-image: url(images/ui-icons_2e83ff_256x240.png);*/
+}
+.ui-state-error .ui-icon,
+.ui-state-error-text .ui-icon {
+	/*background-image: url(images/ui-icons_cd0a0a_256x240.png);*/
+}
+
+/* positioning */
+.ui-icon-blank { background-position: 16px 16px; }
+.ui-icon-carat-1-n { background-position: 0 0; }
+.ui-icon-carat-1-ne { background-position: -16px 0; }
+.ui-icon-carat-1-e { background-position: -32px 0; }
+.ui-icon-carat-1-se { background-position: -48px 0; }
+.ui-icon-carat-1-s { background-position: -64px 0; }
+.ui-icon-carat-1-sw { background-position: -80px 0; }
+.ui-icon-carat-1-w { background-position: -96px 0; }
+.ui-icon-carat-1-nw { background-position: -112px 0; }
+.ui-icon-carat-2-n-s { background-position: -128px 0; }
+.ui-icon-carat-2-e-w { background-position: -144px 0; }
+.ui-icon-triangle-1-n { background-position: 0 -16px; }
+.ui-icon-triangle-1-ne { background-position: -16px -16px; }
+.ui-icon-triangle-1-e { background-position: -32px -16px; }
+.ui-icon-triangle-1-se { background-position: -48px -16px; }
+.ui-icon-triangle-1-s { background-position: -64px -16px; }
+.ui-icon-triangle-1-sw { background-position: -80px -16px; }
+.ui-icon-triangle-1-w { background-position: -96px -16px; }
+.ui-icon-triangle-1-nw { background-position: -112px -16px; }
+.ui-icon-triangle-2-n-s { background-position: -128px -16px; }
+.ui-icon-triangle-2-e-w { background-position: -144px -16px; }
+.ui-icon-arrow-1-n { background-position: 0 -32px; }
+.ui-icon-arrow-1-ne { background-position: -16px -32px; }
+.ui-icon-arrow-1-e { background-position: -32px -32px; }
+.ui-icon-arrow-1-se { background-position: -48px -32px; }
+.ui-icon-arrow-1-s { background-position: -64px -32px; }
+.ui-icon-arrow-1-sw { background-position: -80px -32px; }
+.ui-icon-arrow-1-w { background-position: -96px -32px; }
+.ui-icon-arrow-1-nw { background-position: -112px -32px; }
+.ui-icon-arrow-2-n-s { background-position: -128px -32px; }
+.ui-icon-arrow-2-ne-sw { background-position: -144px -32px; }
+.ui-icon-arrow-2-e-w { background-position: -160px -32px; }
+.ui-icon-arrow-2-se-nw { background-position: -176px -32px; }
+.ui-icon-arrowstop-1-n { background-position: -192px -32px; }
+.ui-icon-arrowstop-1-e { background-position: -208px -32px; }
+.ui-icon-arrowstop-1-s { background-position: -224px -32px; }
+.ui-icon-arrowstop-1-w { background-position: -240px -32px; }
+.ui-icon-arrowthick-1-n { background-position: 0 -48px; }
+.ui-icon-arrowthick-1-ne { background-position: -16px -48px; }
+.ui-icon-arrowthick-1-e { background-position: -32px -48px; }
+.ui-icon-arrowthick-1-se { background-position: -48px -48px; }
+.ui-icon-arrowthick-1-s { background-position: -64px -48px; }
+.ui-icon-arrowthick-1-sw { background-position: -80px -48px; }
+.ui-icon-arrowthick-1-w { background-position: -96px -48px; }
+.ui-icon-arrowthick-1-nw { background-position: -112px -48px; }
+.ui-icon-arrowthick-2-n-s { background-position: -128px -48px; }
+.ui-icon-arrowthick-2-ne-sw { background-position: -144px -48px; }
+.ui-icon-arrowthick-2-e-w { background-position: -160px -48px; }
+.ui-icon-arrowthick-2-se-nw { background-position: -176px -48px; }
+.ui-icon-arrowthickstop-1-n { background-position: -192px -48px; }
+.ui-icon-arrowthickstop-1-e { background-position: -208px -48px; }
+.ui-icon-arrowthickstop-1-s { background-position: -224px -48px; }
+.ui-icon-arrowthickstop-1-w { background-position: -240px -48px; }
+.ui-icon-arrowreturnthick-1-w { background-position: 0 -64px; }
+.ui-icon-arrowreturnthick-1-n { background-position: -16px -64px; }
+.ui-icon-arrowreturnthick-1-e { background-position: -32px -64px; }
+.ui-icon-arrowreturnthick-1-s { background-position: -48px -64px; }
+.ui-icon-arrowreturn-1-w { background-position: -64px -64px; }
+.ui-icon-arrowreturn-1-n { background-position: -80px -64px; }
+.ui-icon-arrowreturn-1-e { background-position: -96px -64px; }
+.ui-icon-arrowreturn-1-s { background-position: -112px -64px; }
+.ui-icon-arrowrefresh-1-w { background-position: -128px -64px; }
+.ui-icon-arrowrefresh-1-n { background-position: -144px -64px; }
+.ui-icon-arrowrefresh-1-e { background-position: -160px -64px; }
+.ui-icon-arrowrefresh-1-s { background-position: -176px -64px; }
+.ui-icon-arrow-4 { background-position: 0 -80px; }
+.ui-icon-arrow-4-diag { background-position: -16px -80px; }
+.ui-icon-extlink { background-position: -32px -80px; }
+.ui-icon-newwin { background-position: -48px -80px; }
+.ui-icon-refresh { background-position: -64px -80px; }
+.ui-icon-shuffle { background-position: -80px -80px; }
+.ui-icon-transfer-e-w { background-position: -96px -80px; }
+.ui-icon-transferthick-e-w { background-position: -112px -80px; }
+.ui-icon-folder-collapsed { background-position: 0 -96px; }
+.ui-icon-folder-open { background-position: -16px -96px; }
+.ui-icon-document { background-position: -32px -96px; }
+.ui-icon-document-b { background-position: -48px -96px; }
+.ui-icon-note { background-position: -64px -96px; }
+.ui-icon-mail-closed { background-position: -80px -96px; }
+.ui-icon-mail-open { background-position: -96px -96px; }
+.ui-icon-suitcase { background-position: -112px -96px; }
+.ui-icon-comment { background-position: -128px -96px; }
+.ui-icon-person { background-position: -144px -96px; }
+.ui-icon-print { background-position: -160px -96px; }
+.ui-icon-trash { background-position: -176px -96px; }
+.ui-icon-locked { background-position: -192px -96px; }
+.ui-icon-unlocked { background-position: -208px -96px; }
+.ui-icon-bookmark { background-position: -224px -96px; }
+.ui-icon-tag { background-position: -240px -96px; }
+.ui-icon-home { background-position: 0 -112px; }
+.ui-icon-flag { background-position: -16px -112px; }
+.ui-icon-calendar { background-position: -32px -112px; }
+.ui-icon-cart { background-position: -48px -112px; }
+.ui-icon-pencil { background-position: -64px -112px; }
+.ui-icon-clock { background-position: -80px -112px; }
+.ui-icon-disk { background-position: -96px -112px; }
+.ui-icon-calculator { background-position: -112px -112px; }
+.ui-icon-zoomin { background-position: -128px -112px; }
+.ui-icon-zoomout { background-position: -144px -112px; }
+.ui-icon-search { background-position: -160px -112px; }
+.ui-icon-wrench { background-position: -176px -112px; }
+.ui-icon-gear { background-position: -192px -112px; }
+.ui-icon-heart { background-position: -208px -112px; }
+.ui-icon-star { background-position: -224px -112px; }
+.ui-icon-link { background-position: -240px -112px; }
+.ui-icon-cancel { background-position: 0 -128px; }
+.ui-icon-plus { background-position: -16px -128px; }
+.ui-icon-plusthick { background-position: -32px -128px; }
+.ui-icon-minus { background-position: -48px -128px; }
+.ui-icon-minusthick { background-position: -64px -128px; }
+.ui-icon-close { background-position: -80px -128px; }
+.ui-icon-closethick { background-position: -96px -128px; }
+.ui-icon-key { background-position: -112px -128px; }
+.ui-icon-lightbulb { background-position: -128px -128px; }
+.ui-icon-scissors { background-position: -144px -128px; }
+.ui-icon-clipboard { background-position: -160px -128px; }
+.ui-icon-copy { background-position: -176px -128px; }
+.ui-icon-contact { background-position: -192px -128px; }
+.ui-icon-image { background-position: -208px -128px; }
+.ui-icon-video { background-position: -224px -128px; }
+.ui-icon-script { background-position: -240px -128px; }
+.ui-icon-alert { background-position: 0 -144px; }
+.ui-icon-info { background-position: -16px -144px; }
+.ui-icon-notice { background-position: -32px -144px; }
+.ui-icon-help { background-position: -48px -144px; }
+.ui-icon-check { background-position: -64px -144px; }
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-on { background-position: -96px -144px; }
+.ui-icon-radio-off { background-position: -112px -144px; }
+.ui-icon-pin-w { background-position: -128px -144px; }
+.ui-icon-pin-s { background-position: -144px -144px; }
+.ui-icon-play { background-position: 0 -160px; }
+.ui-icon-pause { background-position: -16px -160px; }
+.ui-icon-seek-next { background-position: -32px -160px; }
+.ui-icon-seek-prev { background-position: -48px -160px; }
+.ui-icon-seek-end { background-position: -64px -160px; }
+.ui-icon-seek-start { background-position: -80px -160px; }
+/* ui-icon-seek-first is deprecated, use ui-icon-seek-start instead */
+.ui-icon-seek-first { background-position: -80px -160px; }
+.ui-icon-stop { background-position: -96px -160px; }
+.ui-icon-eject { background-position: -112px -160px; }
+.ui-icon-volume-off { background-position: -128px -160px; }
+.ui-icon-volume-on { background-position: -144px -160px; }
+.ui-icon-power { background-position: 0 -176px; }
+.ui-icon-signal-diag { background-position: -16px -176px; }
+.ui-icon-signal { background-position: -32px -176px; }
+.ui-icon-battery-0 { background-position: -48px -176px; }
+.ui-icon-battery-1 { background-position: -64px -176px; }
+.ui-icon-battery-2 { background-position: -80px -176px; }
+.ui-icon-battery-3 { background-position: -96px -176px; }
+.ui-icon-circle-plus { background-position: 0 -192px; }
+.ui-icon-circle-minus { background-position: -16px -192px; }
+.ui-icon-circle-close { background-position: -32px -192px; }
+.ui-icon-circle-triangle-e { background-position: -48px -192px; }
+.ui-icon-circle-triangle-s { background-position: -64px -192px; }
+.ui-icon-circle-triangle-w { background-position: -80px -192px; }
+.ui-icon-circle-triangle-n { background-position: -96px -192px; }
+.ui-icon-circle-arrow-e { background-position: -112px -192px; }
+.ui-icon-circle-arrow-s { background-position: -128px -192px; }
+.ui-icon-circle-arrow-w { background-position: -144px -192px; }
+.ui-icon-circle-arrow-n { background-position: -160px -192px; }
+.ui-icon-circle-zoomin { background-position: -176px -192px; }
+.ui-icon-circle-zoomout { background-position: -192px -192px; }
+.ui-icon-circle-check { background-position: -208px -192px; }
+.ui-icon-circlesmall-plus { background-position: 0 -208px; }
+.ui-icon-circlesmall-minus { background-position: -16px -208px; }
+.ui-icon-circlesmall-close { background-position: -32px -208px; }
+.ui-icon-squaresmall-plus { background-position: -48px -208px; }
+.ui-icon-squaresmall-minus { background-position: -64px -208px; }
+.ui-icon-squaresmall-close { background-position: -80px -208px; }
+.ui-icon-grip-dotted-vertical { background-position: 0 -224px; }
+.ui-icon-grip-dotted-horizontal { background-position: -16px -224px; }
+.ui-icon-grip-solid-vertical { background-position: -32px -224px; }
+.ui-icon-grip-solid-horizontal { background-position: -48px -224px; }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+.ui-icon-grip-diagonal-se { background-position: -80px -224px; }
+
+
+/* Misc visuals
+----------------------------------*/
+
+/* Corner radius */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 4px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 4px;
+}
+/* Overlays */
+.ui-widget-overlay {
+	background: #aaaaaa  50% 50% repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+}
+.ui-widget-shadow {
+	margin: -8px 0 0 -8px;
+	padding: 8px;
+	background: #aaaaaa  50% 50% repeat-x;
+	opacity: .3;
+	filter: Alpha(Opacity=30);
+	border-radius: 8px;
+}
+
+.currentDomainCSS
+{
+    background: #D3D3D3 50% 50% repeat-x;
+}
+
+.serachTextBoxMiddle
+{
+    /* background: url("/assets/_/media/Images/P/Polymetal/Images/css/search-bg.jpg") no-repeat scroll 0 0 transparent;*/
+    height: 18px;
+    margin-left: 220px;
+    right: 44px;
+    width: 140px;
+}
+.serachButtonMiddle
+{
+    left: 363px;
+    position: absolute;
+    top: 53px!important;
+}
+.centerText
+{
+    margin-left: 195px;
+}
+.centerText1
+{
+margin:0 auto;
+width: 180px;
+}
+
+
+.ui-menu {max-width: 190px !important;}
+.ui-menu a{background-color:#ffffff;height:20px;width:100%;position:relative;top:0px;margin-bottom:1px;font-size:1.3em;}
+.ui-menu a:hover{/*background-color:#aaaaaa;*/height:20px;width:100%;position:relative;top:0px;margin-bottom:1px;}
+
+
+.ui-menu .ui-menu-item {padding: 0 !important;  }
+/*---- media-queries-----*/
+/*--------- iPad Landscape and Desktops ---------*/
+@media all and (min-width: 900px) and (max-width: 1024px) {
+#banner .bx-controls, #banner .bx-controls-direction{width:100% !important;}
+.bx-controls-direction{display:none !important;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{top:-2px !important; right:45% !important;}
+
+.bx-wrapper .bx-pager.bx-default-pager a {background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot.png) no-repeat top center !important;margin: 0 2px !important;	}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot-selected.png) no-repeat top center !important;}
+
+
+}
+
+
+/*--------- iPad Portrait and large Tablets Portrait ---------*/
+@media all and (min-width: 768px) and (max-width: 899px) {
+#banner .bx-controls, #banner .bx-controls-direction{width:100% !important;}
+.bx-controls-direction{display:none !important;}
+.bx-wrapper .bx-pager, .bx-wrapper .bx-controls-auto{top: -2px !important; right:45% !important;}
+
+
+.bx-wrapper .bx-pager.bx-default-pager a {background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot.png) no-repeat top center !important;margin: 0 2px !important;	}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active {background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot-selected.png) no-repeat top center !important;}
+
+}
+
+body.ie8 .outer-hm iframe._cookieConsentWrapper body{background-color:transparent !important;}
+
+
+
+
+/*---- sub-main-----*/
+a:active, a:focus {
+   outline:  none;
+   ie-dummy: expression(this.hideFocus=true);
+}
+
+.intro-box.productIntroBox{border:none;}
+
+.tabed-menu.productsTab{margin-bottom:12px; margin-left:1px}
+.intro-text.productsIntro{float: left;width: 679px;padding:0 20px;}
+.productsDesc{float:left; width:679px;;padding:0 20px 15px;border-bottom:1px solid #D6D6D6;}
+p.back-link{margin-bottom: 0; padding-bottom:16px;}
+p.back-link a {background:url(../assets/_/media/Images/I/ICAP-Corp-V3/css/back-arrow-blk-red.png) no-repeat left 3px; padding-left:20px; font-size:1.1em;}
+p.back-link a:hover{background-position: 0 -27px; color: #BE0027;}
+
+.tabed-menu.productsTab ul li.current {padding:0;}
+.tabed-menu.productsTab ul li.current a{color:#fff;}
+.tabed-menu.productsTab ul li.current a:hover{background:none;}
+
+.bottom-content{padding:20px; width:679px; float:left; border-bottom: 1px solid #D6D6D6;}
+ul li.blk-link {margin-bottom:0;font-size:1em;}
+.marketProducts {float:left; width:100%;}
+.marketProducts ul li.blk-link {width:191px; padding-right:7px; float:left; border-right:1px solid #d6d6d6; padding-bottom:4px; margin-right:20px; list-style:none; margin-left: 0; }
+.ip3-our-markets-and-products .marketProducts ul li.blk-link {width:178px;	}
+.marketProducts ul li.blk-link a{display:block; line-height:18px; background:url(_/media/Images/I/ICAP-Corp-V3/css/markets-link-arrow-blk-red.png) no-repeat scroll left 4px transparent}
+.marketProducts ul li.blk-link a:hover {background-position:left -66px;}
+
+.marketProducts ul li
+{
+list-style:none !important;
+}
+.filterMain {float:left; width:239px;}
+.filterMain p{margin:0;}
+.filterMain .filterHeading {padding:10px 20px 10px 20px;background:url(../assets/_/media/Images/I/ICAP-Corp-V3/css/left-col-sm-bg.jpg) no-repeat left top; float:left; width:199px;}
+.filterMain .filterHeading p.filterMainTitle, .videoContent p.videoTitle {font-family:'OpenSansLight', Arial;}
+
+.videoContent p.videoTitle, .filterHire p.filterHireTitle, .filterService p.filterServiceTitle, .filterRegion p.filterRegionTitle, .opportunitiesContent table.oppTable tr th, #leftCol .jobDetails p.jobTitle, #leftCol .jobDetails ul li p.fieldTitle {font-family:'OpenSansSemibold', Arial;}
+/*.filterMain .filterHeading p.filterClear, .opportunitiesContent table.oppTable tr td{font-family:'OpenSansItalic', Arial; font-style:italic;}*/
+.filterMain .filterHeading p.filterClear, .opportunitiesContent table.oppTable tr td{font-family:'OpenSansRegular', Arial;}
+
+.glossary-menu ul li a, #leftCol .jobDetails ul li p.fieldDetail{font-family:'OpenSansRegular', Arial;}
+
+.filterMain .filterHeading p.filterMainTitle {float:left; font-size:1.6em; color:#fff; font-weight:bold;}
+.filterMain .filterHeading p.filterClear {float:right; font-size:1.3em;}
+.filterMain .filterHeading p.filterClear a{color:#fff;}
+.filterHire, .filterService, .filterRegion {float:left; padding:10px 20px 0 20px; width:199px; background:#fff;}
+.filterHire p.filterHireTitle, .filterService p.filterServiceTitle, .filterRegion p.filterRegionTitle{background:url(../assets/_/media/Images/I/ICAP-Corp-V3/css/black-down-arrow.png) no-repeat right center; font-size:1.4em; color:#222222; margin-bottom:13px;}
+.filterHire ul li, .filterService ul li, .filterRegion ul li {padding-bottom:10px;  clear: both; display: block;}
+body.ie7 .filterHire ul li, body.ie7 .filterService ul li, body.ie7 .filterRegion ul li {padding-bottom:10px; display: block;}
+
+body.ie7 .filterHire ul li ul, body.ie7 .filterService ul li ul, body.ie7 .filterRegion ul li ul{margin: 0 0 0 25px;}
+
+.filterHire ul li span, .filterService ul li span, .filterRegion ul li span{font-size:1.2em; vertical-align:top; /*padding-left:10px;*/line-height: 1.4;}
+.filterHire ul li input, .filterService ul li input, .filterRegion ul li input{/*margin:0;*/float: left; margin: 0 10px 10px 0;}
+.filterHire ul li ul, .filterService ul li ul, .filterRegion ul li ul{margin-top:10px; margin-left:20px;}
+.filterService, .filterRegion {margin-top:1px;}
+
+.videoContent {float: left;width: 719px;}
+.videoContent p.videoTitle { color:#222222; font-size:1.6em; margin:0 0 11px 0;}
+
+.videoContent h2{margin:18px 0 16px;}
+table.videoMain tr td img{margin:0 0 17px 0;}
+.videoCategory {float:left; width:679px;padding: 0 20px 15px; border-bottom:1px solid #D6D6D6; margin-bottom:5px;}
+.videoCategory .blk-link {line-height:24px;}
+table.videoMain tr td{padding-bottom:8px;}
+.videoCategory.lastCategory {border-bottom:none;}
+
+/*--------------- Current opp -------------------*/
+.opportunitiesContent {float:left; width:679px; padding:0 20px 15px;}
+.currentOpp .intro-box {border-bottom:none;}
+.opportunitiesContent table.oppTable {float:left; width:100%;margin-bottom:5px}
+.opportunitiesContent table.oppTable tr th{ font-size:1.3em; background:#777777; color:#fff; padding:10px 15px 10px 19px; text-align:left; border-right:1px solid #fff;}
+.opportunitiesContent table.oppTable tr td{font-size:1.3em; padding:10px 15px 15px 19px;text-align:left; /*border-top:1px solid #D6D6D6;*/border-bottom:1px solid #D6D6D6;border-right:1px solid #D6D6D6;line-height:20px;}
+.opportunitiesContent table.oppTable tr td.datePosted, .opportunitiesContent table.oppTable tr th.datePosted{border-right:none;}
+
+#current-opportunities .content-rightcol{min-height:584px;}
+.opportunitiesContent table.oppTable tr.evenRow td{background:#f6f6f6;}
+ 
+/*-------- Glossary page -----------*/
+.glossary-menu{float:left;width:100%; border-bottom:1px solid #D6D6D6;}
+.glossary-menu ul li{float:left;width:auto; padding-right:12px; padding-top:17px; padding-bottom:15px;}
+.glossary-menu ul li a{font-size:2.2em;}
+.glossary-menu ul li a:hover {color:#BE0127}
+.glossary-menu ul li.current{display:block; }
+.glossary-menu ul li.current span{font-size:2.2em;color:#BE0127;}
+.glossary-menu ul {margin-left:22px; margin-right:16px;}
+
+.category-title{border-bottom:1px solid #D6D6D6; padding:13px 0 0 20px; float:left; width:699px; }
+.category-title h2{font-size:4em; margin:10px 0 27px;}
+.glossary-item{float:left;}
+.glossary-item-title{width:679px; padding:18px 20px;}
+.glossary-item-title p{font-size:2.2em; margin:0;}
+.glossary-item-content{border-bottom:1px solid #D6D6D6; padding:0 80px 7px 20px; width:619px;}
+.content-leftcol ul li ul#section-glossary-level3{display:none;}
+
+/*----------- Job details page ----------------*/
+.jobDetailContent {float:left; width:679px;padding:0 20px 25px;}
+
+/*----- Left nav for job details page -----------*/
+#leftCol .jobDetails{float:left; width:100%;}
+#leftCol .jobDetails p.jobTitle {float:left; width:199px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat-x; padding:5px 0;  line-height:14px; font-size:1.6em; color:#fff; padding:12px 20px 14px 20px; margin-bottom:0;}
+#leftCol .jobDetails ul {float:left;}
+#leftCol .jobDetails ul li{display:block;  width:199px; padding:9px 20px 13px 20px; background:#fff; float:left}
+#leftCol .jobDetails ul li.alterDetails {background:#f6f6f6;}
+#leftCol .jobDetails ul li p{font-size:1.4em; margin:0;}
+.applyPosition { float:left; width:199px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat-x; padding:5px 0;  line-height:14px;  color:#fff; padding:12px 20px 14px 20px; margin-bottom:0;}
+
+
+/*----------- Footer website search ------------------*/
+.footer-rowTwo .group-site {border-right:0;float:left; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat-x; line-height:14px;  color:#fff;  margin-bottom:0; margin-left:240px; margin-top:10px;}
+.footer-rowTwo .group-site div.good div.list-wrapper {background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat;bottom: 30px;left: 0;margin: 0;padding: 0 10px;width: 144px; top:auto; }
+
+.footer-rowTwo .group-site div.good ul{margin-top:0;}
+
+/*------- Adobe ---------*/
+.adobe {float:left; width:679px;margin-top:20px;}
+.adobe a img{float:left; margin-right:10px;}
+.content-sectionTwo.howwecreate{border:none;} 
+.main-content{min-height:385px;}
+.main-content table.rad-border.rad-clear{margin:0 40px 10px;width:570px;background:#eeeeee;border:none;padding: 0px;}
+.main-content table.rad-border.rad-clear{border:none;}
+.main-content table.rad-border.rad-clear td{padding:10px 15px;}
+.main-content table.rad-border.rad-clear p{margin-bottom:5px;font-size:1.2em;}
+.main-content table.rad-border.rad-clear p em{font-style:italic;}
+
+
+
+/*------- New careers landing ---------*/
+
+#careerscontent{
+    width: 959px;
+    background-color: #fff;
+    float: left;
+}
+
+
+
+
+#careerscontent .careers-pushpoint {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 175px;
+  border-bottom: 1px solid #fff;
+  background-position: 50% 50%;
+  background-size: cover;
+  font-family: "Open Sans", "Proxima N W01 Reg", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  font-size: 0.9375rem;
+  line-height: 1.15;
+  text-shadow: 2px 3px 12px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  text-align: center;
+  float: left;
+}
+#careerscontent .careers-pushpoint {
+    height: 288px;
+    font-size: 25px;
+    font-size: 1.5625rem;
+    line-height: 1.08571;
+  }
+#careerscontent .careers-pushpoint:before {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+}
+#careerscontent .careers-pushpoint a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+}
+#careerscontent .careers-pushpoint a:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 170%;
+  height: 100%;
+  background-color: rgba(81, 81, 81, 0.55);
+  content: '';
+}
+#careerscontent .careers-pushpoint a:before {
+    display: block;
+    -webkit-transform-origin: 0% 0%;
+    -ms-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    -webkit-transform: skewX(-60deg) translateX(-170%);
+    -ms-transform: skewX(-60deg) translateX(-170%);
+    transform: skewX(-60deg) translateX(-170%);
+    -webkit-transition: -webkit-transform 0.5s ease-out;
+    -ms-transition: -ms-transform 0.5s ease-out;
+    transition: transform 0.5s ease-out;
+  }
+
+#careerscontent .careers-pushpoint a:hover:before {
+  display: block;
+}
+#careerscontent .careers-pushpoint a:hover:before {
+    -webkit-transform: skew(-60deg) translateX(0);
+    -ms-transform: skew(-60deg) translateX(0);
+    transform: skew(-60deg) translateX(0);
+  }
+
+#careerscontent .careers-pushpoint a:hover span:before {
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+#careerscontent .careers-pushpoint span {
+  position: relative;
+  top: 50%;
+  right: 0;
+  left: 0;
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+#careerscontent .careers-pushpoint span:before {
+  position: absolute;
+  bottom: -0.25em;
+  left: 0;
+  display: block;
+  border-color: white;
+  border-bottom: 1px solid white;
+  width: 0;
+  transition: width 0.1s 0.3s linear;
+  content: '';
+}
+
+#careerscontent .careers-pushpoint--experienced:before {
+  background: url("../assets/_/media/Images/I/ICAP-Corp-V3/content-image/careers-images/red-30.png") repeat\9;
+  background-color: rgba(245, 69, 72, 0.3);
+}
+
+#careerscontent .careers-pushpoint--graduate:before {
+  background: url("../assets/_/media/Images/I/ICAP-Corp-V3/content-image/careers-images/blue-30.png") repeat\9;
+  background-color: rgba(75, 163, 179, 0.3);
+}
+
+.group-site iframe {height: auto;overflow: auto;position: absolute;width: 165px;z-index: 9999;}
+.group-site iframe:hover{height:700px;}
+body.ie7 .group-site iframe,body.ie8 .group-site iframe, body.ie9 .group-site iframe, body.ie10 .group-site iframe,body.internetexplorer11 .group-site iframe,body.chrome46 .group-site iframe {height: 700px;}
+.group-site {padding: 0px !important;}
+.search-container {padding: 5px 0 5px 170px !important;}
+.ie8 .group-site iframe {background-color:transparent;}
+
+#Homepage .redbox .iframebox {margin-top: -16px;}
+.custom-news-page table tr td {border-bottom: 1px solid #d6d6d6;text-align: left;vertical-align: middle}
+.DisclaimerNotesContainer > ul {margin:15px 0 15px 30px}
+.DisclaimerNotesContainer ul li {font-size: 1.4em;line-height: 22px;list-style-type: disc;margin-bottom: 10px;}
+.DisclaimerNotesContainer ul li ul{margin: 15px 0 15px 25px;}
+.DisclaimerNotesContainer ul li ul li { font-size: 1em;line-height: 22px;list-style-type: none;}
+/*---- main-----*/
+@charset "utf-8";
+/* CSS Document */
+
+
+/*---------------- Start Reset CSS ----------------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+/*---------------- End Reset CSS ----------------- */
+
+
+/*---------------- Font assigning starts  ----------------- */
+
+/*h1, h2, h3 {font-family:'OpenSansRegular', Arial; }*/
+
+h1, h2, h3, .product-search p.search-hd, .product-search .search-txt p, .latest-job-box p.job-txt, .twitter-box p.twitter-txt, .section-header, .sub-nav-text p, .banner-left .left-bottom p.bann-hd, .banner-left .left-bottom .bann-txt p span, ul.contact-data li {font-family:'OpenSansRegular', Arial;}
+
+.intro-text p, .carousel-slide2-top .box1 p, .carousel-slide2-top .box2 p, .carousel-slide2-top .box3 p, .board p.role, .col-1 p, .col-2 p, .col-3 p, .content-sectionTwo table td, .report-title, ul.who-we-are li a, ul.what-we-do li a, ul.makes-different li a, .contact-footer p.contact-title, ul.company li a, ul.support li a, .ft-social-media p.sm-title, ul.global-contact li a, .left-social-media p.share, .tabed-menu ul li {font-family:'OpenSansRegular', Arial;}
+
+/*ul.who-we-are li a, ul.what-we-do li a, ul.makes-different li a, .contact-footer p.contact-title, ul.company li a, ul.support li a, .ft-social-media p.sm-title, ul.global-contact li a {font-family:'OpenSansRegular', Arial;}*/
+
+.main-navigation ul li a, .content-leftcol ul li a span, .content-leftcol ul li span, .contact a, .banner-left .left-bottom .bann-txt p, .content-sectionTwo table th, p.newsSearch-title, report-title-hd, report-html-hd, report-pdf-hd, .item-content h4, .hd-selectBy, .hd-location, .hd-contactDetail, .region-title {font-family:'OpenSansSemibold', Arial;}
+
+.carousel-slide1-left .left-top p, .banner-left .left-top p, .banner-left .left-column p, .carousel-slide4-left p.quote {font-family:'OpenSansLight', Arial;}
+
+.left-column ul li a, .left-top ul li a, .blk-link a, .news-back a, p.web-link a, p.wht-link a, p.back-link a, .sub-nav ul li a, p.lan-news-title a, p.lan-rns-title a, .landing-calendar table td.bdr, .next-tab a, .next-tab, .result-centre ul li a, .annual-report ul li a, ul.who-we-are li li a, ul.what-we-do li li a, ul.makes-different li li a, .contact-footer p.email a, ul.company li li a, ul.support li li a, ul.global-contact li li a, .related-info ul li a, #site-map #sitemapcontainer ul li a {font-family:'OpenSansItalic', Arial;}
+
+.ie7 .left-column ul li a, .ie7 .left-top ul li a, .ie7 .blk-link a, .ie7 .news-back a, .ie7 p.web-link a, .ie7 p.wht-link a, .ie7 p.back-link a, .ie7 .sub-nav ul li a, .ie7 p.lan-news-title a, .ie7 p.lan-rns-title a, .ie7 .landing-calendar table td.bdr, .ie7 .next-tab a, .ie7 .next-tab, .ie7 .result-centre ul li a, .ie7 .annual-report ul li a, .ie7 ul.who-we-are li li a, .ie7 ul.what-we-do li li a, .ie7 ul.makes-different li li a, .ie7 .contact-footer p.email a, .ie7 ul.company li li a, .ie7 ul.support li li a, .ie7 ul.global-contact li li a, .ie7 .related-info ul li a, .ie7 #site-map #sitemapcontainer ul li a {font-family:'OpenSansItalic', Arial;font-style:italic;}
+
+/*.carousel-slide4-left p.quote {font-family:'OpenSansLight', Arial;}*/
+
+/*ul.who-we-are li li a, ul.what-we-do li li a, ul.makes-different li li a, .contact-footer p.email a, ul.company li li a, ul.support li li a, ul.global-contact li li a, .related-info ul li a {font-family:'OpenSansItalic',}*/
+
+/*---------------- Font assigning ends  ----------------- */
+
+
+
+/* ------------- Global starts here ---------- */
+body {margin:0; padding:0; color: #444; font-family:Arial, Helvetica, sans-serif; font-size:62.5%; background:url(_/media/Images/I/ICAP-Corp-V3/css/bg.jpg); }
+h1{font-size: 4em; color:#222; font-weight: normal; margin: 10px 0 30px 0; line-height:45px}
+h2{font-size: 3em; color:#222; font-weight:normal;margin: 0 0 30px 0; line-height:34px}
+h3{font-size: 2.2em; color: #222; font-weight: normal; margin: 0 0 13px 0; line-height:24px}
+body.ie7 h3{line-height:30px}
+
+body.ie7 .market-snapshot h3{line-height:24px}
+
+.hide {display:none}
+a{/*color:#444; */ color:#BE0027; text-decoration:none; outline:none; cursor:pointer;}
+a:hover{text-decoration:underline;}
+
+p{margin: 0 0 15px 0; font-size: 1.2em; line-height: 20px;}
+.intro-text {width:619px}
+.intro-text p {font-size: 1.8em; line-height:26px}
+.clear{clear:both; display:block; overflow:hidden; visibility:hidden; width:100%; height:0}
+.skiplinks{display:none;}
+.rad-right{float:right;padding-left:10px;}
+.rad-left{float:left;padding-right:10px;padding-bottom:5px;margin:0;}
+#main-wrapper {width:959px; margin:0 auto; padding:0}
+
+.currentOpp ul li ul{font-size: 0.7em; line-height:15px;}
+
+#rightCol p, #rightCol .main-content ul li, #rightCol .currentOpp ul li{font-size: 1.4em; line-height:22px;}
+#rightCol p.blk-link a{font-size:1em;background-position:left 5px;}
+#rightCol p.back-link a{background-position:left 5px;}
+#rightCol .intro-text p{/*font-size: 1.8em;*/font-size: 1.5em;line-height: 26px;}
+#rightCol p.wht-link a{background-position:left 7px;}
+#rightCol .bottom-content ul li, #rightCol .tab-content ul li{font-size:1.4em;}
+#rightCol table.formatted th, #rightCol table.formatted td, #rightCol .main-content table td, #rightCol table.rad-financial td, #rightCol table.rad-financial th{font-size: 1.4em; line-height:18px;}
+#rightCol p.newsDate{font-size: 1.2em;line-height: 20px;}
+#rightCol .main-content table td ul li, #rightCol table.formatted th p, #rightCol table.formatted td p, #rightCol .main-content table td p, #rightCol table.rad-financial td p, #rightCol table.rad-financial th p{font-size:1em;}
+#rightCol p.web-link a, #rightCol p.web-link a:hover{background-position:left 6px;}
+
+#rightCol p.blk-link{padding-bottom:5px;}
+/* ------------- Global ends ---------- */
+
+/*breadcrumbs*/
+#breadcrumb {font-size: 1.2em; padding: 0px 0 10px 0px;}
+#breadcrumb .separator {margin: 0 5px;}
+
+/* ------------ Top row starts ---------- */
+
+.country-disclaimer {background: #b30027 url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/icons/icon-location.png") no-repeat  20px 11px; padding:10px 20px 10px 45px; display:none;}
+.country-disclaimer p {color:#fff; margin-bottom:0}
+.country-disclaimer p a {color:#fff; font-style:italic; text-decoration:underline; margin:0 5px}
+
+.outer {float:left; width:959px; position:relative; left:0;}
+
+
+.top-row {float:left; width:100%}
+
+/*.top-link { float:left; width:552px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat-x; padding:5px 0; border-right:1px solid #fff; line-height:14px}*/
+.top-link { float:left; width:552px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat; padding:5px 0; border-right:1px solid #fff; line-height:14px;background-position: -349px -163px;}
+
+.top-link ul li {float:left; margin-left:27px; /*margin-left:11px;*/ }
+/* .ie7 .top-link ul li {margin-left:14px}*/
+.top-link ul li.top-menu1 {margin-left:20px;}
+.top-link ul li.last {margin-left:11px; margin-right:15px;}
+.ie7 .top-link ul li.last {margin-left:10px;}
+
+.top-link ul li a {color:#fff; padding:8px 0; display:block; font-size:1.2em; /*font-weight:bold; text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);*/}
+.top-link ul li a:hover { text-decoration:underline;}
+
+#investor-relations .top-link ul li a.active1, .ip3-investor-relations .top-link ul li a.active1, #careers .top-link ul li a.active2, .ip3-careers .top-link ul li a.active2, #latest-news .top-link ul li a.active3, .ip3-press-releases .top-link ul li a.active4 {text-decoration:underline}
+
+
+
+.search {float:left; width:406px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-search-bg.jpg) repeat-x;}
+/*.group-site {float:left; width:164px; padding:1px 0; border-right:1px solid #fff; position:relative; z-index: 9;}
+[if IE7] .group-site{padding:0;}
+
+div.good input {background-color: transparent; color:#fff; font-family:Arial, Helvetica, sans-serif; font-size: 1.2em; height:38px; line-height:36px; margin:0; padding:0 10px; border:0; width: 142px; cursor:pointer; float:left;}
+.ie7 div.good input{height:33px;}*/
+
+div.icon {background:url(_/media/Images/I/ICAP-Corp-V3/css/down-arrow.png) no-repeat 0 0; cursor: pointer; height: 16px; right:10px; position:absolute; top:17px; width: 10px;}
+
+/*div.good div.list-wrapper {background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg.jpg) repeat 0 0; bottom: auto; left: 2px; margin: 0; padding: 0 10px; top: 1px; width: 142px;}
+	
+div.good ul {max-height: 390px; list-style-type: none; margin: 38px 0 0 0; padding: 0;}
+
+div.good li {cursor: pointer; font-size: 1.2em;  margin: 0; height:28px; padding-top: 2px; }
+div.good li span {color: #fff;}
+div.good li:hover span {color: #999;}
+
+div.combo {float: left; left:0px; position: relative; top: 0;}
+
+.combo div.list-wrapper {max-height: 390px; overflow: hidden; position: absolute; z-index: 99999;}
+.combo .visible {display: block; z-index:-1 !important}
+.combo .invisible {display: none;}*/
+
+.region-site {float:left; width:73px; border-right:1px solid #fff;display:none;}
+.region-site ul {float:left; width:100%; height:40px; position:relative; z-index:99}
+.region-site ul ul {position:absolute; top:40px; left:0; z-index:99; width:139px; height:125px; padding:20px 10px 0 10px; display:none; background:url(_/media/Images/I/ICAP-Corp-V3/css/region-dropdown-bg.png) repeat 0 0; }
+.region-site ul li {display:block; cursor:pointer; float:left; width:100%; height:40px; background:url(_/media/Images/I/ICAP-Corp-V3/css/region-dd-with-selected.jpg) no-repeat 0px 0px;}
+.region-site ul ul li {float:left; width:130px; height:20px; color:#fff; padding:5px 10px; font-size:1.2em; background-image:none}
+.region-site ul ul li:hover {color:#999; background-image:none;}
+.region-site ul li:hover {/*background:url(_/media/Images/I/ICAP-Corp-V3/css/region-dropdown-selected.jpg) no-repeat 0px 2px;*/ background-position:0 -40px}
+.region-site ul li:hover ul.region-list {display:block; }
+
+
+.group-site {float:left; width:164px; padding:1px 0; border-right:1px solid #fff;}
+.group-site ul {float:left; width:100%; position:relative; z-index:99}
+.group-site ul ul {position:absolute; top:38px; left:0; z-index:99; width:144px; padding:5px 10px 10px; background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg.jpg) repeat 0 0; display:none; }
+
+/*.group-site ul li {display:block; cursor:pointer; float:left; width:128px;height:18px; padding:13px 18px 7px 18px; font-size:1.2em; color:#fff; 
+	background:url(_/media/Images/I/ICAP-Corp-V3/css/groop-site-bg.jpg) no-repeat left top}*/
+
+.group-site ul li {display:block; cursor:pointer; float:left; width:128px;height:18px; padding:13px 18px 7px 18px; font-size:1.2em; color:#fff; 
+	background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat -5px -169px;}
+
+.group-site ul ul li a {/*height:20px;*/ color:#fff; /*font-size:0.833em;*/ font-size: 0.75em;}
+.group-site ul ul li a:hover {color:#999; background-image:none;}
+.group-site ul ul li{float:left; width:135px; /*height:20px;*/ color:#fff; /*padding:7px 0 6px 8px;*/ padding:2px 0px 6px 8px; background-image:none;height:auto;}
+
+.group-site ul ul li:hover {color:#999; background-image:none;}
+.group-site ul ul li.botborder{border-bottom:dotted 1px #fff; margin-bottom: 5px;}
+
+.group-site ul li:hover {background-position:left -40px}
+.group-site ul li:hover ul.websites {display:block; }
+
+
+
+
+
+.search-container {float:left; width:236px; padding:5px 0 5px 5px}
+.search-container:hover {background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg.jpg) repeat 0 0; background-position:left -40px;}
+
+.search-container .btn:hover + .search-container {background-color:#ff0000; display:block }
+
+.ie7 .search-container {padding:4px 0 3px 5px}
+.search-container .input-box { float:left; width:198px}
+.search-container .input-box input {width:178px; height:15px; padding:5px 10px; font-family:arial; font-size:1.2em; color:#444;}
+.search-container .btn {float:left; width:35px}
+
+.shareBar {float:left; width:100%; margin:1px 0 0 0;}
+#tickerContainer {float:left; width:100%}
+/* ------------ Top row ends ---------- */
+
+
+/* ----------- second row starts here -------- */
+.second-row {float:left; width:100%; margin:1px 0; background-color:#fff; position:relative; z-index:8}
+.ie7 .second-row {float:none;}
+.logo {float:left; width:239px; height:110px; border-right:1px solid #e5e5e5}
+.logo a {float:left; display:block}
+.main-navigation {float:left; width:560px;}
+.main-navigation ul {float:left; width:560px;}
+.main-navigation ul li {float:left; width:159px; border-right:1px solid #e5e5e5; height:110px;}
+.main-navigation ul li a {display:block; padding:50px 19px 16px 19px; font-size:2em; line-height:22px; color:#222}
+.main-navigation ul li#nav-Homepage-level1 {width:79px}
+
+/*#Homepage .main-navigation ul li#nav-Homepage-level1 a {background: url(_/media/Images/I/ICAP-Corp-V3/css/home-selected.jpg) no-repeat center center; text-indent: -9999px; height:110px; display:block}*/
+
+#Homepage .main-navigation ul li#nav-Homepage-level1 a {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat center center;
+    text-indent: -9999px;
+    height: 110px;
+    display: block;
+    width: 79px;
+    background-position: -236px -169px;
+}
+
+.main-navigation li#nav-Homepage-level1 a {padding:0}
+.main-navigation li#nav-Homepage-level1 a {background: url(_/media/Images/I/ICAP-Corp-V3/css/home.jpg) no-repeat center center; text-indent: -9999px;; height:110px; display:block}
+
+.main-navigation ul li#nav-Homepage-level1 a:hover {background: url(_/media/Images/I/ICAP-Corp-V3/css/home-hover.jpg) no-repeat center center; text-indent: -9999px;; height:110px; display:block}
+
+.main-navigation ul li:hover a { background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg-2.jpg) repeat left top; color:#fff}
+.main-navigation ul li:hover div.drop-down {display:block}
+.main-navigation ul li a:hover {color:#fff;text-decoration:none;}
+
+.main-navigation ul li.selected { background:url(_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html) no-repeat left top; color:#fff}
+.main-navigation ul li.selected a {color:#fff}
+
+.ip3-who-we-are .main-navigation ul li#who-we-are-level1, #who-we-are .main-navigation ul li#who-we-are-level1  {background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat left top; /*color:#fff; padding-bottom:15px*/}
+.ip3-who-we-are .main-navigation ul li#who-we-are-level1 a, #who-we-are .main-navigation ul li#who-we-are-level1 a {color:#fff}
+
+.ip3-what-we-do .main-navigation ul li#what-we-do-level1, #what-we-do .main-navigation ul li#what-we-do-level1 {background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat left top;}
+.ip3-what-we-do .main-navigation ul li#what-we-do-level1 a, #what-we-do .main-navigation ul li#what-we-do-level1 a {color:#fff;}
+
+.ip3-what-makes-us-different .main-navigation ul li#what-makes-us-different-level1, #what-makes-us-different .main-navigation ul li#what-makes-us-different-level1, #contact-us div.contact{background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat left top;}
+
+
+.ip3-working-at-icap .main-navigation ul li#working-at-icap-level1, #working-at-icap .main-navigation ul li#working-at-icap-level1, #contact-us div.contact{background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat left top;}
+
+.ip3-working-at-icap .main-navigation ul li#working-at-icap-level1 a, #working-at-icap .main-navigation ul li#working-at-icap-level1 a, #contact-us div.contact a {color:#fff;} 
+
+.ip3-what-makes-us-different .main-navigation ul li#what-makes-us-different-level1 a, #what-makes-us-different .main-navigation ul li#what-makes-us-different-level1 a, #contact-us div.contact a {color:#fff;} 
+
+
+ul.social-media li {float:left; text-indent:-99999; width:52px; height:54px; border-right:1px solid #e5e5e5; border-bottom:1px solid #e5e5e5; cursor:pointer; text-indent:-9999px}
+ul.social-media li a {float:left; width:100%; height:100%}
+
+/*ul.social-media li.twitter { background:url(_/media/Images/I/ICAP-Corp-V3/css/twitter-header.jpg) no-repeat left 0;}
+ul.social-media li.twitter:hover {background-position:left -54px}*/
+
+ul.social-media li.twitter {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -349px -213px;
+}
+
+ul.social-media li.twitter:hover {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -349px -267px;
+}
+
+/*ul.social-media li.facebook { background:url(_/media/Images/I/ICAP-Corp-V3/css/facebook-header.jpg) no-repeat left top;}
+ul.social-media li.facebook:hover {background-position:left -54px;}*/
+
+
+
+ul.social-media li.facebook {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -289px -27px;
+}
+
+ul.social-media li.facebook:hover {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -289px -81px;
+}
+
+ul.social-media li.linkedin{
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -375px -5px;
+}
+
+ul.social-media li.linkedin:hover {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 52px;
+    height: 54px;
+    background-position: -375px -59px;
+}
+
+/*ul.social-media li.linkedin { background:url(_/media/Images/I/ICAP-Corp-V3/css/linkedin-header.jpg) no-repeat left top; width:53px; border-right:none}
+ul.social-media li.linkedin:hover {background-position:left -54px;}*/
+
+.contact  {float:left; width:159px; }
+.contact a {font-size:2em; line-height:22px; color:#222; padding:17px 27px 16px 27px; display:block}
+.contact a:hover {color:#fff; background:url(_/media/Images/I/ICAP-Corp-V3/css/magamenu-hover-bg.jpg) repeat left top;text-decoration:none;}
+.contact.selected a {background:url(_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html) no-repeat left top; color:#fff}
+
+.drop-down {float:left; width:919px; position:absolute; z-index:-1; top:110px; left:0; height:321px; padding:20px; background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg-2.jpg) repeat left top; display:none}
+
+.section-header {float:left; width:889px; font-size:2.2em; color:#fff; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat left 15px; padding:10px 0 40px 30px}
+
+.main-navigation ul li .sub-nav {float:left; width:298px; min-height:268px; border-right:1px solid #505050}
+.main-navigation ul li .sub-nav ul {width:180px;}
+.main-navigation ul li .sub-nav ul li {padding:0 0 5px 0; height:auto; width:100%; border-right:none}
+.main-navigation ul li .sub-nav ul li a {font-size:1.3em; color:#fff; padding:0 0 0 25px; background:url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-wht.png) no-repeat left 5px;}
+.main-navigation ul li .sub-nav ul li a:hover {opacity:0.556; filter:alpha(opacity=50);zoom: 1;}
+.main-navigation ul li .sub-nav ul li:hover {background:none}
+
+.sub-nav-content { float:left; width:600px; margin-left:20px}
+.sub-nav-text { float:left; width:300px; margin-right:20px}
+.sub-nav-text p {font-size:1.8em; line-height:26px; color:#fff}
+.sub-nav-image { float:left; width:279px}
+
+/* ----------- second row starts here -------- */
+
+
+/* ------------ Slider starts ---------- */
+/* body.ie7 #image-container, body.ie7 .homecontent{ z-index:-1;} */
+#image-container {float: left; display: inline;	width: 100%; height: 580px;	overflow: hidden; text-align: center; position:relative; z-index:9}
+#image-container #image-inner {float: left;	display: inline; width: 100%; height: 541px; overflow: hidden; text-align: center; position: relative;
+}
+#image-container #left-overlay {position: absolute;	top: 0;	left: 0; height: 541px;	background:url(_/media/Images/I/ICAP-Corp-V3/css/overlay.png);	z-index: 10;}
+#image-container #right-overlay {position: absolute; top: 0; right: 0; height: 541px; background:url(_/media/Images/I/ICAP-Corp-V3/css/overlay.png); z-index: 10;}
+#image-container .move-left, #image-container .move-right {position: absolute; top: 220px; z-index: 100; width: 80px; height: 80px;	text-indent: -9999em;}
+.move-right {background:url(_/media/Images/I/ICAP-Corp-V3/css/bann-arrow-right.jpg) no-repeat 0 0; right:71px;}
+.ie7 .move-right, .ie8 .move-right {right:69px;}
+.move-right:hover {background-position: -80px 0}
+.move-left {background:url(_/media/Images/I/ICAP-Corp-V3/css/bann-arrow-left.jpg) no-repeat -80px 0; left:72px;}
+.ie7 .move-left, .ie8 .move-left {left:69px;}
+.move-left:hover {background-position: 0 0}
+.carousel-nav {height: 16px; margin: 0 auto; position: absolute; bottom: 10px; left: 400px; z-index:10;}
+.carousel-nav-item {float:left; margin:0 9px; width:12px; height:12px; background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot.png) no-repeat center center; text-indent:-9999px; cursor:pointer}
+.carousel-nav-item.carousel-nav-item-selected, .carousel-nav-item.carousel-nav-item-selected:hover { background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot-selected.png) no-repeat center center}
+
+.carousel-nav-item:hover {background:url(_/media/Images/I/ICAP-Corp-V3/css/carousel-dot-hover.png) no-repeat center center;}
+#image-container #image-slider {position: absolute;	top: 0;	left: 0; width: 2200px;}
+#image-container #image-slider .image-area {float: left; display: inline; position: relative; z-index: 5; width: 959px; text-align:left}
+
+
+
+
+
+
+
+/* ------- home carousel slide 1 -------- */
+.carousel-slide1-left {float:left; width:319px}
+.carousel-slide1-left .left-top { float:left; width:279px; height:306px; padding:24px 20px 30px 20px; background-color:#222; margin-bottom:1px;}
+.carousel-slide1-left .left-top p { font-size:2.2em; color:#fff; line-height:26px}
+.carousel-slide1-left .left-bottom {float:left; width:319px; height:158px; background:url(_/media/Images/I/ICAP-Corp-V3/css/icon-share-price.png) no-repeat right bottom #be0027; padding:10px 0;}
+.left-column ul li, .left-top ul li {padding:3px 0}
+.left-column ul li a, .left-top ul li a { font-size:1.3em; color:#fff; background:url(_/media/Images/I/ICAP-Corp-V3/css/navigation-arrow.png) no-repeat left 3px; padding-left:20px; line-height:18px;}
+.left-column ul li a:hover, .left-top ul li a:hover {opacity:0.556; filter:alpha(opacity=50);zoom: 1;}
+.ie7 .left-column ul li a:hover, .ie7 .left-top ul li a:hover {background-position:left 4px;}
+
+.carousel-slide1-right {float:left; width:640px}
+.carousel-video-text { float:left; width:540px; height:138px; padding:20px 80px 20px 20px; margin-top:1px; background:#fff url(_/media/Images/I/ICAP-Corp-V3/icons/icon-video.png) no-repeat right bottom}
+.carousel-video-text h1 {margin:3px 0 10px}
+.blk-link {margin-bottom:0; font-size:1em}
+.blk-link a {background:url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-blk-red.png) no-repeat left 4px; padding-left:20px; font-size:1.3em;}
+.blk-link a:hover {color:#be0027 ;background-position: left -26px}
+
+/* ------- home carousel slide 2 -------- */
+.carousel-slide2-top {float:left; width:959px; background-color:#fff}
+.box1, .box2, .box3 {float:left; width:279px; min-height:230px; padding:20px;}
+.carousel-slide2-top .box1 { border-right:1px solid #e5e5e5; background:url(_/media/Images/I/ICAP-Corp-V3/icons/icon-broking.png) no-repeat right bottom}
+.carousel-slide2-top .box2 { border-right:1px solid #e5e5e5; background:url(_/media/Images/I/ICAP-Corp-V3/icons/icon-electronic.png) no-repeat right bottom}
+.carousel-slide2-top .box3 { background:url(_/media/Images/I/ICAP-Corp-V3/icons/icon-risk.png) no-repeat right bottom}
+
+.carousel-slide2-top .box1 h3, .carousel-slide2-top .box2 h3, .carousel-slide2-top .box3 h3 {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-arrow.png) no-repeat right 6px;}
+
+.carousel-slide2-top .box1 h3:hover, .carousel-slide2-top .box2 h3:hover, .carousel-slide2-top .box3 h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}
+
+p.next-arrow {float:left; width:7%; padding-top:6px}
+
+.carousel-slide2-top .box1 p, .carousel-slide2-top .box2 p, .carousel-slide2-top .box3 p {font-size:1.6em; line-height:22px;}
+
+.carousel-slide2-bootom {float:left; width:959px}
+.carousel-slide2-bootom .product-search {float:left; width:599px; padding:23px 20px; background:#be0027 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-product-search.png) no-repeat right bottom; margin-right:1px }
+.product-search p.search-hd {font-size:3em; line-height:34px; color:#fff}
+.product-search .search-txt p{font-size:1.6em; line-height:22px; color:#fff; margin-bottom:40px}
+.pro-search-container { float:left; width:100%; clear:both; margin-bottom:47px}
+.pro-search-container .txtBox {float:left; width:545px}
+.pro-search-container .txtBox input {width:515px; height:30px; padding:5px 15px; border:0; font-family: Arial, Helvetica, sans-serif; font-size:1.2em; color:#444; line-height:32px;}
+.pro-search-container .btnSearch {float:left; width:53px}
+.ie7 .pro-search-container .btnSearch {margin-top:1px}
+
+p.wht-link {margin-bottom:0; position: absolute;}
+p.wht-link a, .bannerbox.redbox p.wht-link a{padding-left:20px; font-size:1.084em; color:#fff; float:left}
+p.wht-link a:before, .bannerbox.redbox p.wht-link a:before {background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; padding-left:20px; float:left;background-position: -351px -5px;position: absolute;content: "";height:12px;bottom:4px;left: 0;}
+
+/*p.wht-link a:hover {opacity:0.556; filter:alpha(opacity=50);zoom: 1;}*/
+
+/*p.whtPink-link a {background:url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-wht-pink.png) no-repeat left -19px; padding-left:20px; font-size:1.084em; color:#fff; float:left}*/
+
+.product-search p.wht-link a:hover {background-position:0 -75px; color:#4c000f}
+
+
+
+
+.joint-venture {float:left; width:319px; height:269px; display:block; cursor:pointer;}
+.joint-venture a {background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+.joint-venture h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+
+.title-bg {float:left; width:279px; background:url(_/media/Images/I/ICAP-Corp-V3/css/title-bg.png) no-repeat left bottom; padding:12px 20px 5px 20px}
+.title-bg h3  {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 6px; color:#fff;}
+.title-bg h3 a {color:#fff;}
+ p.next-arrow-wht {float:left; width:7%; padding-top:6px; margin-bottom:0}
+ 
+ /* ------- home carousel slide 3 -------- */
+
+.caption-area { float:left; width:319px; height:211px; background:#000; opacity:0.8; }
+.caption-area p {color:#fff; padding:10px 20px; width:279px}
+.caption-area p a{color:#fff;padding:0;}
+
+.carousel-slide3-top {float:left; width:959px; background-color:#fff}
+.director-box {float:left; width:319px; height:269px; margin-right:1px; display:block; cursor:pointer;}
+.director-box a {background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+.director-box h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+.bussiness-box {float:left; width:319px; height:269px; margin-right:1px; display:block; cursor:pointer;}
+.bussiness-box a {background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+.bussiness-box h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+/*.bussiness-box h3 {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 6px; color:#fff; margin:0 0 20px 0}*/
+/*.bussiness-box p {color:#fff}*/
+.global-box {float:left; width:319px; height:269px; display:block; cursor:pointer;}
+.global-box a{background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+
+.global-box h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+/*.global-box h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}*/
+
+.carousel-slide3-bootom {float:left; width:959px}
+.ebs-market {float:left; width:639px; background:url(_/media/Images/I/ICAP-Corp-V3/home-images/heart-of-market-bg.jpg) no-repeat left top; margin-right:1px }
+.ebs-mkt-img {float:left; width:319px}
+.ebs-mkt-txt {float:left; width:319px;}
+.ebs-mkt-txt img {margin-bottom:20px}
+
+.technology-box {float:left; width:319px; height:269px; display:block; cursor:pointer;}
+.technology-box a {background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+.technology-box h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+
+ /* ------- home carousel slide 4 -------- */
+ 
+.carousel-slide4-left {float:left; width:279px; background:url(_/media/Images/I/ICAP-Corp-V3/home-images/joselyn-lee-bg1.jpg) no-repeat left top; padding:30px 20px 0 20px; margin-right:1px; height:509px}
+.carousel-slide4-left p.quote {font-size:2.2em; font-weight:bold; line-height:32px; margin-bottom:7px}
+.carousel-slide4-left p.name { font-size:1.2em; font-weight:bold; color:#be0027; margin-bottom:0px;}
+.carousel-slide4-left p.role {font-size:1.2em; line-height:15px;}
+
+.carousel-slide4-right {float:left; width:639px}
+.latest-job-box {float:left; width:279px; background:#444 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-latest-job.png) no-repeat right bottom; height:229px; margin-right:1px; padding:20px; color:#fff}
+.latest-job-box h3 {color:#fff}
+
+.latest-job-box p.job-txt {font-size:1.6em; line-height:28px;clear:both;margin:0;}
+.latest-job-box p.job-txt a{font-size:1.2em;color:#fff;}
+.latest-job-box p.wht-link { float:left; margin-top:35px}
+.latest-job-box p.wht-link a:hover {background-position:left -16px; color:#999}
+
+.carousel-slide4-right .latest-job-box{ position: relative;}
+.carousel-slide4-right .latest-job-box p.wht-link{  position: absolute; bottom: 20px;margin-top:15px;}
+
+.charity-box {float:left; width:319px; height:269px; margin:1px 0px 0 0; display:block; cursor:pointer;}
+.charity-box h3 { float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+.latest-job-box h3 { float:left; width:279px; color:#fff;background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+
+
+/*.charity-box h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}
+.charity-box p { text-align:center}*/
+.charity-box a{background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+
+.culture-box {float:left; width:319px; height:269px; margin:1px 0px 0 0; display:block; cursor:pointer;}
+.culture-box h3 { float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+/*.culture-box h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}
+.culture-box p { text-align:center}*/
+.culture-box a{background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+
+
+
+.people-box {float:left; width:319px; height:269px; margin:1px 1px 0 0; display:block; cursor:pointer;}
+.people-box a {background-color:#000; opacity:0.8; padding:14px 20px; float:left;}
+.people-box h3 {float:left; width:279px; color:#fff; margin-bottom:0; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 11px;}
+
+.twitter-box {float:left; width:279px; background:#199bbe url(_/media/Images/I/ICAP-Corp-V3/icons/icon-twitter.png) no-repeat right bottom; height:229px; margin-top:1px; padding:20px; color:#fff}
+.twitter-box h3 {color:#fff}
+.twitter-box p.time {font-size:1.1em; margin-bottom:2px}
+.twitter-box p.twitter-txt {font-size:1.6em; line-height:24px; margin-bottom:53px}
+.twitter-box p.wht-link a:hover {background-position:left -56px; color:#a3d7e5}
+/* ------------ Slider ends ---------- */
+
+
+/* ---------------------- home Content starts here ------------------ */
+
+.content-wrapper-landing {float:left; width:100%;}
+.icap-swap-box {float:left; width:319px; height:359px;background:#444; margin-right:1px; /*background:#444 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-news.png) no-repeat right bottom*/}
+.icap-swap-box:after {background: #444 url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png") no-repeat scroll 0 0;float: right;height: 35px;bottom: 0;right:0;width: 36px;content: "";   background-position: -230px -289px;position: absolute;}
+.swap-content { float:left; width:279px; color:#fff; padding:10px 20px }
+.swap-content h3 {color:#fff}
+.swap-content p {margin-bottom:21px}
+.ie7 .swap-content p {margin-bottom:18px}
+
+
+/*.swap-content p.wht-link a {background:url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-wht999.png) no-repeat left 5px; padding-left:20px; font-size:1.084em; color:#fff; float:left}*/
+
+.swap-content p.wht-link a:hover {color:#999}
+.swap-content p.wht-link a:hover:before {background-position:-351px -25px; color:#999}
+
+
+.dark-grey-box {float:left; width:279px; height:319px; background:#444 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-news.png) no-repeat right bottom; padding:20px; margin-right:1px}
+
+
+
+.light-grey-box {float:left; width:279px; height:319px; background:#666 /*url(_/media/Images/I/ICAP-Corp-V3/icons/icon-news.png) no-repeat right bottom*/; padding:20px; margin-right:1px}
+.light-grey-box:after {background: #666 url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png") no-repeat scroll 0 0;float: right;height: 35px;bottom:0;right:0;width: 36px;content: "";   background-position: -230px -289px;position: absolute;}
+
+.light-grey-box h3 { color:#fff; float:left; width:87%; margin-right:15px}
+.lan-news-item {float:left; width:100%; border-bottom:1px solid #888; margin-bottom:13px}
+p.lan-news-date { font-size:1.1em; color:#bbbbbb; margin-bottom:1px}
+p.lan-news-date span {color:#444; margin:0 4px}
+p.lan-news-title {margin-bottom:13px}
+p.lan-news-title a {font-size:1.084em; color:#fff}
+p.lan-news-title a:hover {color:#bbb}
+
+/*.light-grey-box p.wht-link a {background:url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-wht-bbb.png) no-repeat left 5px; padding-left:20px; font-size:1.084em; color:#fff; float:left}*/
+
+.light-grey-box p.wht-link a:hover {color:#bbb}
+.light-grey-box p.wht-link a:hover:before {background-position:-351px -45px; color:#bbb}
+
+
+.blue-box {float:left; width:279px; height:319px; background:#199bbe /*url(_/media/Images/I/ICAP-Corp-V3/icons/icon-twitter.png) no-repeat right bottom*/; padding:20px;}
+.blue-box:after {background: #199bbe url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png") no-repeat scroll 0 0;float: right;height: 36px;bottom: 0;right: 0; width:49px; content: ""; background-position: -276px -289px;position: absolute;}
+
+.blue-box h3 {color:#fff}
+.lan-tweet-item {float:left; width:100%; border-bottom:1px solid #47afcb; margin-bottom:13px}
+p.lan-tweet-time { font-size:1.1em; color:#fff; margin-bottom:1px}
+p.lan-tweet-title {margin-bottom:12px; font-size:1.2em; color:#fff; line-height:20px}
+.blue-box p.wht-link a:hover {color:#a3d7e5}
+.blue-box p.wht-link a:hover:before {background-position:-351px -65px; color:#a3d7e5}
+
+
+.market-snapshot {float:left; width:639px; height:599px; margin-right:1px; background:#fff /*url(_/media/Images/I/ICAP-Corp-V3/icons/icon-market.png) no-repeat right bottom*/; padding:20px 0;}
+.market-snapshot:after {background: #fff url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png") no-repeat scroll 0 0;float: right;bottom:0;right: 0; width:40px; content: ""; height: 37px;background-position: -180px -289px;position: absolute;}
+
+.market-snapshot img {margin:14px 0}
+.market-comment {float:left; width:279px; height:570px; background:#fff; padding:20px; position: relative;}
+.market-comment h3 {float:left; width:87%; margin:0 15px 0 0;padding-bottom:13px;}
+
+.market-comment p.blk-link { bottom: 20px;margin-top: 22px; position: absolute;}
+
+.blue-box{position:relative;}
+.blue-box p.wht-link{bottom: 20px; position: absolute;}
+
+/* ---------------------- home Content ends here ------------------ */
+
+
+
+/* ---------------------- landing page starts here ------------------ */
+
+#mainwrapper { width:959px; margin:0 auto; padding:0}
+.banner-wrapper {float:left; width:100%}
+.banner-left {float:left; width:319px; margin-right:1px}
+.banner-left .left-top, .banner-left .left-column {float:left; width:279px;height:300px; padding:30px 20px; background-color:#222; margin-bottom:1px;}
+.banner-left .left-column {height:480px;}
+.banner-left .left-top p, .banner-left .left-column p { font-size:2.2em; color:#fff; line-height:26px}
+.banner-left .left-bottom {float:left; width:279px; height:140px; padding:20px;}
+.banner-left .left-bottom p.bann-hd {font-size:2.2em; color:#fff; margin-bottom:15px}
+.banner-left .left-bottom .bann-txt p {font-size:1.2em; color:#fff; line-height:20px}
+
+#who-we-are .banner-left .left-bottom {background:#be0027 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-charity-day-wht.png) no-repeat right bottom}
+#what-we-do .banner-left .left-bottom {background:#be0027 url(_/media/Images/I/ICAP-Corp-V3/icons/icon-product-search.png) no-repeat right bottom}
+
+#what-makes-us-different .banner-left .left-bottom, #working-at-icap .banner-left .left-bottom{background:#199bbe url(_/media/Images/I/ICAP-Corp-V3/icons/icon-twitter.png) no-repeat right bottom}
+#what-makes-us-different .banner-left .left-bottom .bann-txt p:first-child, #working-at-icap .banner-left .left-bottom .bann-txt p:first-child { font-size:1.1em; margin-bottom:2px}
+#what-we-do .banner-left .left-bottom .bann-txt{height:88px;}
+
+#who-we-are .banner-left .left-bottom .bann-txt p {font-size:6em; line-height:48px; margin-top:25px}
+.ie7#who-we-are .banner-left .left-bottom .bann-txt p {margin-bottom:28px}
+#who-we-are .banner-left .left-bottom .bann-txt p span {font-size:0.65em; color:#fff}
+.banner-right {float:left; width:639px; background-color:#fff; height:541px; position:relative; z-index:1}
+#investor-relations .banner-right {height:539px}
+.banner-video {float:left; width:100%; height:360px}
+.banner-video-text { float:left; width:539px; padding:20px; background:#fff; height:110px}
+.banner-video-text h2 {margin:3px 0 10px}
+#who-we-are .banner-video-text {padding-top:15px}
+.ie7#who-we-are .banner-video-text {padding-top:17px}
+
+
+.ln-box, .ln-lastBox {float:left; padding: 10px 20px 20px 20px; width: 279px; margin:1px 0 0 0; border-right:1px solid #e9e9e9;min-height: 328px;   position: relative;}
+
+.ln-box p.wht-link, .ln-lastBox p.wht-link{bottom: 16px;position: absolute;left:20px;float:left;width:250px;}
+
+.monthly-data p.wht-link{left:20px !important;}
+
+
+.ln-box p.wht-link a, .ln-lastBox p.wht-link a{color:#444; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/link-arrow-blk-red.png") no-repeat scroll left 5px transparent;}
+
+.ln-box p.wht-link a:hover, .ln-lastBox p.wht-link a:hover{color:#BE0027; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/link-arrow-blk-red.png") no-repeat scroll left -25px transparent;}
+
+
+.ln-lastBox {margin-right:0; border-right:none}
+
+.ln-box-with-top-img { float:left; width:319px; border-right:1px solid #e9e9e9;position: relative;}
+.ln-box-with-top-img-txt {float: left; padding: 10px 20px 20px 20px; width: 279px; }
+.boxicon{bottom:0;position: absolute;right: 0;}
+
+body.ie7 .monthly-data .boxicon{float:left;}
+
+.boxicon img{margin:0 !important;}
+.ln-box h3, .ln-box-with-top-img-txt h3 {float: left; width:95%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-arrow.png) no-repeat right 7px;padding-right:20px;}
+
+
+
+
+
+
+
+.ln-box h3:hover, .ln-box-with-top-img-txt h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 7px;}
+
+.ln-box p.next-arrow, .ln-box-with-top-img-txt p.next-arrow {float: left; padding-top: 6px; width: 7%;}
+.ln-box p:nth-child(3), .ln-box-with-top-img-txt p:nth-child(3) {clear:both}
+
+
+
+.ln-lastBox-with-top-img { float:left; width:319px;position:relative;}
+.ln-lastBox-with-top-img-txt {float: left; padding: 10px 20px; width: 279px; height:180px}
+.ln-lastBox h3, .ln-lastBox-with-top-img-txt h3 {float: left; width: 100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-arrow.png) no-repeat right 7px;}
+.ln-lastBox h3:hover, .ln-lastBox-with-top-img-txt h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 7px;}
+
+
+
+.ln-lastBox-with-top-img p.next-arrow a img {margin:0}
+
+.sml-img img {margin:12px 0 10px 22px}
+
+.wwa-rowOne { float:left; width:100%; margin:1px 0 0 0; background-color:#fff;}
+
+.wwa-rowTwo { float:left; width:100%; margin:1px 0 0 0;  background-color:#fff;}
+
+.wwd-rowOne { float:left; width:100%; margin:1px 0 0 0; background:#fff;}
+
+.wmud-rowOne { float:left; width:100%; margin:1px 0 0 0; background:#fff;}
+
+.wmud-rowTwo { float:left; width:100%; margin:1px 0 0 0; background:#fff;}
+
+.investor-rowOne { float:left; width:100%; margin:1px 0 0 0; background:#fff; }
+
+.investor-rowTwo { float:left; width:100%; margin:1px 0 0 0; background:#fff; }
+
+.career-rowOne { float:left; width:100%; margin:1px 0 0 0; background:#fff;}
+
+.career-rowlast { float:left; width:100%; margin:1px 0 0 0; background:#fff;}
+
+.lan-rns-item {float:left; width:100%; border-bottom:1px solid #d6d6d6; margin-bottom:12px}
+.lan-rns-item.last {border-bottom:none}
+p.lan-rns-date { font-size:1.1em; color:#be0027; margin-bottom:1px}
+p.lan-rns-date span {font-size:1.1em; color:#444}
+p.lan-rns-title {margin-bottom:12px;}
+p.lan-rns-title a {font-size:1.084em; color:#222}
+p.lan-rns-title a:hover {color:#be0027}
+
+.monthly-data table {margin-top:20px}
+.monthly-data table caption {padding:14px 6px; background-color:#777; font-size:1.1em; color:#fff; font-weight:bold}
+.monthly-data table, .landing-calendar table {float:left; width:100%; clear:both; margin-top:10px}
+.monthly-data table th, .landing-calendar table th {font-size:1.1em; font-weight:bold; padding:10px 8px; border-bottom:1px solid #d6d6d6}
+.monthly-data table td, .landing-calendar table td {font-size:1.1em; padding:10px 8px; border-bottom:1px solid #d6d6d6}
+.monthly-data table th.bdr, .monthly-data table td.bdr, .landing-calendar table td.bdr{ border-right:1px solid #d6d6d6}
+.monthly-data table th.alt, .monthly-data table td.alt, .landing-calendar table td.alt { background-color:#f6f6f6}
+
+.landing-calendar table th { font-size:1.2em; color:#fff; background-color:#777; border-right:1px solid #fff}
+.landing-calendar table td { font-size:1.3em; line-height:18px}
+
+
+.main-content table.rad-border{border: 1px solid #BBBBBB;  display: block;  margin: 0 15% 10px;
+    padding: 0 10px;    width: 70%;}
+.main-content a:hover, table.pulled-item tr td a:hover, .content-box a:hover, .tab-content a:hover { color:#BE0027}
+
+.main-content table.rad-border td {font-size: inherit;}
+
+
+.annual-report ul li, .result-centre ul li {padding:3px 0}
+.annual-report ul li a, .result-centre ul li a { font-size:1.3em; background: url(_/media/Images/I/ICAP-Corp-V3/css/link-arrow-blk-red.png) no-repeat left 3px; padding-left:20px}
+.annual-report ul li a:hover, .result-centre ul li a:hover {background-position:left -27px; color:#be0027}
+.annual-report .ln-box-with-top-img-txt {height:161px}
+.annual-report .ln-box-with-top-img-txt p {margin-bottom:15px}
+
+
+/* ---------------------- landing page ends here ------------------ */
+
+
+/* ------------------- Landing slider starts here -------------- */
+
+#slides {position:absolute; top:0px; left:0px; z-index:100;}
+
+.slides_container {width:639px; overflow:hidden; position:relative; display:none;}
+
+.slides_container div.slide {width:639px; height:508px;	display:block;}
+/*.ie7 .slides_container div.slide {height:500px}*/
+
+/* #slides .next,#slides .prev {position:absolute; top:107px; left:-39px; width:24px; height:43px; display:block;	z-index:101;}
+
+#slides .next {left:585px;} */
+
+.pagination {margin:0 auto; width:140px; padding:0 0 20px 0}
+
+.pagination li {float:left; margin:0 1px; list-style:none; margin:0 5px}
+
+/*.pagination li a {display:block; width:12px; height:8px; padding:5px 0; background:url("/assets/_/media/Images/I/ICAP-Corp-V3/css/carousel-dot.png") no-repeat center center; float:left; text-indent:-9999px; overflow:hidden;}*/
+
+.pagination li a {
+	display:block; padding:5px 0; float:left; text-indent:-9999px; overflow:hidden;
+background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 11px;
+    height: 4px;
+    background-position: -289px -2px;
+}
+
+
+    
+
+/*.pagination li.current a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/carousel-dot-selected.png") no-repeat center center;}*/
+
+.pagination li.current a {
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat;
+    width: 11px;
+    height: 4px;
+    background-position: -311px -2px;
+}
+
+.caption {width:599px;}
+
+/* ------------------- Landing slider ends here -------------- */
+
+
+
+/* ---------------------- Content page starts here ------------------ */
+
+.content-wrapper {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/content-left-col-bg.jpg) repeat-y top center;}
+.content-leftcol { float:left; width:239px; margin:0 1px 40px 0 }
+.content-rightcol { float:left; width:719px; background-color:#fff; padding:25px 0 0 0 }
+.main-content {float:left; width:679px; background-color:#fff; padding:0 20px 25px 20px}
+.main-content ul li, .currentOpp ul li{color: #444444;    font-size: 1.2em; padding: 2px 0 4px 4px;  margin-bottom:1px;  line-height: 20px; list-style: disc;  margin-left: 14px; }
+.main-content ul li ul li{font-size:1em !important;}
+.main-content ul li ul{margin-bottom:0;}
+.main-content ul{  margin-bottom: 18px; }
+
+
+.bottom-content ul li {color: #444444;    font-size: 1.2em; padding: 2px 0 4px 4px;  margin-bottom:1px;  line-height: 20px; list-style: disc;  margin-left: 14px; }
+.bottom-content ul li ul li{font-size:1em;}
+.bottom-content ul li ul {margin-bottom:0;}
+.bottom-content ul {  margin-bottom: 18px; }
+
+.main-content ol li {color: #444444; font-size: 1.2em; padding: 2px 0 4px 4px;  margin-bottom:1px;  line-height: 20px; list-style: decimal;  margin-left: 14px; }
+.main-content ol {  margin-bottom: 18px; }
+
+.product-desc ul li {
+ color: #444444;    font-size: 1.2em; padding: 2px 0 4px 4px;  margin-bottom:1px;  line-height: 20px; list-style: disc;  margin-left: 14px; }
+.product-desc ul {  margin-bottom: 18px; }
+
+.tab-content ul li {
+color: #444444;    font-size: 1.2em; padding: 2px 0 4px 4px;  margin-bottom:1px;  line-height: 20px; list-style: disc;  margin-left: 14px; }
+.tab-content ul {  margin-bottom: 18px; }
+
+
+.content-leftcol ul li a {background:url(_/media/Images/I/ICAP-Corp-V3/css/left-nav-pattern.jpg) repeat left top; padding:10px 20px; display:block; font-size:1.6em; color:#fff; line-height:22px; /*text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);*/}
+
+.content-leftcol ul li a:hover { background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat-x left top;text-decoration:none;}
+
+.content-leftcol ul li.current {background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat-x left top; padding: 10px 0 0; display:block; font-size:1.6em; color:#fff; line-height:20px;}
+
+.content-leftcol ul li.current span {display: block;    padding-bottom: 10px;    padding-left: 20px;}
+
+
+
+
+/*.content-leftcol ul li.current span{text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);}*/
+
+
+.content-leftcol ul li.selected a {background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat-x left top;}
+
+.content-leftcol ul li li.current {background:none; background-color:#fff; color:#be0027; }
+.content-leftcol ul li li.current span{text-shadow:none; filter:;}
+ .content-leftcol ul li.selected li a  {background-image:none; background-color:#fff; color:#222; text-shadow:none; font-size: 1em; border-bottom: 1px solid #D6D6D6; padding-bottom: 0;}
+.content-leftcol ul li li a {
+background-image:none; background-color:#fff; color:#222; text-shadow:none; font-size: 1em; border-bottom: 1px solid #D6D6D6; padding-bottom: 0;
+}
+
+
+.content-leftcol ul li li a:hover {background-image:none; background-color:#fff; color:#be0027}
+.content-leftcol ul li.current a span {padding-left: 0px;}
+
+
+.content-leftcol ul li.level2.current ul li.level3 a {font-size: 1em;}
+.content-leftcol ul li.level2.selected ul li.level3 a{font-size: 1.6em; padding-bottom: 10px;}
+.content-leftcol ul li.level2.selected ul li.level3.current span{border-bottom: 1px solid #D6D6D6;}
+
+.content-leftcol ul li.level2 {border-bottom: 1px solid #D6D6D6;}
+
+
+.left-social-media {float:left; width:199px; background:url(_/media/Images/I/ICAP-Corp-V3/css/left-col-sm-bg.jpg) no-repeat left top; padding:10px 20px 15px 20px}
+.left-social-media p.share {font-size:1.6em; color:#fff; margin-bottom:10px;  zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);}
+
+.left-social-media ul {float:left; width:100%; clear:both}
+.left-social-media ul li {float:left; border-right:1px solid #444; width:40px; line-height:12px; height:30px; background:none; text-indent:-9999px}
+.left-social-media ul li:hover { background:none}
+.left-social-media ul li a {font-size:0; display:block; color:#737373; line-height:12px; text-shadow:none; filter:;}
+.ie8 .left-social-media ul li a {padding:15px 20px}
+.ie7 .left-social-media {padding-bottom:7px;}
+.left-social-media ul li.lft-col-twitter {padding:5px 0;}
+.left-social-media ul li.lft-col-twitter a { background:url(_/media/Images/I/ICAP-Corp-V3/icons/tweeter-nav.png) no-repeat 4px -20px; }
+.left-social-media ul li.lft-col-twitter a:hover {background-position:4px 6px}
+
+.left-social-media ul li.lft-col-facebook {padding:5px 8px}
+.left-social-media ul li.lft-col-facebook a { background:url(_/media/Images/I/ICAP-Corp-V3/icons/facebook-nav.png) no-repeat center -18px; }
+.left-social-media ul li.lft-col-facebook a:hover {background-position: center 10px}
+
+.left-social-media ul li.lft-col-linkdin {padding:5px 8px;}
+.left-social-media ul li.lft-col-linkdin a {background:url(_/media/Images/I/ICAP-Corp-V3/icons/linkdin-nav.png) no-repeat center -19px; }
+.left-social-media ul li.lft-col-linkdin a:hover {background-position:center 6px}
+
+.left-social-media ul li.lft-col-email {padding:5px 0 5px 0; border-right:none}
+.left-social-media ul li.lft-col-email a {background:url(_/media/Images/I/ICAP-Corp-V3/icons/email-nav.png) no-repeat right -14px; }
+.left-social-media ul li.lft-col-email a:hover {background-position: right 9px}
+
+
+.intro-box {float:left; width:619px; padding:0 80px 10px 20px; border-bottom:1px solid #d6d6d6 }
+.content-box {float:left; width:679px; padding:20px 20px 5px 20px; border-bottom:1px solid #d6d6d6}
+.content-box.last {border-bottom:none;}
+
+body#icap-in-10 .content-box { padding-right: 0px; }
+
+
+#spot-fx .content-box h2 {margin-bottom:15px}
+
+#icap-in-10 .content-box.first {border-top:1px solid #d6d6d6 ;}
+
+.content-image { float:left; width:219px; margin-right:20px}
+
+#associated-companies .gryborder img, #joint-ventures .gryborder img {border: 1px solid #CCCCCC;}
+.content-box-txt ul li{font-size: 1.4em; line-height: 20px; list-style-type: disc; margin-left: 15px;   padding-bottom: 10px;}
+
+.content-box-txt { float:left; width:439px}
+body#associated-companies .content-box-txt, body#joint-ventures .content-box-txt{width:100%;}
+.content-box .content-box-txt h3 {float: left; width:95%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-arrow.png) no-repeat right 6px; margin-top:-7px;padding-right:20px;}
+
+.content-box .content-box-txt h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}
+
+.content-box .content-box-txt h3.noArrow {background:none}
+.content-box .content-box-txt h3.noArrow:hover {color:#444; background:none}
+
+.board .content-box-txt h3 {float: left; margin-bottom: 2px; width: 100%; margin-top: -7px; background:none}
+.board .content-box-txt h3:hover {color:#444; background:none}
+.board p.role { font-size:1.5em; margin-bottom:12px}
+.board p {margin-bottom:10px}
+
+p.web-link {margin-bottom:0;}
+p.web-link a {background:url(_/media/Images/I/ICAP-Corp-V3/css/exLink-arrow-blk.png) no-repeat left 4px; padding-left:25px; font-size:1.1em;color:#000;display: inline-block;}
+p.web-link a:hover {background:url(_/media/Images/I/ICAP-Corp-V3/css/exLink-arrow-red.png) no-repeat left 4px; color:#be0027;text-decoration:none;}
+
+#broking .content-rightcol {padding-bottom:0}
+.highlighted-section {float:left; width:679px; padding:20px 20px 50px; background-color:#222}
+.highlighted-section h2 {color:#fff}
+.highlighted-section p {color:#fff}
+body#global-broking .highlighted-section, body#electronic .highlighted-section{background-color: #BE142C;}
+
+.pulled-item-container {float:left; width:719px;}
+table.pulled-item {width:100%}
+table.pulled-item td {padding:20px 20px 5px 20px; border-bottom:1px solid #d6d6d6; border-right:1px solid #d6d6d6; width:50%}
+table.pulled-item td.alt {border-right:none}
+table.pulled-item td h3 {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-arrow.png) no-repeat right 6px;}
+table.pulled-item td h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 6px;}
+
+table.pulled-item td h3.bgnone, table.pulled-item td h3.bgnone:hover{background:none !important;color:#222;}
+
+
+.related-info {float:left;  width:679px; /* width:640px;*/ padding:20px 20px 0 20px; background-color:#be0027; margin-bottom:1px}
+.related-info h3, .related-info h2 {color:#fff; /*text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);*/}
+.col-1 {float:left; width:205px; padding:0 20px 25px 0; border-right:1px solid #9f0726; min-height:155px}
+.col-2 {float:left; width:186px; padding:0 20px 25px; border-right:1px solid #9f0726; min-height:155px}
+.col-3 {float:left; width:205px; padding:0 0 25px 20px; min-height:155px}
+
+.col-1 p, .col-2 p, .col-3 p {color:#fff; font-size:1.6em; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);}
+
+.related-info ul li {margin-bottom:10px; list-style: none; margin-left: 0;}
+.related-info ul li a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/arrow-blk-wht-hov.png") no-repeat left 4px; color: #fff; font-size: 1.3em; padding-left: 20px;line-height:16px;  display: inline-block;}
+
+.related-info ul li a:hover {background-position:left -75px; color:#4c000f;text-decoration:none;}
+
+/* ------------- Tabed menu ------------ */
+
+.tabed-menu {float:left; width:100%; background:url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-bg.jpg") repeat-x center top; height:46px}
+
+.tabed-menu ul {}
+.tabed-menu ul li {float:left; width:auto; font-size:1.4em; line-height:22px; background:url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-seperator.gif") no-repeat right top;}
+.tabed-menu ul li a {display:block; padding:8px 17px 16px 17px;color:#000;}
+
+body#sef .tabed-menu ul li a {display:block; padding:8px 15px 16px 15px;}
+
+.tabed-menu ul li a:hover {background:url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-blk-hover.png") repeat-x center top; color: #fff; display: block;text-decoration:none;}
+
+.tabed-menu ul li.current {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-hover.png") repeat center top; color: #fff; display: block; padding:8px 20px 16px 20px;   }
+
+.main-content .tabed-menu ul li.current {list-style: none !important;}
+
+.tabed-menu ul li {list-style: none !important; margin-left: 0 !important; padding: 0;}
+
+ul#section-associated-companies-and-joint-ventures-level3, ul#section-information-services-level3 {display:none}
+
+.content-sectionTwo {float:left; width:679px; margin:20px 0; padding:10px 20px 20px 20px; border-top:1px solid #d6d6d6;}
+
+.content-sectionTwo.contactTable {padding:10px 0px 20px 0px;}
+
+
+.content-sectionTwo table { float:left; width:100%;  margin-bottom: 10px;}
+.content-sectionTwo table th { background-color:#777; border-right:1px solid #fff; padding:10px 20px; font-size:1.4em; color:#fff; text-align:left}
+.main-content .content-sectionTwo table td {padding:10px 20px; border-bottom:1px solid #d6d6d6; border-right:1px solid #d6d6d6; width:33%; font-size:1.4em}
+.content-sectionTwo table th.rad-noborder, .content-sectionTwo table td.rad-noborder {border-right: none}
+.content-sectionTwo table td.rad-alternate { background-color:#f6f6f6;}
+
+
+.product-box {float:left; width:679px; padding:13px 20px; border-bottom:1px solid #d6d6d6}
+.product-box.last {border-bottom:none; display:none}
+
+
+.selected-box {background-color:#f6f6f6}
+.product-desc {float:left; width:100%; margin-top:20px}
+
+.product-title h3, .item-title h3 {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/product-downArrow.png) no-repeat right -23px; margin-bottom:0}
+
+.product-title h3:hover, .item-title h3:hover {color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/product-downArrow.png) no-repeat right 6px;}
+
+.product-title.product-selected h3, .item-title.item-selected h3 {color:#222; background:url(_/media/Images/I/ICAP-Corp-V3/css/product-upArrow.png) no-repeat right -22px;}
+
+#our-markets-and-products h1 {margin-bottom:20px}
+
+/* ---------------------- Content page ends here ------------------ */
+
+/* --------------------- Press Releases starts here ---------------------- */
+
+.news-content {float:left; width:100%; background-color:#fff;}
+.news-content h1 {padding:0 20px}
+
+#news-search {float:left; width:100%; background:url(_/media/Images/I/ICAP-Corp-V3/css/left-col-sm-bg.jpg) repeat left top; margin-bottom:1px}
+
+.newsSearch-title {font-size:1.6em; color:#fff; margin-bottom:10px; text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1); }
+
+select option {padding:1px 0 2px 0; text-indent:10px; line-height:20px}
+select#catNews, select#regNews, select#year_dropdown {color: #222; font-size: 1.2em; height: 18px; line-height: 17px;
+    position: relative; width: 199px; z-index: 10;}
+
+.category-search, .region-search, .date-search{float: left; position: relative; width: 199px; z-index: 5; border-bottom:1px solid #5c5c5c; padding:15px 20px 20px 20px; height:45px}
+
+.category-search span.select, .region-search span.select, .date-search span.select {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/news-search-box.png") no-repeat scroll left top transparent; float: left; color:#222; font-size: 1.2em; height: 18px; left: 20px; line-height: 17px; position: absolute; text-indent: 10px; top: 45px; width: 199px; z-index: 1;}
+
+.news-item {float:left; width:679px; padding:10px 20px 5px 20px; border-top:1px solid #d6d6d6}
+.news-item.last {border-bottom:1px solid #d6d6d6;}
+body.ie7 .news-item.last{min-height:90px;}
+
+
+.news-item h3 {float:left; width: 96%; padding-bottom:5px; margin-bottom:10px; cursor:pointer}
+.ie7 .news-item h3 {float:none}
+.news-item h3:hover {color:#be0027;}
+
+.news-item h2 {float:left; width:96%;padding-right:26px; padding-bottom:5px; margin-bottom:2px; cursor:pointer;font-size:1.4em;line-height:20px;font-weight:normal;}
+.ie7 .news-item h2 {float:none}
+
+.news-item h2:hover {color:#be0027;}
+
+
+
+.news-item a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/next-blk-red-arrow-pr.png") no-repeat scroll right 3px; float: left; width:100%; display:block}
+
+.news-item a:hover {color:#be0027; background-position: right -103px}
+
+
+p.newsDate {float:left; width:100%; font-size:1.2em; color:#be0027; font-weight:bold; margin-bottom:5px}
+
+p.newsDate b, p.newsDate strong {color:#999; margin:0 4px}
+
+.loading{margin-top:20px;float:left;width:95%;display:none; font-weight:bold; font-size:1.4em; padding:15px; text-align:center;}
+.nextTab-wrapper {float:left; width:100%; padding:20px 0 30px 0; text-align:center;}
+
+.next-tab {width:85px; height:43px; margin:0 auto; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/left-col-sm-bg.jpg") no-repeat left top; color:#fff; font-size:1.3em; line-height:40px}
+.next-tab a {font-size:1em; color:#fff; padding:15px 25px; display:block; line-height:10px}
+
+.main-content table { float:left; width:100%; margin-bottom:20px; }
+.main-content table td {font-size:1.2em; padding:4px 0}
+
+.news-back a {background:url(_/media/Images/I/ICAP-Corp-V3/css/back-arrow-blk-red.png) no-repeat left 5px; padding-left:20px; font-size:1.3em;}
+
+.news-back a:hover {color:#be0027; background-position:0 -25px}
+#news-search .region-search{display:none;}
+
+/* --------------------- Press Releases ends here ---------------------- */
+
+
+/* ---------------- Investor section starts here ------------------------------ */
+
+
+.investor-rowOne .share-info {padding:10px 0 20px 0; width:319px}
+.investor-rowOne .share-info h3 {float:left; width:88%; margin: 0 20px 10px 20px}
+
+.video {float:left; width:100%; margin-bottom:30px}
+.item-content {float:left; width:100%; margin-top:25px}
+.item-content h4 {font-size:1.4em; line-height:20px; margin-bottom:10px}
+
+table.rad-financial {float:left; width:100%; border-top:1px solid #d6d6d6; margin:10px 0 20px 0}
+table.rad-financial th {text-align:right; font-weight:bold}
+table.rad-financial td {text-align:right;}
+table.rad-financial tbody tr td:first-child {text-align:left}
+table.rad-financial td, table.rad-financial th {padding:7px; font-size:1.2em; line-height:18px;}
+table.rad-financial td.rad-border, table.rad-financial th.rad-border {border-bottom:1px solid #d6d6d6;}
+table.rad-financial td.rad-caption {font-weight:bold}
+table.rad-financial td.rad-highlight, table.rad-financial th.rad-highlight {background-color:#fff}
+
+.item-content ul {float:left; width:100%; margin-top:10px}
+.item-content ul li {font-size:1.2em; list-style-type:disc; line-height:20px; margin:0 0 5px 15px}
+.report-link {float:left; width:100%; border-top:1px solid #d6d6d6; padding-top:20px}
+.report-link p {margin-bottom:10px; font-weight:bold}
+.result-centre .report-link ul li { padding:3px 0}
+
+/* --------------------- Reports & Presentations starts here ---------------------- */
+
+.report-item-hd {float: left; width:679px; color: #fff;  font-size: 1em; background-color:#777; font-weight: bold; margin: 10px 0 0 0;}
+
+.report-item {float: left; width:679px; border-bottom:1px solid #d6d6d6;}
+
+/*.report-item.report-last {margin-bottom:40px}*/
+
+.report-title-hd, .report-title {float: left; width: 408px; font-size:1.4em; padding: 12px 15px;  border-right:1px solid #d6d6d6; line-height:20px}
+
+.report-html-hd, .html-report, .report-pdf-hd, .pdf-report {float: left; width: 88px; padding: 12px 15px 6px 15px; text-align: center; font-size:1.4em;}
+
+.report-html-hd, .report-pdf-hd {padding-bottom:12px; line-height:20px}
+
+
+.report-html-hd, .html-report {border-right:1px solid #d6d6d6}
+.html-report, .pdf-report {height:26px}
+.report-title-hd, .report-html-hd, report-pdf-hd {text-shadow: 1px 0px 1px #000; zoom:1; filter: progid:DXImageTransform.Microsoft.DropShadow(Color=#000000, OffX=1, OffY=0, Positive=1);}
+
+.report-item.alt {background-color: #f6f6f6;}
+.ie7 .report-item {float:none}
+.html-report a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/icons/icon-html.png") no-repeat 32px 3px; font-size:0; height:26px; width:92px; display:block}
+.html-report a:hover {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/icons/icon-html.png") no-repeat 32px -21px;}
+
+
+.pdf-report a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/icons/icon-pdf.png") no-repeat 38px 2px; font-size:0; height:26px; width:92px; display:block}
+.pdf-report a:hover {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/icons/icon-pdf.png") no-repeat 38px -26px;}
+
+/* --------------------- Reports & Presentations ends here ---------------------- */
+
+
+/* ------------ share price -------------- */
+
+#share-monitor .main-content {padding:0 0 25px 0}
+#share-monitor .main-content h1 {margin-left:20px}
+#spTableContainer {float:left; width:100%;}
+#spMonitorContainer {float:left; width:100%}
+
+/* ---------------- Investor section ends here ------------------------------ */
+
+
+
+/* --------------------- Contact us starts here ------------ */
+
+#contact-us h1 {margin-bottom:17px}
+.address {width:100%; float:left;}
+.address h2{margin-bottom:4px;}
+.address p{margin:0;}
+.address p.conNumbers span {color:#BE0027; padding-right:6px; padding-left:6px; font-weight:bold;}
+.address p.conNumbers span.first{padding-left:0;}
+.address p.conNumbers a[href ^="mailto:"]{font-style:italic; font-weight:bold;}
+.address p.conNumbers {margin-bottom:18px;}
+
+
+.contact-content { float:left; width:919px; background-color:#fff; padding:25px 20px}
+.contact-listing {float:left; width:100%}
+.listing-header {float:left; width:100%; background-color:#777; margin-top:10px }
+.hd-selectBy {float:left; width:199px; padding:10px 20px; border-right:1px solid #fff; font-size:1.4em; color:#fff}
+.hd-location {float:left; width:299px; padding:10px 20px; border-right:1px solid #fff; font-size:1.4em; color:#fff}
+.hd-contactDetail {float:left; width:299px; padding:10px 20px; font-size:1.4em; color:#fff}
+
+.contact-search {float:left; width:199px; padding:10px 20px;}
+
+.contactSearch-title {font-size: 1.4em; margin-bottom: 10px;}
+select option {line-height: 20px;padding: 1px 0 2px; text-indent: 10px;}
+
+select#regionCon, select#serviceCon, select#marketCon {color: #222222; font-size: 1.2em; height: 18px; line-height: 17px; position: relative; width: 199px;  z-index: 10;}
+
+.regContact-search, .serContact-search, .marContact-search {float: left; height: 45px; padding-bottom:20px; position: relative; width: 199px; z-index: 5;}
+
+.regContact-search span.select, .serContact-search span.select, .marContact-search span.select {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/news-search-box.png") no-repeat scroll left top transparent; color: #222;     float: left; font-size: 1.2em; height: 18px; left:0px; line-height: 17px; position: absolute; text-indent: 10px;
+top: 30px; width: 199px; z-index: 1;}
+
+.contact-detail-wrapper {float:left; width:679px; /*padding:0 0 20px 0;*/ min-height:680px; position:relative; /*border-left:1px solid #d6d6d6*/}
+ul.contact-data {float:left; width:340px;}
+ul.contact-data li {font-size:1.4em; padding:10px 20px; border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6; border-bottom:1px solid #d6d6d6; background-color:#f6f6f6; }
+ul.contact-data li.selected {color:#be0027}
+/* ul.contact-data li.alt-row {background-color:#fff;}*/
+
+.contact-detail {float:left; width:320px; padding-left:20px; color:#444; position:absolute; top:0; right:0; height:630px; overflow:auto; overflow-x:hidden; cursor:auto; /*border-left:1px solid #d6d6d6*/ }
+.contact-detail p {font-size:0.857em}
+.locName {float:left; width:100%; margin-top:10px}
+.locName h2 {font-size:2.143em; margin-bottom:12px}
+.conMap small {float:left; width:100%; padding-top:15px}
+.conMap small p {font-size:0.66em}
+.conMap a {font-size:0.857em; text-decoration:underline}
+.conPhone, .conFax {margin-bottom:0px}
+.conPhone span, .conFax span, .conEmail span {color:#be0027; padding-right:4px}
+.contact-detail.contactData-disblk {display:block}
+
+.region-data {float:left; width:340px; clear:both}
+.region-title {border-left:1px solid #d6d6d6; border-right:1px solid #d6d6d6; border-bottom: 1px solid #d6d6d6; font-size: 1.4em; color:#222; padding: 10px 20px;}
+
+.conAddress span {color:#be0027;}
+.conAddress p {margin-bottom:10px; cursor:auto}
+.conAddress p.link {margin-bottom:0}
+
+
+/* --------------------- Contact us ends here ------------ */
+
+
+
+
+/* ---------------------- footer starts here ------------------ */
+.footer-wrapper { float:left; width:959px; background:url(_/media/Images/I/ICAP-Corp-V3/css/black-pattern-bg-2.jpg) repeat left top; padding:30px 0 0px 0;}
+
+.footer-rowOne { float:left; width:919px; padding:0 20px; margin-bottom:40px;}
+
+ul.who-we-are, ul.what-we-do, ul.makes-different, ul.company, ul.support {float:left; width:200px; margin-right:40px}
+ul.who-we-are li, ul.what-we-do li, ul.makes-different li, ul.company li, ul.support li, ul.global-contact li {padding:0 0 3px 0}
+ul.who-we-are li a, ul.what-we-do li a, ul.makes-different li a, ul.company li a, ul.support li a, ul.global-contact li a{font-size:1.6em; color:#fff; line-height:28px; padding-bottom:8px; display:block}
+ul.who-we-are li a:hover, ul.what-we-do li a:hover, ul.makes-different li a:hover, ul.company li a:hover, ul.support li a:hover, ul.global-contact li a:hover {color:#999}
+ul.who-we-are li li a, ul.what-we-do li li a, ul.makes-different li li a, ul.company li li a, ul.support li li a, ul.global-contact li li a {font-size:1.3em; color:#999; line-height:20px; padding-bottom:0px;}
+ul.who-we-are li li a:hover, ul.what-we-do li li a:hover, ul.makes-different li li a:hover, ul.company li li a:hover, ul.support li li a:hover, ul.global-contact li li a:hover {color:#fff}
+
+.contact-footer {float:left; width:195px; }
+.contact-footer p.contact-title {font-size:1.6em; color:#fff; line-height:28px; margin-bottom:10px}
+.contact-footer p.address{color:#fff; margin-bottom:0}
+.contact-footer p.phone{color:#fff; margin-bottom:0}
+
+.contact-footer p.fax{color:#fff; margin-bottom:0}
+.contact-footer p.email{color:#fff; margin-bottom:0}
+.contact-footer p.email a {color:#fff}
+.contact-footer p.email a:hover {color:#999}
+
+.footer-rowTwo { float:left; width:919px; padding:0 20px; margin-bottom:35px}
+
+.ft-social-media {float:left; width:200px; margin-right:40px}
+.ft-social-media p.sm-title {font-size:1.6em; color:#fff; line-height:28px; margin-bottom:10px;}
+ul.soc-med-ft li { float:left; height:40px; width:42px; border-left:1px solid #444; text-indent:-9999px; cursor:pointer}
+ul.soc-med-ft li a{padding:15px 0; text-align:center; display:block;}
+
+/*
+ul.soc-med-ft li.ft-tweeter {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-tweeter.png) no-repeat center center}
+ul.soc-med-ft li.ft-tweeter:hover {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-tweeter-hover.png) no-repeat center center}
+
+ul.soc-med-ft li.ft-facebook {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-facebook.png) no-repeat center center}
+ul.soc-med-ft li.ft-facebook:hover {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-facebook-hover.png) no-repeat center center}
+
+ul.soc-med-ft li.ft-linkdin {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-linkdin.png) no-repeat center center}
+ul.soc-med-ft li.ft-linkdin:hover {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-linkdin-hover.png) no-repeat center center}*/
+
+/*ul.soc-med-ft li.ft-rss {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-rss.png) no-repeat center center; border-right:1px solid #444;}
+ul.soc-med-ft li.ft-rss:hover {background:url(_/media/Images/I/ICAP-Corp-V3/icons/ft-icon-rss-hover.png) no-repeat center center}*/
+
+ul.soc-med-ft li.ft-tweeter {width: 42px; height: 40px;}
+ul.soc-med-ft li.ft-tweeter a {background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; background-position: -301px -145px; margin: 14px 15px 15px 15px; padding-bottom: 0; padding-top: 4px;}
+ul.soc-med-ft li.ft-tweeter a:hover {background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; height: 14px; background-position: -320px -145px;}
+
+ul.soc-med-ft li.ft-facebook {width: 42px; height: 40px;}
+ul.soc-med-ft li.ft-facebook a {background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; background-position: -175px -145px; margin: 13px 15px 15px 14px; padding-bottom: 0; padding-top: 4px;}
+ul.soc-med-ft li.ft-facebook a:hover {background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; height: 14px; background-position: -192px -145px;}
+
+
+
+ul.soc-med-ft li.ft-linkdin {width: 42px; height: 40px;}
+ul.soc-med-ft li.ft-linkdin a {background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; background-position: -213px -145px; margin: 14px 15px 15px 16px; padding-bottom: 0; padding-top: 4px;}
+ul.soc-med-ft li.ft-linkdin a:hover {background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; height: 14px; background-position: -234px -145px;}
+
+
+ul.soc-med-ft li.ft-rss {border-right:1px solid #444; width: 42px; height: 40px;}
+ul.soc-med-ft li.ft-rss a {background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; background-position: -255px -145px; margin: 13px 15px 15px 14px; padding-bottom: 0; padding-top: 4px;}
+ul.soc-med-ft li.ft-rss a:hover {background:url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat; width: 14px; height: 14px; background-position: -279px -145px;}
+
+
+ul.global-contact {float:left; width:195px;}
+
+.footer-rowThree { float:left; width:939px; border-top:1px solid #444; padding:0px 0px 0 20px;}
+.footer-rowThree #copyrights {float: left; padding-top: 20px; width: 860px;}
+.footer-rowThree #topofpage {float: right;  width: 79px; }
+.footer-rowThree #topofpage a {height: 80px; background:url(_/media/Images/I/ICAP-Corp-V3/icons/top-of-page.jpg) no-repeat left top; display: block; border-left:1px solid #444;}
+.footer-rowThree #topofpage a:hover{background-position: left bottom;}
+
+.footer-rowThree #topofpage span {visibility: hidden;}
+.footer-rowThree p {color:#fff; margin-bottom:0}
+.footer-rowThree img {margin-right:80px; vertical-align: bottom;float:left; }
+.footer-rowThree .cr-right {float:right; text-align:right; width:45%;/*width:55%; padding:20px 20px 0 0;*/ padding:15px 20px 0 0;}
+.footer-rowThree .cr-right a{color:#fff; padding:0 5px}
+.footer-rowThree .cr-left {float:left; /*width:40%*/width:50%}
+
+
+.group-site-ft {float:right; width:164px; padding:10px 35px 0 0;}
+.group-site-ft ul {float:left; width:100%; position:relative; z-index:99}
+.group-site-ft ul ul {position:absolute; bottom:36px; left:0; z-index:99; width:144px; padding:10px 10px 0px 10px; background:url(_/media/Images/I/ICAP-Corp-V3/css/top-menu-bg.jpg) repeat 0 0; display:none; }
+
+/*.group-site-ft ul li {display:block; cursor:pointer; float:left; width:128px; height:18px; padding:13px 18px 7px 18px; font-size:1.2em; color:#fff; background:url(_/media/Images/I/ICAP-Corp-V3/css/groop-siteFt-bg.jpg) no-repeat left top}*/
+
+.group-site-ft ul li {display:block; cursor:pointer; float:left; padding:13px 18px 7px 18px; font-size:1.2em; color:#fff; 
+    background: url(/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png) no-repeat -5px -259px;
+    width: 128px;
+    height: 18px;
+}
+
+.group-site-ft ul ul li a {height:20px; color:#fff; /*font-size:0.833em;*/ font-size:0.75em;}
+.group-site-ft ul ul li a:hover {color:#bbb; background-image:none;}
+.group-site-ft ul ul li{float:left; width:135px; height:auto; color:#fff; /*padding:7px 0 6px 8px;*/ padding:2px 0 6px 8px; background-image:none}
+
+.group-site-ft ul ul li:hover {color:#bbb; background-image:none;}
+.group-site-ft ul li:hover ul.websitesFt {display:block; }
+.group-site-ft ul ul li.botborder{border-bottom:dotted 1px #fff; margin-bottom: 5px;}
+
+
+/* ---------------------- footer ends here ------------------ */
+
+/* ------------------- Sitemap starts here ------------- */
+#site-map #sitemapcontainer ul li {font-size: 1.2em; line-height: 1.6em; padding: 0 0 5px 15px; 
+list-style: none outside none; margin-left: 0px; }
+
+#site-map #sitemapcontainer ul li a {background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/link-arrow-blk-red.png") no-repeat left 4px; padding-left:20px}
+#site-map #sitemapcontainer ul li a:hover {background-position: left -26px; color: #BE0027;}
+
+
+
+
+#site-map #sitemapcontainer ul li ul {margin-bottom: 0; margin-top:5px}
+#site-map #sitemapcontainer ul li ul li {font-size: 1em;  list-style: none;}
+
+/* ------------------- Sitemap ends here ------------- */
+
+/*------------ Updated css ------------------*/
+.sharePriceMore { float:left; padding: 0 20px; width:279px;}
+.sharePriceMore p.wht-link a:hover {background-position:0 -75px; color:#4c000f}
+
+/*-------- Financial calendar -----------*/
+.financial-calendar { float:left; width:100%;}
+.financial-calendar table tr th{font-size:1.4em; text-align:left; padding-bottom:15px; font-weight:bold; border-bottom: 1px solid #D6D6D6;}
+.financial-calendar table tr td{text-align:left;border-bottom: 1px solid #D6D6D6; vertical-align:middle}
+.financial-calendar table tr th.addtooutlook, .financial-calendar table tr td.addtooutlook {text-align:center;}
+
+
+/* --- start home page slide option ----*/
+.carousel-slide1option1-right{height: 540px;position: relative;}
+#slides1 {left: 0;position: absolute; top: 0;z-index: 100;height:540px;}
+#slides1 .slides_container{height:540px;width:640px;}
+#slides1 .pagination{display:none;}
+
+#slides1 a.prev{position: absolute;top:10px; z-index: 11;right:50px;font-size:1.2em;
+background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/hbNavButton.png") no-repeat 0 0;display: inline-block;
+ height: 20px !important; overflow: hidden; width: 20px !important; }
+
+#slides1 a.prev:hover{  background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/hbNavButton.png") no-repeat scroll 0 -20px transparent;}
+
+#slides1 a.next:hover{background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/hbNavButton.png") no-repeat scroll -20px -20px transparent;}
+
+#slides1 a.next{position: absolute;top: 10px; z-index: 11;right:25px;font-size:1.2em;
+  background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/hbNavButton.png") no-repeat scroll -20px 0 transparent;
+    display: inline-block;height: 20px !important;overflow: hidden;width: 20px !important;
+}
+#slides1 .slide{height:540px;width:640px;}
+
+.market-snapshot-inner{position:relative;z-index:10;}
+
+/* --- end home page slide option ----*/
+.market-snapshot-inner{ position: relative;}
+#slides2{left: 0;position: absolute;top: 0;z-index: 100;}
+.iframe-text{width:600px;padding:0 20px;}
+
+.market-snapshot .blk-link{position:absolute;bottom:20px;}
+#slides2 .slides_container{width:639px;}
+#slides2 .slide{width:602px;height:auto;}
+#slides2 .slides_container{height:510px;}
+#slides2 .pagination{margin:0;width:auto; position: absolute;right:18px;top:-35px;z-index:11;}
+p.iframe-title{margin:0;}
+/* --- end home page slide option ----*/
+/*------ start terms of business ----*/
+.main-content table tbody tr td ul li{font-size:1em;}
+
+table th, table td {
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
+}
+table.formatted {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-collapse: separate;
+    border-color: #D1D1D1;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 1px medium;
+    clear: both;
+    color: #444444;
+    font-size: 1em;
+}
+* + html table.formatted {
+
+    border-collapse: collapse;
+}
+table.formatted p, #content table.formatted p {
+    margin-bottom: 0;
+}
+table.formatted th, table.formatted td {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #D1D1D1;
+    border-right: 1px solid #D1D1D1;
+    padding: 6.5px 7px;
+ font-size: 1.2em;
+    line-height: 15px;
+
+}
+table.formatted th {
+    background-color: #E6E6E6;
+    border-bottom: medium none;
+    font-weight: bold;
+}
+table.formatted th:last-child, table.formatted td:last-child, table.formatted th.last, table.formatted td.last {
+    border-right: medium none;
+}
+table .heading, table.formatted .heading, table.formatted .heading:last-child, table caption {
+    background-color: #D3E1F5;
+    border: 1px solid #FFFFFF;
+    color: #000F55;
+    padding: 6px 7px;
+}
+table .subheading {
+    background-color: #E6E6E6;
+    border-top: 1px solid #D1D1D1;
+    color: #444444;
+    font-size: 0.91667em;
+    font-weight: bold;
+    padding: 7px;
+}
+.info-table {
+    border: medium none;
+}
+.info-table .heading {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #E6E6E6;
+    border-color: #D1D1D1 -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: medium none;
+    border-style: solid none none;
+    border-width: 1px medium medium;
+    color: #444444;
+    font-size: 1em;
+    font-weight: bold;
+}
+.info-table th, .info-table td {
+    padding: 7px 15px;
+}
+td span.down, dt span.up {
+    padding-left: 15px;
+    text-align: center;
+}
+td span.down {
+    background: url("/assets/images/mainsite/tab-menu/down.html") no-repeat scroll left center transparent;
+}
+td span.up {
+    background: url("/assets/images/mainsite/tab-menu/up.html") no-repeat scroll left center transparent;
+}
+
+/*------ end terms of business ----*/
+#tweetfeeds .tweet-wrapper{height:75px;}
+.tweet-wrapper span.text{color: #FFFFFF;font-size: 1.2em;line-height: 18px;}
+
+
+
+.tweet-wrapper span.text a{color: #FFFFFF;}
+
+body#what-makes-us-different .left-bottom, body#working-at-icap .left-bottom, .icap-swap-box, .light-grey-box{position:relative;}
+body#what-makes-us-different .left-bottom p.wht-link, body#working-at-icap .left-bottom p.wht-link, .light-grey-box p.wht-link{ bottom: 19px;position: absolute;}
+.icap-swap-box p.wht-link{ bottom: 0px;position: absolute;}
+.rad-underline{text-decoration:underline;}
+.hm-tweetfeeds ul li{ padding: 8px 0 0 0;border-bottom:solid 1px #fff;}
+
+.contact-detail h3 {margin:10px 0 0 0;}
+.currentloc {border-top: 1px solid #ccc; padding:10px 0;}
+.currentloc.first{border:none}
+
+.location-title {padding-bottom:5px; padding-top:10px; font-weight:bold; }
+.errorMsg {float:left; padding:10px; color:#F00}
+.globalbox{ border-top: 1px solid #CCCCCC; float: left; padding: 20px 20px 0;}
+body.ip3-sef .content-box-txt{width:100%;}
+/*--- FAQ ----*/
+
+table.faqtable tbody tr td, table.faqtable tbody tr th{border:solid 1px gray;padding:5px;}
+table.faqtable tbody tr td.highlighted, table.faqtable tbody tr th.highlighted{background-color:#ccc;}
+.content-box-txt p{clear:both;}
+table.tablecontctus td{border-bottom: 1px solid #D6D6D6; border-right: 1px solid #D6D6D6; font-size: 1.4em;
+    padding: 10px 20px; width: 33%;}
+table.tablecontctus td.rad-noborder {border-right: medium none;}
+table.tablecontctus th {background-color: #777777; border-right: 1px solid #FFFFFF; color: #FFFFFF; font-size: 1.4em; padding: 10px 20px;text-align: left;}
+.fullwidth{width:100% !important;}
+
+#leftcoltwitter{background:#199bbe url(_/media/Images/I/ICAP-Corp-V3/icons/icon-twitter.png) no-repeat 215px bottom;float:left;padding:20px;border-top:1px solid #fff;}
+#leftcoltwitter p.bann-hd{  color: #FFFFFF;font-size: 1.6em;line-height: 22px; margin-bottom: 10px;}
+/*---- Awards page ----*/
+ul#section-awards-level3{display:none;}
+.annual-report{background:url("/assets/_/media/Images/I/ICAP-Corp-V3/content-image/investor-images/bgAnnualReport2015.png") no-repeat top center;}
+.annual-report p.wht-link{left:70px !important;}
+.annual-report h3{color:#fff; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/white-next-arrow.png") no-repeat scroll right 7px transparent;}
+.ar-box2 p.wht-link{position:static;}
+.ar-box2{bottom:60px;left: 70px; position: absolute;}
+.ar-box3{ bottom: 22px;left: 0; position: absolute; width: 100%;}
+
+
+.ar-box1{font-size: 1.2em;font-weight: bold;left:70px !important;line-height: 20px;position: absolute !important;top: 150px;    width: 130px;float:left;}
+
+
+body.ie7 .ln-box a {display:block;}
+
+
+
+
+
+#tweet-charity, #tweet-futsopts, #tweet-campus, #tweet-lp2014{display:none;height:232px;overflow: hidden;}
+.nextdataLoad{padding-top:20px;}
+.newscontent h1{ font-size: 2.2em;line-height: 28px;}
+.filterbtns{float:left;}
+.filterbtns input{float:left;padding:0 2px;}
+#resetbtn{margin-left:5px;}
+body.ie7 .filterbtns input{padding:0;font-size:1.1em;float:left;}
+body.ie7 #resetbtn{margin-left:0px;}
+h2.topspec{margin-top:50px;}
+
+/*-------- 10-4-2013 start new homepage design ----*/
+.outer-hm{margin:0 auto;width:959px;}
+.market-snapshot{position:relative;}
+
+#MainBannerWrapper{position:relative;height:720px;}
+#hm-headerwrapper{ position: absolute;width: 100%;z-index: 100;left:0;}
+/*#banner{margin: 0 auto;overflow: hidden;position: relative; width: 1235px;}*/
+.homecontent{margin-top:45px;}
+/*.header-heading{background:url(_/media/Images/I/ICAP-Corp-V3/css/header-heading.png) repeat top center;
+min-height:62px;clear:both;}*/
+
+.header-heading{background: rgba(20,38,111,0.9); min-height:62px;clear:both;}
+
+.bannerbox{float:left;width:289px;height:163px;margin-right:1px;padding:15px 15px 0 15px;position:absolute;z-index:2;color:#fff;}
+.bannerbox.last{margin:0;}
+/*.bannercontent{bottom:0; position: absolute;width: 100%;}*/
+.redbox{background:url(_/media/Images/I/ICAP-Corp-V3/css/icon-share-price.png) no-repeat right bottom #be0027;padding:5px 0;width:319px;height:168px;}
+.redbox p.wht-link{padding-left:15px;}
+.tranpBG{color:#fff;background:url(_/media/Images/I/ICAP-Corp-V3/css/bannerbox-bg.png) repeat;}
+
+
+.bannerbox h3{float: left; width:95%; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-wht-arrow.png) no-repeat right 7px;padding-right:20px;margin:0;padding-bottom:13px; line-height: 20px;color:#fff;}
+.bannerbox h3 a{color:#fff;}
+.bannerbox h3 a:hover{text-decoration:none;color:#be0027;}
+.bannerbox h3:hover{color:#be0027; background:url(_/media/Images/I/ICAP-Corp-V3/css/next-red-arrow.png) no-repeat right 7px;}
+body.ie7 .bannerbox p{float:left;}
+#bannerbox1{background:url(_/media/Images/I/ICAP-Corp-V3/css/bannerbox-1-bg.jpg) no-repeat 287px 148px #fff;}
+#bannerbox2{background:url(_/media/Images/I/ICAP-Corp-V3/css/bannerbox-2-bg.jpg) no-repeat 287px 148px #fff;}
+#bannerbox3{background:url(_/media/Images/I/ICAP-Corp-V3/css/bannerbox-3-bg.jpg) no-repeat 287px 148px #fff;}
+.header-heading h2{color: #FFFFFF; font-size: 1.8em;font-weight: normal;line-height: 25px; margin: 0;
+    padding: 19px 10px;text-align: center;}
+.iframe-img img{padding-bottom:10px;margin:0;}
+.market-comment .rad-big{color: #3B3B3B; float: left;font-family: OpenSansRegular; font-size: 2.2em;line-height: 35px;padding-top:30px;}
+.market-snapshot h3, .market-snapshot .blk-link, .iframe{padding-left:20px;}
+.market-comment p span{ color: #BE0027;font-weight: bold; text-transform: uppercase;}
+p.rad-img{ bottom: 0; margin: 0; padding: 0;position: absolute; right: 0;}
+body#Homepage .market-comment{padding:16px 0;width:319px;}
+.market-top{border-bottom: 1px solid #e3e3e3; float: left;padding: 0 20px;width: 280px;height:41px;}
+/*.market-bottom{padding: 0 20px;}*/
+.market-top a:hover{text-decoration:none;}
+.downloadPage, #appformSubmitButton{background-color: #BE0027; border: 0 none;color: #FFFFFF; padding: 8px; cursor: pointer;}
+
+.downloadPage{clear:both;}
+
+.market-snapshot h3, .market-snapshot .blk-link, .iframe iframe body td iframe{wmode:transparent !important;}
+/*-------- 10-4-2013 end new homepage design ----*/
+
+.ip3-current-opportunities h2{color: #222222; font-size: 2.2em; font-weight: normal; line-height: 24px; margin: 0 0 13px; border-bottom: 1px solid grey; padding: 0 0 10px 0;}
+
+.ip3-current-opportunities h3{
+font-size: 1.8em !important;
+font-weight: bold !important;	
+}
+
+.ip3-current-opportunities .intro-box{
+    padding: 0 20px 10px !important;
+    width: 679px !important;	
+}
+
+.ip3-current-opportunities em{
+font-style: italic !important;	
+}
+
+.ip3-current-opportunities .intro-box .intro-text{
+width: 679px !important;	
+}
+
+#appformContainer{font-size:1.4em;}
+#appformnameLabelContainer, #appformroleLabelContainer, #appformdateLabel, #appformemailLabel, #appformemp-yes-noLabelContainer, #appformemp-nameLabelContainer, #appformnoteLabelContainer, #appformcaptchaLabelContainer, #appformupload-cvLabelContainer, #appformTelephoneLabelContainer, #appformexp-dateLabel{float:left;margin-right:15px;clear:both;width:150px;padding-bottom:20px;}
+
+
+#appformname-textboxTextboxContainer, #appformrole-textboxTextboxContainer, #appformtelephone-textboxTextboxContainer, #appformdate-textboxTextboxContainer, #appformemail-textboxTextboxContainer, #appformemp-radio-buttonRadioListContainer, #appformempname-textboxTextboxContainer, #appformnote-textareaTextareaContainer, #appformcv-fileuploadFileUploadContainer, #appformexp-date-textboxTextboxContainer{width:500px;padding-bottom:20px;float:left;margin-right:10px;}
+
+#appformcaptcha-codeCaptchaTextContainer {width:200px;padding-bottom:20px;float:left;margin-right:10px;}
+
+#appformtick-checkboxCheckboxContainer, #appformcaptcha-codeCaptchaCodeContainer{float:left;padding-bottom:20px;}
+#appformSubmitButtonContainer{clear:both;}
+p.msg{color:#BE0027;}
+#appformContainer span{line-height:17px;}
+#appformname-textboxTextbox, #appformtelephone-textboxTextbox, #appformrole-textboxTextbox, #appformdate-textboxTextbox, #appformemail-textboxTextbox,#appformempname-textboxTextbox, #appformnote-textareaTextarea, #appformexp-date-textboxTextbox{width:180px;}
+#appformemp-nameLabelContainer, #appformempname-textboxTextboxContainer{display:none;}
+#appformcaptcha-codeCaptchaContainer{position:relative;}
+#appformcaptcha-codeCaptchaCodeError{color: #BE0027; left: 0; position: absolute; top: 460px;}
+#appformSubmitButton{ float: left; margin-top: 50px;}
+#banner{  float: left; height: 720px; position: relative;  width: 100%;}
+
+#innerbanner{width:960px;margin:0 auto;}
+#banner2{bottom:-1px;height: 180px;position: absolute; width: 960px;  z-index:99;}
+#banner .bx-controls-direction{  margin: 0 auto;position: relative;width: 1122px;}
+
+#appformfree-text-email-addressFreeTextEmailContainer{display:none;}
+/*-------- 11-8-2013 start new homepage design ----*/
+.outer-hm .fullbox{width:929px;}
+.outer-hm .twobox{width:609px;}
+.boxopacity{filter: alpha(opacity=90);-khtml-opacity: 0.9;opacity: 0.9;height: 178px;
+    position: absolute; width: 319px;z-index:1;}
+
+.rad-clear{padding:0 !important;,margin:0;}
+
+.twobox.rad-clear{width:639px;height:178px;}
+.fullbox.rad-clear{width:959px;height:178px;}
+.singlebox{width:319px;height:178px !important;}
+.boxouter{width:319px;height:178px;float:left;margin-right:1px;}
+.fullboxouter{width:959px;height:178pxfloat:left;margin-right:1px;}
+.twoboxouter{width:639px;height:178px;float:left;margin-right:1px;}
+.boxouter.last, .twoboxouter.last{margin:0;}
+.outerBox{;position:relative;}
+.bannerbox p.wht-link a{background:url(_/media/Images/I/ICAP-Corp-V3/css/thin-wht-arrow.png) no-repeat left 7px;font-family: Arial,Helvetica,sans-serif; position: absolute; bottom: 10px;left:15px;}
+.boxIcon{bottom: 10px; position: absolute; right: 10px;height:20px;width:20px;}
+#bxslider li a{display:block;}
+#bxslider li a img{width:100%;height:100%;}
+.bannerbox a{color:#ff6600;}
+#banner2 .bx-controls{display:none;}
+/*-------- 11-8-2013 end new homepage design ----*/ 
+#our-markets-and-products .filterMain{display:none;}
+#financial-calendar .main-content { min-height: 710px;}
+#corporate-governance .main-content, #the-davies-report .main-content{ min-height: 665px;}
+.ip3-associated-companies-and-joint-ventures .intro-box{min-height:190px;}
+#sef #maincontent .item2 table.faqtable{margin-top: 20px;}
+#sef #maincontent .item2 table.faqtable tbody tr td{ font-size: 1.2em;}
+.productItems{float:left;}
+#in-and-on-the-news #maincontent a, .ip3-in-and-on-the-news-New #maincontent a{overflow-wrap: break-word;-ms-word-break: break-all;word-break: break-all;}
+ul.company li p.sm-title, ul.support li p.sm-title{font-family:'OpenSansRegular', Arial;font-size:1.6em; color:#fff; line-height:28px; margin-bottom:10px;}
+ul.global-contact li p{color:#fff;margin:0;}
+
+#spTrader {overflow-x:hidden;}
+.currentOpp .adobe, .ip3-reports-and-presentations .adobe{padding:0 20px 20px 20px;}
+.pre-annual-content{ float: left; padding: 20px; width: 679px;}
+
+#section-reports-and-presentations-level3, #section-in-and-on-the-news-New-level3, #section-in-and-on-the-news-level3{display:none;}
+
+.pre-annual-content ul li{font-size:1.4em;line-height:22px;list-style-type:disc;margin-left:15px;padding-bottom:5px;}
+.pre-annual-content ul{padding-bottom:10px;}
+#spTraderExternalIFrame{overflow-x: hidden;}
+
+body#Homepage.ie7 #video-content{padding:0 0 0 10px;}
+#Homepage #video-content{padding:15px 0 10px 15px;}
+/*---- start advance search ----*/
+.searcharea{padding:0 20px;}
+#searchContainerRP{ float: left;width: 100%;}
+#searchinnerRP{ float: left;padding: 5px 0 5px 5px; width: 234px;background:url(_/media/Images/I/ICAP-Corp-V3/css/top-search-bg.jpg) repeat-x;}
+#searchTextBoxContainerRP{ float: left; width: 198px;}
+
+#SearchTextboxRP{width:178px; height:15px; padding:5px 10px; font-family:arial; font-size:1.2em; color:#444;}
+#searchButtonContainerRP{float:left;width:35px;}
+#searchFilter{float: left;font-size: 1.4em; padding: 15px 0; width: 100%;}
+#tabsDD{display:none !important;}
+#tabs span.select{display:none !important;}
+#tabs ul{display:block !important;}
+#tabs ul li{float:left;font-size:1.4em;border-left:solid 1px #bbb;max-width:105px;}
+#tabs ul li.lastLI{border-right:solid 1px #bbb;}
+#tabs ul li.lastLI a{padding:10px 9px 10px 8px;}
+#tabs ul li a{display:block;padding:10px 9px;text-align: center;
+background:url(_/media/Images/I/ICAP-Corp-V3/css/content-left-col-bg.jpg) repeat-y;
+color:#444;min-height:60px;line-height:17px;font-family: 'OpenSansSemibold',Arial;}
+
+#tabs ul li a:hover{text-decoration:none;background:#BE0027;color:#fff;}
+#tabs ul li a span{display: block;padding-top:5px;}
+#tabs{float: left; width: 100%; padding-bottom: 15px;}
+table.searchTable{margin-top:10px;float:left;margin-top:10px;}
+#loadmore a{font-size:1.4em;}
+#tabs ul li.current a{background:#BE0027;color:#fff;}
+#ui-id-1{z-index:100 !important;}
+.ip3search_highlight{font-weight:bold;}
+#search-results table tr td ul li{   font-size: 1.4em;line-height: 24px;list-style-type: disc;    margin-left: 15px; padding-bottom: 5px;}
+
+body#search-results.ie7 table.searchTable{width:98%;}
+
+
+#loadmore a{background:url(_/media/Images/I/ICAP-Corp-V3/css/left-nav-pattern.jpg) repeat left top; padding:10px 20px; display:block; font-size:1.4em; color:#fff; line-height:22px;font-family:'OpenSansSemibold', Arial; text-align: center; text-decoration: none;margin:0 auto;width:100px;}
+
+#loadmore a:hover { background:url(_/media/Images/I/ICAP-Corp-V3/css/red-texture.jpg) repeat-x left top;text-decoration:none;}
+
+body#search-results table.searchTable p.links, body#search-results table.searchTable p.searchdescription{ width: 675px; word-wrap: break-word;}
+
+/*----  end advance search ----*/
+
+.productItems p.rad-highlight{background:#FF6666;border:solid 1px #000;font-weight: bold; padding: 10px;}
+.rad-color{color: #FF0000;}
+
+
+#leftcoltwitter p.wht-link a{background:url(_/media/Images/I/ICAP-Corp-V3/css/arrow-blk-wht-hov.png) no-repeat left 4px; padding-left:20px; font-size:1.084em; color:#fff; float:left}
+
+#future-and-options .adobe{padding:0 20px;} 
+
+#_cookieConsentWrapper, ._cookieConsentWrapper{ bottom: 0;padding:0!important; position: fixed; width:100%;left:0;z-index:9999;}
+
+#cookie-ie9 {display:none;}
+.ie9 #cookie-ie9 {display:block;}
+
+#_cookieConsentWrapper p{background-color: #BE0027;margin: 0 auto !important;padding:10px 20px 2px; position: relative;
+    width: 919px;z-index: 9999;z-index:9999;filter: alpha(opacity=90);-khtml-opacity: 0.9;opacity: 0.9;color: #FFFFFF;}
+
+#section-our-businesses-level3{display:none;}
+.norows{padding-left:20px;}
+
+#rightCol table.formatted tr.header td{font-size: 1.2em !important; text-align:center;}
+#rightCol table.formatted tr.sub-header td{font-size: 1.2em !important;}
+.hidetxt{display:none;}
+.ip3-selfserve .hidetxt{display:block;}
+
+#DisclaimerMainContainer {padding:0 20px 40px;}
+
+
+
+
+
+
+
+/*vendor form css*/
+
+#vndappformContainer{font-size:1.4em;}
+
+
+
+
+
+#vndappformnameLabelContainer, 
+#vndappformorganisationLabelContainer, 
+#vndappformdescriptionLabelContainer, 
+#vndappformbusiness-focusLabelContainer, 
+#vndappformyear-establishedLabelContainer,
+
+#vndappformdescribe-areaLabelContainer,
+#vndappformtotal-employeesLabelContainer,
+#vndappformtotal-developersLabelContainer,
+#vndappformownership-structureLabelContainer,
+#vndappformtaxpayerLabelContainer,
+#vndappformofficesLabelContainer,
+#vndappformoffices-locationLabelContainer,
+#vndappformtotal-customersLabelContainer,
+#vndappformdedicated-contactLabelContainer,
+#vndappformtitleLabelContainer,
+#vndappformcontact-numberLabelContainer,
+#vndappformEmailAddressLabelContainer,
+#vndappformplease-indicateLabelContainer,
+#vndappformcaptchaLabelContainer
+{
+    clear: both;
+    float: left;
+    margin-right: 15px;
+    padding-bottom: 20px;
+    width: 260px;
+}
+
+
+#vndappformname-txtboxTextboxContainer,
+#vndappformorg-txtboxTextboxContainer,
+#vndappformdescription-txtareaTextareaContainer,
+#vndappformbusiness-focus-txtboxTextboxContainer,
+#vndappformyear-established-txtboxTextboxContainer,
+#vndappformdescribe-area-txtareaTextareaContainer,
+#vndappformtotal-employees-txtboxTextboxContainer,
+#vndappformtotal-developers-txtboxTextboxContainer,
+#vndappformownership-structure-txtboxTextboxContainer,
+#vndappformtaxpayer-txtboxTextboxContainer,
+#vndappformoffices-txtboxTextboxContainer,
+#vndappformoffices-location-textboxTextboxContainer,
+#vndappformtotal-customers-txtboxTextboxContainer,
+#vndappformdedicated-contact-txtboxTextboxContainer,
+#vndappformtitle-txtboxTextboxContainer,
+#vndappformcontact-number-txtboxTextboxContainer,
+#vndappformfree-text-email-addressFreeTextEmailContainer,
+#vndappformplease-indicate-txtareaTextareaContainer
+
+
+{
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    width: 250px;
+}
+#vndappformcaptcha-codeCaptchaTextContainer
+
+{
+    float: left;
+    margin-right: 10px;
+    padding-bottom: 20px;
+    width: 170px;
+}
+#vndappformcaptcha-codeCaptchaCodeContainer{ float:left;padding-bottom: 0px;}
+
+
+
+#vndappformcaptcha-codeCaptchaCodeError{ color:#BE0027;float: left;
+    margin-left: 275px;
+    padding-bottom: 20px;
+    }
+
+#vndvndappformContainer span {
+    line-height: 17px;
+}
+
+
+#vndappformname-txtboxTextbox,
+#vndappformorg-txtboxTextbox,
+#vndappformdescription-txtareaTextarea,
+#vndappformbusiness-focus-txtboxTextbox,
+#vndappformyear-established-txtboxTextbox,
+#vndappformdescribe-area-txtareaTextarea,
+#vndappformtotal-employees-txtboxTextbox,
+#vndappformtotal-developers-txtboxTextbox,
+#vndappformownership-structure-txtboxTextbox,
+#vndappformtaxpayer-txtboxTextbox,
+#vndappformoffices-txtboxTextbox,
+#vndappformoffices-location-textboxTextbox,
+#vndappformtotal-customers-txtboxTextbox,
+#vndappformdedicated-contact-txtboxTextbox,
+#vndappformtitle-txtboxTextbox,
+#vndappformcontact-number-txtboxTextbox,
+#vndappformfree-text-email-addressFreeTextEmailText,
+#vndappformplease-indicate-txtareaTextarea { width:250px;}
+
+#vndappformplease-indicate-txtareaTextarea{ height:80px;}
+
+#vndappformSubmitButtonContainer {
+    clear: both;
+}
+
+
+#vndappformSubmitButton {
+    background-color: #BE0027;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 8px;
+	float: left;
+    margin-top: 50px;
+}
+
+.main-content ul { clear:both}
+sup { vertical-align:super; font-size:0.8em;}
+.ie7 #colorbox,.ie7 #cboxOverlay,.ie7 #cboxWrapper{padding:0px !important;}
+.ie7 #Homepage #video-content{padding:0px  !important;}
+.ie7 .inv_videoMainContainer{width:630px;margin-left:20px;}
+#Homepage.ie7 p.wht-link {left:20px;}
+.ie7 .left-social-media ul li{text-indent:0px;width:39px;overflow:hidden;}
+.ie7 .left-social-media ul li.lft-col-email a{padding-right:0px;}
+.ie7 .col-1 p,.ie7 .col-2 p,.ie7 .col-3 p,.ie7 .left-social-media p.share,.ie8 .col-1 p,.ie8 .col-2 p,.ie8 .col-3 p,.ie8 .left-social-media p.share{filter:none !important;}
+
+/*--------------- SEF Subscribe Form --------------------*/
+body#sef #maincontent .item7 .intro-text{ display:none;} /*to hide the subscibe link*/
+#subscribe-form-wrapper h3{ margin: 7px 0 0 18px; }
+#subscribe-form-wrapper p{ padding:25px 0 25px 25px;}
+#subscribe-form-wrapper {display: none; position: fixed!important; width: 340px; z-index: 9998!important; left: 36%; top: 18%; background-color:#fff; }
+#subscribeformContainer{ width: 400px;padding: 10px 20px 30px 20px; background: #F1F1F1;
+float: left;margin: 0 0 21px 0;} 
+#subscribeformTitleContainer{ font-size: 1.5em; font-weight: bold; padding-bottom: 18px;margin-top: 15px; }
+#subscribeformlabelNameLabelContainer, #subscribeformlabelEmailLabelContainer, #subscribeformlabelCompanyLabelContainer,#subscribeformlabelCountryLabelContainer, #subscribeformlabelSubscribetoLabelContainer, #subscribeformlabelcaptchaLabelContainer
+{float: left; font-weight: bold; font-size: 1.4em; padding: 0 0 5px 0; }
+#subscribeformmarket-data-notifyCheckboxContainer, #subscribeformsef-rule-notifyCheckboxContainer{float: left; font-size: 1.1em; padding: 0 0 10px 0; width:340px;
+}
+#subscribeformtextNameTextboxContainer, #subscribeformtextEmailTextboxContainer, #subscribeformlabelcaptchaLabelContainer, #subscribeformtextCompanyTextboxContainer, #subscribeformm-CountryListDropDownContainer{clear: both; width: 297px;
+padding: 0 0 10px 0;}
+#subscribeformtextNameTextboxContainer input, #subscribeformtextEmailTextboxContainer input, #subscribeformtextCompanyTextboxContainer input{ width: 297px}
+
+.form-FillerWrapper {opacity: 0.9;cursor: pointer;visibility: visible;background: #000;height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 9997;display: none;}
+
+#subscribeformSubmitButtonContainer{margin-top: 15px; float: left;}
+
+#subscribeformcaptchaCaptchaContainer{ width: 340px; float: left; margin-bottom: 10px;}
+.subscribeformcaptchaCaptchaCode {width: 180px; float: left; }
+
+#subscribeformSubmitButton{
+background-color: #BE0027; border: 0 none; color: #FFF; padding: 8px; cursor: pointer; text-transform: uppercase;
+}
+#subscribeformlabelSubscribetoLabelContainer{margin-top: 5px;}
+#subscribeformcaptchaCaptchaTextContainer{margin-bottom: 5px;}
+
+#subscribeformcaptchaCaptchaCodeError{width: 340px; color: red; float: left; padding: 10px 0 0 0;font-size: 1.2em;}
+
+/*--------------- SEF Subscribe Form --------------------*/
+
+.main-content ol.rad-alternate li {list-style-type: lower-alpha !important;}
+
+li.homebanner2 .bannerbox{padding-top: 20px;height: 158px; }
+li.homebanner2 .bannerbox, li.homebanner2 .bannerbox a{ color:#000000}
+li.homebanner2 .bannerbox p em{ font-style:italic; text-align:right; float:right}
+li.homebanner2 .bannerbox p.wht-link a{background:url(_/media/Images/I/ICAP-Corp-V3/css/thin-black-arrow.png) no-repeat left 7px;font-family: Arial,Helvetica,sans-serif; position: absolute; bottom: 10px;left:15px;}
+
+.addtooutlook.hideicon a{ display:none; visibility:hidden;}
+
+
+#close-button{background: #fff;   float: right;  padding: 7px 6px 5px 5px;cursor: pointer;}
+
+body#sign-up #section-global-broking-level3 li#nav-sef-level3 a{color: #be0027;}
+
+body#search-results #tabs ul li {
+    max-width: 103px;
+}
+body#Homepage .bannerbox.redbox p.wht-link a:before {
+    background: rgba(0, 0, 0, 0) url("/assets/_/media/Images/I/ICAP-Corp-V3/css/thin-black-arrow.png") no-repeat scroll left 7px!important;bottom:28px;
+}
+body#Homepage .bannerbox.redbox p.wht-link a {background:none;}
+body#Homepage li.homebanner2 .bannerbox p.wht-link a {bottom: -29px;width: 250px;}
+
+body#contact-us .serContact-search, body#contact-us .marContact-search{display:none;}
+body#spot-fx .content-rightcol .tab-content .productsDesc p, body#spot-fx .content-rightcol .tab-content .productsIntro p { line-height: 22px;font-size:1.4em;font-family:"OpenSansRegular",Arial;}
+
+.cr-left > p {margin-top: 15px;}
+
+.btn > input, #searchButtonContainerRP > input {background: rgba(0, 0, 0, 0) url("/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/sprite-icap.png") no-repeat scroll 0 0;float: left; position: relative;width: 35px;height: 30px;background-position: -379px -123px;text-indent: -9999px;border:none;cursor: pointer;}
+
+.address-detail > span {float: left; font-size: 1.2em; line-height: 20px; width: 100%;}
+.address-detail {float: left;width: 22%;position:relative;margin-right:15px;padding:5px;}
+
+
+
+.ip3-our-markets-and-products .intro-box.snapcontent{min-height: 416px;}
+
+.venues-bottom-section ul{margin-bottom:0;}
+.venues-bottom-section ul li {list-style: none;border-bottom: 1px solid #e5e5e5;padding: 23px 17px 16px;margin-left: 0;}
+.venues-bottom-section ul li:last-child{border:none!important;}
+.venues-bottom-section ul li a {font-weight: 700;line-height:18px;}	
+/*---- main-2-----*/
+.venues-box-section {float:left;width:100%;margin-top:17px;margin-bottom: 27px;}
+.venues-box a {font-family: 'OpenSansRegular', Arial;font-weight: normal;display: block;color: #fff;position: relative;font-size: 1.5em;padding: 13px 5px 0 15px;height: 113px;}
+.venues-box a:hover, .venues-box a:hover, .venues-box a:hover { text-decoration: none; color: #fff; }
+.venues-box {background-color: #29205a;height: 126px;width: 126px;float: left;margin-right: 10px;}
+.venues-box5.venues-box { margin-right:0; }
+.venues-box.otf-venue { background-color: #bd022b; }
+.venues-box a:after {background-image:url(_/media/Images/I/ICAP-Corp-V3/css/venue-box-arrow.png);content:"";width: 14px;height: 10px;position: absolute;bottom: 12px;right: 13px;}
+.venues-bottom-section { float:left; width:100%; }
+.venues-bottom-section .venues-bottom-link a {color:#bd022b;font-size:1.5em;font-weight: 700;line-height: 18px;}
+.venues-bottom-section .venues-bottom-content { color:#444; font-size:1.4em; line-height:20px; }
+.venues-bottom-section .venues-bottom {border-bottom:1px solid #e5e5e5;padding: 23px 17px 16px;}
+.venues-bottom-section .venues-bottom-section5.venues-bottom { border-bottom:none; }
+.venues-legend-section {float: left;width:100%;}
+.venues-legend-section p {position:relative;float: right;}
+.venues-legend-section p.mtf-legend:before {content:"";position:absolute;background-color:#29205a;width: 12px;height: 12px;margin-left: -19px;margin-top: 5px;}
+.venues-legend-section p.otf-legend:before {content:"";position:absolute;background-color:#bd022b;width: 12px;height: 12px;margin-left: -19px;margin-top: 5px;}
+.venues-legend-section p.otf-legend { padding-right:15px; }
+.venues-legend-section p.mtf-legend { padding-right:40px; }
+.main-content.news-page table th, .main-content.news-page table td { font-size:1.4em; line-height:18px; padding:10px 0; border-bottom:1px solid #e5e5e5; }
+.main-content.news-page table th { font-weight:700; }
+.main-content.news-page .tabed-menu { margin-bottom:10px; }
+.left-news-box {float:left;font-family: 'OpenSansRegular', Arial;padding: 30px 19px 9px;}
+.left-news-box-ttl {font-size:1.5em;line-height:normal;color:#222;margin-bottom: 23px;font-weight:700;}
+.left-news-inner-box .left-news-item {border-top:1px solid #aaa;padding-top: 12px;}
+.left-news-inner-box .left-news-item:last-of-type { border-bottom:1px solid #aaa; }
+.left-news-inner-box .left-news-item p.left-news-date {font-family: Arial;color:#888888;font-size:1.2em;line-height:22px;margin-bottom: 1px;}
+.left-news-inner-box .left-news-item p.left-news-title {font-family: 'OpenSansRegular', Arial;font-weight:700;font-size:1.5em;margin-bottom: 4px;}
+.left-news-inner-box .left-news-item p { font-family: Arial; font-size:1.4em; line-height:22px; }
+body.ip3-news.ip3-our-mifid-ii-venues .left-news-box, .left-news-box { display:none; }
+.left-news-inner-box .left-news-archive-link { float:right; margin-top:15px; font-size:1.4em; }
+body#our-mifid-ii-venues .left-news-box, body.ip3-our-mifid-ii-venues .left-news-box { display:block; }
+body.ip3-our-mifid-ii-venues .product-box.last { display:block; border-bottom:1px solid #d6d6d6; }
+body.ip3-our-mifid-ii-venues .globalbox { width:679px; padding:15px 20px 11px; }
+.ir-contact-form div.clearfix { border: medium none; margin-bottom: 20px; float:left; clear:both; }
+.ir-contact-form .form-left { float: left; margin-right: 10px; width: 180px; font-size:1.4em; line-height:22px; padding-top:2px; }
+.ir-contact-form .checkbox-select .form-left { width:auto; padding-top:3px; }
+.ir-contact-form .form-left span.mandatory, span.mandatory { color: #ff0000;}
+.ir-contact-form .form-right { float: left;}
+.form-right > span { position: absolute;padding-top:6px;font-size:1.4em;}
+.ir-contact-form .form-right input { border:1px solid #444; margin-right: 10px; padding: 5px 10px; width: 178px; height: 15px; font-family: arial; font-size: 1.2em; color: #444;}
+.ir-contact-form input[type='text']  {-webkit-border-radius: 0; -moz-border-radius: 0; -webkit-appearance: none; }
+.ir-contact-form .form-right input#txtCaptcha { float: none; margin-top: 10px;}
+.ir-contact-form .form-right input[type="submit"] {font-family: 'OpenSansRegular', Arial;background: #474747;color: #fff;cursor: pointer;display: block;float: none;margin-top: 10px;padding: 6px 10px;font-size: 1.6em;font-weight: normal;line-height: 22px;width: auto;height: auto;border: none;}
+.ir-contact-form .form-right input[type="submit"]:hover {background: #c8132c;color: #fff;}
+.form-right > div {margin-bottom: 10px;}
+#txtPageName { display:none; }
+.main-content { min-height:auto; padding:0 20px 12px 20px; }
+.ir-contact-form { float:left; width:100%; margin-top:15px; }
+table.rad-datatable { margin-bottom:20px; }
+table.rad-datatable th {font-weight:700;color: #fff;background-color: #555;}
+table.rad-datatable tbody tr:nth-child(odd){ background-color: #fff; }
+table.rad-datatable tbody tr:nth-child(even){ background-color: #f1f1f1; }
+table.rad-datatable th, table.rad-datatable td {font-size:1.4em;line-height:18px;text-align: left;padding: 5px;border: 1px solid #d4d4d4;}
+table.rad-datatable th { border:1px solid #555; }
+body.ip3-our-mifid-ii-venues #rightCol ul, body.ip3-our-mifid-ii-venues #rightCol ol { margin-bottom: 15px; padding-left:14px; }
+body.ip3-our-mifid-ii-venues #rightCol ul li, body.ip3-our-mifid-ii-venues #rightCol ol li {padding: 0 0 0 14px;position:relative;line-height: 22px;font-size: 1.4em;list-style:none;margin-left: 14px;margin-bottom: 0;}
+body.ip3-our-mifid-ii-venues #rightCol ul li:before, body.ip3-our-mifid-ii-venues #rightCol ol li:before {content:'';height:5px;width:5px;border-radius:50%;background-color: #444;display:inline-block;position:absolute;left:0;top: 8px;}
+body.ip3-our-mifid-ii-venues #rightCol ul li ul { margin-top: 10px; margin-bottom: 10px; padding-left: 5px; }
+body.ip3-our-mifid-ii-venues #rightCol ol li { line-height: 22px; font-size: 1.4em; }
+body.ip3-our-mifid-ii-venues #rightCol ol li ol { margin-top: 10px; margin-bottom: 10px; padding-left: 17px; }
+.content-btm { float:left; width:619px; margin-top:15px; padding:0 80px 10px 20px; }
+
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu { float: left; width: 100%; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-bg.jpg") repeat-x center top; height: 46px }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul { padding-left:0; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li:before { background:none; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li { float: left; width: auto; font-size: 1.4em; line-height: 22px; background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-seperator.gif") no-repeat right top; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li a { display: block; padding: 8px 17px 16px 17px; color: #000; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li a:hover { background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-blk-hover.png") repeat-x center top; color: #fff; display: block; text-decoration: none; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li.current { background: url("/assets/_/media/Images/I/ICAP-Corp-V3/css/tab-hover.png") repeat center top; color: #fff; display: block; padding: 8px 20px 16px 20px; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li.current { list-style: none !important; }
+body.ip3-our-mifid-ii-venues #rightCol .tabed-menu ul li { list-style: none !important; margin-left: 0 !important; padding: 0; }
+body.ip3-our-mifid-ii-venues .content-leftcol ul li.level3.selected a { color:#be0027; }
+body.ip3-our-mifid-ii-venues .content-leftcol ul li a { padding:10px 0px 10px 20px; }
+body.ie7 .group-site iframe, body.ie8 .group-site iframe, body.ie9 .group-site iframe, body.ie10 .group-site iframe, body.internetexplorer11 .group-site iframe, body.chrome46 .group-site iframe { height:100px; }

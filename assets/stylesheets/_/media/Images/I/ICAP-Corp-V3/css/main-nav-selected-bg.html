@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document Not Found</title>
+    <link href="/sitecore/login/default.css" rel="stylesheet" />
+    <script type="text/javascript" language="javascript">
+    
+    function toggleMore() {
+      var more = document.getElementById("ErrorMorePanel");
+      more.style.display = more.style.display == "none" ? "" : "none";
+    }
+    
+    </script>
+  </head>
+  <body>
+    <div id="Body">
+      <div id="ErrorTopPanel">
+        <div class="ErrorTitle">
+          <img Src="/sitecore/shell/themes/standard/Applications/48x48/document_error.png" Align="middle" style="margin:0px 8px 0px 0px;" border="0" alt="" width="48px" height="48px" />
+          The requested document was not found
+        </div>
+      </div>
+      
+      <div id="ErrorPanel">
+        Most likely causes:
+        <ul>
+          
+          <li>The resource you are looking for (or one of its dependencies) has been removed, had its name changed, or is temporarily unavailable.
+              Please review the following URL and make sure that it is spelled correctly.</li>
+        </ul>
+      
+        <div class="ErrorOptions">What you can try:</div>
+        
+        <div>
+          <a class="ErrorOption" href="javascript:history.go(-1)">
+            <img Src="/sitecore/shell/themes/standard/Applications/16x16/bullet_ball_blue.png" Align="middle" style="margin:0px 4px 0px 4px;" border="0" alt="" width="16px" height="16px" />
+            Go back to the previous page
+          </a>
+        </div>
+        
+        <div>
+          <a class="ErrorOption" href="javascript:location.href='/'">
+            <img Src="/sitecore/shell/themes/standard/Applications/16x16/bullet_ball_blue.png" Align="middle" style="margin:0px 4px 0px 4px;" border="0" alt="" width="16px" height="16px" />
+            Go to the start page
+          </a>
+        </div>
+        
+        <div class="ErrorMoreOptionPanel">
+          <a class="ErrorOption" href="javascript:toggleMore()">
+            <img id="MoreGlyph" Src="/sitecore/shell/themes/standard/Applications/16x16/navigate_close.png" Align="middle" style="margin:0px 4px 0px 4px;" border="0" alt="" width="16px" height="16px" />
+            More information
+          </a>
+        </div>
+        
+        <div id="ErrorMorePanel" style="display:none">
+          <div>
+            Requested URL: [unknown]
+          </div>
+          <div>
+            User Name: 
+          </div>
+          <div>
+            Site Name: 
+          </div>
+          
+          <div>
+            If the page you are trying to display exists, please check that an appropriate prefix has been added to the IgnoreUrlPrefixes setting in the web.config.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+</html>
