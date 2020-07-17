@@ -1,0 +1,1483 @@
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> cov-build 2019.03 (build 2c0f9c8cf4 p-pacific1-push-35439.872)
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> Coverity Build Capture (64-bit) version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> Dumping from hostname : SNG00XW05744
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> Platform info: Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> cov-build command: cov-build --dir cov-int --no-command --fs-capture-search ./ 
+2020-07-17T15:25:05.118177Z|cov-build|27036|info|> cov-build expanded command: cov-build --dir cov-int --no-command --fs-capture-search ./ 
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> build command: C:\Projects\ca\bin\cov-build.exe
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> thunk command: cov-build.exe
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> Set COVERITY_CAPTURE_IGNORE to MSPDBSVR.EXE
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> Set COVERITY_BUILD_COMMAND to "C:\Projects\ca\bin\cov-build.exe" 
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> Set COVERITY_ORIG_BUILD_COMMAND to cov-build.exe
+2020-07-17T15:25:05.157210Z|cov-build|27036|info|> Set COVERITY_COV_BUILD_COMMAND to cov-build --dir cov-int --no-command --fs-capture-search ./ 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set MSBUILDDISABLENODEREUSE to 1
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set UseSharedCompilation to false.
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_BIN to C:/Projects/ca/bin
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_SITE_CC to apt;c++;cc;cl;clang;clang++;csc;csc.dll;csc2;devenv;dotnet;g++;g++-3;g++-4;gcc;gcc-3;gcc-4;java;javac;javaw;ld;link;microsoft.aspnetcore.mvc.razor.viewcompilation;microsoft.aspnetcore.mvc.razor.viewcompilation-x64;microsoft.aspnetcore.mvc.razor.viewcompilation-x64.dll;microsoft.aspnetcore.mvc.razor.viewcompilation-x86;microsoft.aspnetcore.mvc.razor.viewcompilation-x86.dll;microsoft.aspnetcore.mvc.razor.viewcompilation.dll;msbuild;razor;scala;scalac;swiftc;vbc;vbc.dll
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_SITE_CC_CAPTURE_DESCENDANTS to dotnet
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_TEMP to C:/Users/msilao-a/AppData/Local/Temp/cov-msilao-a/645d1a253e8367d781825ba9d1a8316f
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_COMMON_TEMP to C:/Users/msilao-a/AppData/Local/Temp
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_IDIR to C:/Projects/michael/icap/cov-int
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_OUTPUT to pipe:\\.\pipe\cov-log-abe4d4ceaa11cc00ae767a197c5be1ae.s
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_LOG to pipe:\\.\pipe\cov-log-abe4d4ceaa11cc00ae767a197c5be1ae.m
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_OUTPUT_ENCODING to windows-1252
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_SYSTEM_ENCODING to windows-1252
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_EMIT to C:/Projects/michael/icap/cov-int/emit
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_EMIT to C:/Projects/michael/icap/cov-int/emit
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_ENABLE_JAVA_PARSE_ERROR_RECOVERY to 1
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_JAVA_CONFIG to javac#TEMPLATE##java#TEMPLATE##apt#TEMPLATE##javaw#TEMPLATE###
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Set COVERITY_USING_CYGWIN to False
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Dumping configuration:
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> User/default configuration:
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Configuration read from: command-line
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: prevent
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>       Node: dir Value: C:\Projects\michael\icap\cov-int
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-gcc-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-g++-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-gcc-config-1\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-gcc-config-2\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-g++-config-1\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-g++-config-2\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-ld-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-gcc-config-3\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-g++-config-3\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-javac-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-java-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-apt-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-javaw-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-jsp-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-android-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-capture-config-files-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-msvc-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-msvc_devenv-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-msvc_msbuild-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-msvc_link-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-csc-config-0\coverity_config.xml
+2020-07-17T15:25:05.158210Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-csc-config-1\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-csc-config-2\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-dotnet-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-1\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-2\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-3\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-4\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-5\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-razor-config-6\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-clangcc-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-clangcxx-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-javascript-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-html-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-typescript-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-jsx-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-vue-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-scalac-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-scala-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-swiftc-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-vbc-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-vbc-config-1\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-ruby-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-php-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: include Value: C:\Projects\ca\config\template-python-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-gcc-config-0\coverity_config.xml
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: comp_name Value: gcc
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: comp_translator Value: gcc
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: id Value: gcc-gcc-.*
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.159211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: id Value: g++-gcc-.*
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: id Value: g++cc-gcc-.*
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: md5 Value: 220ab2f621b426ef21b5bff0d14bd626
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-g++-config-0\coverity_config.xml
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_name Value: g++
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_translator Value: g++
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: id Value: g++-g++-.*
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-0/../user_nodefs.h
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: id Value: g++cc-g++-.*
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-0/../user_nodefs.h
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: md5 Value: d8da15d655e23f85d5c6ae35de65d439
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-gcc-config-1\coverity_config.xml
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_name Value: gcc-3
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_translator Value: gcc
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: id Value: gcc-gcc-3-.*
+2020-07-17T15:25:05.160210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-1/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: g++-gcc-3-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-1/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: g++cc-gcc-3-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-1/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: md5 Value: 6a6dc6f1a6c9360514c721c673fa1951
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-gcc-config-2\coverity_config.xml
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_name Value: gcc-4
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_translator Value: gcc
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: gcc-gcc-4-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-2/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: g++-gcc-4-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-2/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: g++cc-gcc-4-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-2/../user_nodefs.h
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: md5 Value: 6f1a220d892e908cc9817e94bdeb7bc5
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-g++-config-1\coverity_config.xml
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_name Value: g++-3
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_translator Value: g++
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: id Value: g++-g++-3-.*
+2020-07-17T15:25:05.161210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-1/../user_nodefs.h
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: id Value: g++cc-g++-3-.*
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-1/../user_nodefs.h
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: md5 Value: ada4013796c1b19ed1fe7ebb4197cd2d
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-g++-config-2\coverity_config.xml
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_name Value: g++-4
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_translator Value: g++
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: id Value: g++-g++-4-.*
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-2/../user_nodefs.h
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: id Value: g++cc-g++-4-.*
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-2/../user_nodefs.h
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: md5 Value: deb1268a1fd912fa66d290aac3a8d6e1
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-ld-config-0\coverity_config.xml
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_name Value: ld
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_translator Value: ld
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: id Value: ld-ld-.*
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-ld-config-0/../user_nodefs.h
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: md5 Value: a31ebdf549aecdabc7c15e5c23be5e63
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-gcc-config-3\coverity_config.xml
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_name Value: cc
+2020-07-17T15:25:05.162210Z|cov-build|27036|info|>         Node: comp_translator Value: gcc
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: gcc-cc-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-3/../user_nodefs.h
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: g++-cc-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-3/../user_nodefs.h
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: g++cc-cc-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-gcc-config-3/../user_nodefs.h
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: md5 Value: 5ab1d465abf1e699248ecdb7fe5931c0
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-g++-config-3\coverity_config.xml
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_name Value: c++
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_translator Value: g++
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_generic Value: gnu
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: g++-c++-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-3/../user_nodefs.h
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: g++cc-c++-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-g++-config-3/../user_nodefs.h
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: md5 Value: 92107d6a420ac9dd06caaaf4fa667276
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-javac-config-0\coverity_config.xml
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_name Value: javac
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_translator Value: javac
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_lang Value: Static Java
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: id Value: javac-javac-.*
+2020-07-17T15:25:05.163210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: md5 Value: 4dff82855a5f75486f23dc3987a065c8
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-java-config-0\coverity_config.xml
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_name Value: java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_translator Value: java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_lang Value: Static Java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: id Value: java-java-.*
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: md5 Value: 670e0eff61ca6e268d4c53f998738922
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-apt-config-0\coverity_config.xml
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_name Value: apt
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_translator Value: apt
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_lang Value: Static Java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: id Value: apt-apt-.*
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: md5 Value: 0c3c17692884987df5fe47566993553e
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-javaw-config-0\coverity_config.xml
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_name Value: javaw
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_translator Value: javaw
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_lang Value: Static Java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: id Value: javaw-javaw-.*
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: md5 Value: aa3bf49b5164470df847ce74b96aa069
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-jsp-config-0\coverity_config.xml
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.164209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-jsp-0
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_translator Value: jsp
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.(jsp|jspx)$
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: id Value: jsp-cov-filesystem-capture-jsp-0-.*
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: md5 Value: 425f5b1409471a4a55890e518ffea917
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-android-config-0\coverity_config.xml
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-android-0
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_translator Value: android
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_generic Value: java
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml)$
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: id Value: android-cov-filesystem-capture-android-0-.*
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: md5 Value: 2038ccdce64ccbc0d91a6d98e3ada876
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-capture-config-files-config-0\coverity_config.xml
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_translator Value: capture-config-files
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: comp_generic Value: capture_config_files
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: file_include_pattern Value: $capture-config-files$
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|>   Node: md5 Value: b94e617f98adb465b84e44c2bb1187e2
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.165209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-msvc-config-0\coverity_config.xml
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: comp_name Value: cl
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: comp_translator Value: msvc
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: comp_generic Value: msvc
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: id Value: msvc-cl-.*
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-msvc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: var_name Value: cov_instrument_config_version
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: 3
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_header_path
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\sdk\runtime\ta-runtime
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_name
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: x64
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: x86
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_path
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.166209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: id Value: msvc_cxx-cl-.*
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-msvc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: var_name Value: cov_instrument_config_version
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: 3
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_header_path
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\sdk\runtime\ta-runtime
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_name
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: x64
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: x86
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_path
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>   Node: md5 Value: d36eac5f85014704ca63f6c7414ff750
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-msvc_devenv-config-0\coverity_config.xml
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: comp_name Value: devenv
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: comp_translator Value: msvc_devenv
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: comp_generic Value: msvc
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: id Value: msvc_devenv-devenv-.*
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-msvc_devenv-config-0/../user_nodefs.h
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.167209Z|cov-build|27036|info|>   Node: md5 Value: 1bd6116a591fe1eeb03a04d0299f415d
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-msvc_msbuild-config-0\coverity_config.xml
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_name Value: msbuild
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_translator Value: msvc_msbuild
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_generic Value: msvc
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: id Value: msvc_msbuild-msbuild-.*
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-msvc_msbuild-config-0/../user_nodefs.h
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>   Node: md5 Value: 90758a4508778ab76c418f64362bed29
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-msvc_link-config-0\coverity_config.xml
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_name Value: link
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_translator Value: msvc_link
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: comp_generic Value: msvc
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: id Value: msvc_link-link-.*
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-msvc_link-config-0/../user_nodefs.h
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: var_name Value: cov_instrument_config_version
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: var_value Value: 3
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_deployment_path
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_header_path
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\sdk\runtime\ta-runtime
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_name
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: platform_name Value: x64
+2020-07-17T15:25:05.168209Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x64.lib
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>             Node: platform_name Value: x86
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>             Node: var_value Value: libci-runtime-x86.lib
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: instrument_variable
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>           Node: var_name Value: cov_lib_path
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>           Node: cond_platform_value
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>             Node: platform_name Value: all
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>             Node: var_value Value: C:\hudson_home\workspace\SCAN\kits\cov-analysis-win64-2019.03\lib
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: md5 Value: 28814c8b4e2281d36e61b6c167a15793
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-csc-config-0\coverity_config.xml
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_name Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_translator Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_lang Value: C#
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_generic Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: id Value: csc-csc-.*
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: md5 Value: fe090f9c5ade85b6791417ae28e7af34
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-csc-config-1\coverity_config.xml
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_name Value: csc2
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_translator Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_lang Value: C#
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_generic Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: id Value: csc-csc2-.*
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: md5 Value: 977437d947559cc8595a296b529da4b3
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-csc-config-2\coverity_config.xml
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_name Value: csc.dll
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_translator Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_lang Value: C#
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: comp_generic Value: csc
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: id Value: csc-csc.dll-.*
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.169210Z|cov-build|27036|info|>   Node: md5 Value: d7617a61a1e5d38ea17e0065e15a334c
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-dotnet-config-0\coverity_config.xml
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_name Value: dotnet
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_translator Value: dotnet
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_lang Value: C#
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_capture_descendants Value: true
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_generic Value: dotnet
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: id Value: dotnet-dotnet-.*
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: md5 Value: c1f04f52f32e19ee321f007827420925
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-0\coverity_config.xml
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_name Value: razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: id Value: razor-razor-.*
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: md5 Value: 299c29c5e1aed07e748c20434abece6a
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-1\coverity_config.xml
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation-.*
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.170211Z|cov-build|27036|info|>   Node: md5 Value: 012f7f10f25cb7255cd3da914f9303b2
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-2\coverity_config.xml
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation.dll
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation.dll-.*
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: md5 Value: f144074c0456b3d3fe4011b5d8b3db91
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-3\coverity_config.xml
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation-x86
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation-x86-.*
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: md5 Value: 22238b5ed838db5e1a83a95e6b26b976
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-4\coverity_config.xml
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation-x64
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation-x64-.*
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.171211Z|cov-build|27036|info|>   Node: md5 Value: bd398ee66245bba5a4125fd742fd562f
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-5\coverity_config.xml
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation-x86.dll
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation-x86.dll-.*
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: md5 Value: 580e3886424cb4bdad1f53dc515e78c7
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-razor-config-6\coverity_config.xml
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_name Value: microsoft.aspnetcore.mvc.razor.viewcompilation-x64.dll
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_translator Value: razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_lang Value: Razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_generic Value: razor
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: id Value: razor-microsoft.aspnetcore.mvc.razor.viewcompilation-x64.dll-.*
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: md5 Value: 004b0de293c07eddd6afd0f44b3a2d6e
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-clangcc-config-0\coverity_config.xml
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_name Value: clang
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_translator Value: clangcc
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: comp_generic Value: clang
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: id Value: clangcc-clang-.*
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.172210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangcxx-clang-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangcxxcc-clang-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangobjc-clang-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangobjcxx-clang-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcc-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>   Node: md5 Value: 15fd1279f5d22c97f5ebadaac9bf1e6b
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-clangcxx-config-0\coverity_config.xml
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: comp_name Value: clang++
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: comp_translator Value: clangcxx
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: comp_lang Value: C/C++
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: comp_generic Value: clang
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangcxx-clang++-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcxx-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangcxxcc-clang++-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcxx-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangobjc-clang++-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcxx-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: id Value: clangobjcxx-clang++-.*
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: opt_preinclude_file Value: C:\Projects\ca\config\template-clangcxx-config-0/../user_nodefs.h
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|>   Node: md5 Value: a5fffed9db920f7281ac5687f6514630
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.173210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-javascript-config-0\coverity_config.xml
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_translator Value: javascript
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.(js|xsjs|xsjslib|map)$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: md5 Value: 5dc7fe28a5d7a345225ec3edabbf5701
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-html-config-0\coverity_config.xml
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_translator Value: html
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.(html|htm)$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: id Value: html-cov-filesystem-capture-html-0-.*
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: md5 Value: 874e134728d1412d745d699feb38e141
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-typescript-config-0\coverity_config.xml
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-typescript-0
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_translator Value: typescript
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: comp_generic Value: typescript
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*(\.ts(x?)|tsconfig.json)$
+2020-07-17T15:25:05.174210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: id Value: typescript-cov-filesystem-capture-typescript-0-.*
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: md5 Value: 0fbcd451629a877b0945511269f745bd
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-jsx-config-0\coverity_config.xml
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-jsx-0
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_translator Value: jsx
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.jsx$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: id Value: jsx-cov-filesystem-capture-jsx-0-.*
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: md5 Value: 6ef7db223c129acd408eed304126e3a1
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-vue-config-0\coverity_config.xml
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-vue-0
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_translator Value: vue
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.vue$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]node_modules[/\\]
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\]jquery[^/\\]*[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: file_exclude_pattern Value: [/\\][^/\\]*-vsdoc[.]js$
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: id Value: vue-cov-filesystem-capture-vue-0-.*
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: md5 Value: e2e0d3714ab927a7bdeebe5c48dde342
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-scalac-config-0\coverity_config.xml
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.175210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_name Value: scalac
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_translator Value: scalac
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_lang Value: Scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_generic Value: scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: id Value: scalac-scalac-.*
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: md5 Value: 72f6e51a33977034a91c37366e5501cc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-scala-config-0\coverity_config.xml
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_name Value: scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_translator Value: scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_lang Value: Scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_generic Value: scala
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: id Value: scala-scala-.*
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: md5 Value: 06e293540a5f4dc8f97f0f06a6021b74
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-swiftc-config-0\coverity_config.xml
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_name Value: swiftc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_translator Value: swiftc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_lang Value: Swift
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_generic Value: swift
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: id Value: swiftc-swiftc-.*
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: md5 Value: 23140da751bb0ef0b36a4b63d655d971
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-vbc-config-0\coverity_config.xml
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_name Value: vbc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_translator Value: vbc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_lang Value: Visual Basic
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: comp_generic Value: vbc
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: id Value: vbc-vbc-.*
+2020-07-17T15:25:05.176210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: md5 Value: feeb8b03a6f975f0aaca18abe6c96895
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-vbc-config-1\coverity_config.xml
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_name Value: vbc.dll
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_translator Value: vbc
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_lang Value: Visual Basic
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_generic Value: vbc
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: id Value: vbc-vbc.dll-.*
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: md5 Value: fb11aa1996139335dbc0bdc5b4851b37
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-ruby-config-0\coverity_config.xml
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-ruby-0
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_translator Value: ruby
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_generic Value: ruby
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*(\.rb|Gemfile)$
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: id Value: ruby-cov-filesystem-capture-ruby-0-.*
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: md5 Value: 9a95acc499de60467aeb7e3b29315f90
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-php-config-0\coverity_config.xml
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-php-0
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_translator Value: php
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: comp_generic Value: php
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.ph(p|p3|p4|p5|p7|tml)$
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: id Value: php-cov-filesystem-capture-php-0-.*
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.177210Z|cov-build|27036|info|>   Node: md5 Value: 6db33a0a68d7f8c9b0f5085b9afaab3b
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|> Configuration read from: C:\Projects\ca\config\template-python-config-0\coverity_config.xml
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|> Node: coverity
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>   Node: cit_version Value: 1
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>   Node: config
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>     Node: build
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>       Node: compiler
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: template_compiler Value: true
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: comp_name Value: cov-filesystem-capture-python-0
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: comp_translator Value: python
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: comp_generic Value: python
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: file_include_pattern Value: ^.*\.py$
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>       Node: options
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: id Value: python-cov-filesystem-capture-python-0-.*
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>         Node: begin_command_line_config
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|>   Node: md5 Value: 4498fd410774a9faa0109aad2e182841
+2020-07-17T15:25:05.178210Z|cov-build|27036|info|> 
+2020-07-17T15:25:05.186224Z|cov-build|27036|info|> [STATUS] Running filesystem capture search...
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> [STATUS] Emitting 56 files from filesystem capture
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> No source files for template-jsp-config-0 (^.*\.(jsp|jspx)$ -> cov-filesystem-capture-jsp-0)
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> No source files for template-android-config-0 (^.*(layout.*[/\\].*\.xml|AndroidManifest\.xml)$ -> cov-filesystem-capture-android-0)
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> BEGIN source files (24) for template-capture-config-files-config-0 (<config files> -> cov-filesystem-capture-capture-config-files-0)
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/robots.txt
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergeall96a8.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergeprint8008.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergescreene617.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eot.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eotd41d.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-woff.woff
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eot.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eotd41d.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-woff.woff
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eot.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eotd41d.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-woff.woff
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eot.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eotd41d.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-woff.woff
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eot.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eotd41d.eot
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-woff.woff
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/bxsliderf99f.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/colorbox4b01.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/datepicker99cb.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/sef-form.css
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> C:/Projects/michael/icap/web.config
+2020-07-17T15:25:05.400209Z|cov-build|27036|info|> END source files for template-capture-config-files-config-0 (<config files> -> cov-filesystem-capture-capture-config-files-0)
+2020-07-17T15:25:06.317902Z|cov-translate|26944|output|> * Configuring Configuration Filesystem Capture
+2020-07-17T15:25:06.325872Z|cov-translate|26944|output|> Added template compiler configuration instance C:/Projects/michael/icap/cov-int/emit/SNG00XW05744/config/86c0393db2dfc13f34bf36599b00f373/coverity_config.xml
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\86c0393db2dfc13f34bf36599b00f373\coverity_config.xml
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|> Node: coverity
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>   Node: config
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>     Node: include Value: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\86c0393db2dfc13f34bf36599b00f373\capture-config-files-config-0\coverity_config.xml
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\86c0393db2dfc13f34bf36599b00f373\capture-config-files-config-0\coverity_config.xml
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|> Node: coverity
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>   Node: config
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>     Node: build
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>       Node: compiler
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_name Value: cov-filesystem-capture-capture-config-files-0
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_translator Value: capture-config-files
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_front_end Value: cov-internal-emit-misc
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_desc Value: Configuration Filesystem Capture
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: comp_generic Value: capture_config_files
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-86c0393db2dfc13f34bf36599b00f373-0
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: is_compiler Value: true
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: is_linker Value: false
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>       Node: options
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-86c0393db2dfc13f34bf36599b00f373-0
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: template_config_option_id Value: capture-config-files-cov-filesystem-capture-capture-config-files-0-.*
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: prepend_arg Value: --language=capture-config-files
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: split
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>           Node: options
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>             Node: prepend_arg Value: -coverity_source=non_compiled
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: expand
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>           Node: options
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>             Node: intern_split_response_file_fn Value: line_split
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>         Node: begin_command_line_config
+2020-07-17T15:25:06.348902Z|cov-translate|26944|output|>   Node: md5 Value: ba960caa472abdc5ce929e6a7a0ea22d
+2020-07-17T15:25:06.362871Z|cov-translate|26944|output|> COV_TRANSLATE EXPANDED ARGS: "--fs-capture-search" "./" "C:/Projects/michael/icap/assets/robots.txt" "C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergeall96a8.css" "C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergeprint8008.css" "C:/Projects/michael/icap/assets/stylesheets/ResourceHandlermergescreene617.css" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eot.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eotd41d.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-woff.woff" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eot.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eotd41d.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-woff.woff" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eot.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eotd41d.eot"
+2020-07-17T15:25:06.385902Z|cov-translate|26944|output|> [WARNING] During pre_translate, unrecognized option: --fs-capture-search
+2020-07-17T15:25:06.395903Z|cov-translate|26944|output|> [STATUS] Compiling 12 Non compiled source files.
+2020-07-17T15:25:06.395903Z|cov-translate|26944|output|> [STATUS] Compiling assets\robots.txt, assets\stylesheets\ResourceHandlermergeall96a8.css, assets\stylesheets\ResourceHandlermergeprint8008.css, assets\stylesheets\ResourceHandlermergescreene617.css, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Bold-webfont-eot.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Bold-webfont-eotd41d.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Bold-webfont-woff.woff, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Italic-webfont-eot.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Italic-webfont-eotd41d.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Italic-webfont-woff.woff, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Light-webfont-eot.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Light-webfont-eotd41d.eot
+2020-07-17T15:25:06.395903Z|cov-translate|26944|output|> C:/Projects/ca/bin/cov-internal-emit-misc.exe --dir=C:\Projects\michael\icap\cov-int --language=capture-config-files --fs-capture-search ./ assets/robots.txt assets/stylesheets/ResourceHandlermergeall96a8.css assets/stylesheets/ResourceHandlermergeprint8008.css assets/stylesheets/ResourceHandlermergescreene617.css assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eot.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eotd41d.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-woff.woff assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eot.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eotd41d.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-woff.woff assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eot.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eotd41d.eot 
+2020-07-17T15:25:06.399903Z|cov-translate|26944|output|> Command line with response file: C:/Projects/ca/bin/cov-internal-emit-misc.exe @utf8@C:\Projects\michael\icap\cov-int\tmp\cov-internal-emit-misc-77bbdca2cb39197a629551c4d8586239-0.cmd_args.txt
+2020-07-17T15:25:06.574869Z|cov-translate|26944|output|> Coverity Internal Misc Emit version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:06.574869Z|cov-translate|26944|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:06.574869Z|cov-translate|26944|output|> 
+2020-07-17T15:25:07.010534Z|cov-translate|26944|output|> Detected ISO-8859-1 encoding for assets/robots.txt
+2020-07-17T15:25:07.025530Z|cov-translate|26944|output|> Detected ISO-8859-1 encoding for assets/stylesheets/ResourceHandlermergeall96a8.css
+2020-07-17T15:25:07.033565Z|cov-translate|26944|output|> Detected ISO-8859-1 encoding for assets/stylesheets/ResourceHandlermergeprint8008.css
+2020-07-17T15:25:07.039533Z|cov-translate|26944|output|> Detected ISO-8859-1 encoding for assets/stylesheets/ResourceHandlermergescreene617.css
+2020-07-17T15:25:07.045531Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eot.eot
+2020-07-17T15:25:07.052531Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-eotd41d.eot
+2020-07-17T15:25:07.059563Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Bold-webfont-woff.woff
+2020-07-17T15:25:07.065530Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eot.eot
+2020-07-17T15:25:07.071531Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-eotd41d.eot
+2020-07-17T15:25:07.079531Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Italic-webfont-woff.woff
+2020-07-17T15:25:07.084531Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eot.eot
+2020-07-17T15:25:07.090532Z|cov-translate|26944|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-eotd41d.eot
+2020-07-17T15:25:07.120534Z|cov-translate|26944|output|> cov-internal-emit-misc.exe took 1s
+2020-07-17T15:25:07.120534Z|cov-translate|26944|output|> 
+2020-07-17T15:25:07.143535Z|cov-translate|26944|output|> 
+2020-07-17T15:25:07.157533Z|cov-build|27036|info|> cov-translate exited with code 0
+2020-07-17T15:25:07.305534Z|cov-translate|25472|output|> Using cached template compiler configuration instance C:/Projects/michael/icap/cov-int/emit/SNG00XW05744/config/86c0393db2dfc13f34bf36599b00f373/coverity_config.xml
+2020-07-17T15:25:07.322534Z|cov-translate|25472|output|> COV_TRANSLATE EXPANDED ARGS: "--fs-capture-search" "./" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-woff.woff" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eot.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eotd41d.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-woff.woff" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eot.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eotd41d.eot" "C:/Projects/michael/icap/assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-woff.woff" "C:/Projects/michael/icap/assets/stylesheets/bxsliderf99f.css" "C:/Projects/michael/icap/assets/stylesheets/colorbox4b01.css" "C:/Projects/michael/icap/assets/stylesheets/datepicker99cb.css" "C:/Projects/michael/icap/assets/stylesheets/sef-form.css" "C:/Projects/michael/icap/web.config"
+2020-07-17T15:25:07.346564Z|cov-translate|25472|output|> [WARNING] During pre_translate, unrecognized option: --fs-capture-search
+2020-07-17T15:25:07.353564Z|cov-translate|25472|output|> [STATUS] Compiling 12 Non compiled source files.
+2020-07-17T15:25:07.353564Z|cov-translate|25472|output|> [STATUS] Compiling assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Light-webfont-woff.woff, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Regular-webfont-eot.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Regular-webfont-eotd41d.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Regular-webfont-woff.woff, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Semibold-webfont-eot.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Semibold-webfont-eotd41d.eot, assets\stylesheets\_\media\Files\I\ICAP-Corp-V3\font\OpenSans-Semibold-webfont-woff.woff, assets\stylesheets\bxsliderf99f.css, assets\stylesheets\colorbox4b01.css, assets\stylesheets\datepicker99cb.css, assets\stylesheets\sef-form.css, web.config
+2020-07-17T15:25:07.353564Z|cov-translate|25472|output|> C:/Projects/ca/bin/cov-internal-emit-misc.exe --dir=C:\Projects\michael\icap\cov-int --language=capture-config-files --fs-capture-search ./ assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-woff.woff assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eot.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eotd41d.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-woff.woff assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eot.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eotd41d.eot assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-woff.woff assets/stylesheets/bxsliderf99f.css assets/stylesheets/colorbox4b01.css assets/stylesheets/datepicker99cb.css assets/stylesheets/sef-form.css web.config 
+2020-07-17T15:25:07.356565Z|cov-translate|25472|output|> Command line with response file: C:/Projects/ca/bin/cov-internal-emit-misc.exe @utf8@C:\Projects\michael\icap\cov-int\tmp\cov-internal-emit-misc-d44e299de3f7f3e084217e86bdec9b98-0.cmd_args.txt
+2020-07-17T15:25:07.392561Z|cov-translate|25472|output|> Coverity Internal Misc Emit version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:07.392561Z|cov-translate|25472|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:07.392561Z|cov-translate|25472|output|> 
+2020-07-17T15:25:07.692338Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Light-webfont-woff.woff
+2020-07-17T15:25:07.698342Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eot.eot
+2020-07-17T15:25:07.704338Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-eotd41d.eot
+2020-07-17T15:25:07.712338Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Regular-webfont-woff.woff
+2020-07-17T15:25:07.717341Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eot.eot
+2020-07-17T15:25:07.723345Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-eotd41d.eot
+2020-07-17T15:25:07.731341Z|cov-translate|25472|output|> Detected windows-1252 encoding for assets/stylesheets/_/media/Files/I/ICAP-Corp-V3/font/OpenSans-Semibold-webfont-woff.woff
+2020-07-17T15:25:07.738306Z|cov-translate|25472|output|> Detected ISO-8859-1 encoding for assets/stylesheets/bxsliderf99f.css
+2020-07-17T15:25:07.744307Z|cov-translate|25472|output|> Detected ISO-8859-1 encoding for assets/stylesheets/colorbox4b01.css
+2020-07-17T15:25:07.751308Z|cov-translate|25472|output|> Detected ISO-8859-1 encoding for assets/stylesheets/datepicker99cb.css
+2020-07-17T15:25:07.756339Z|cov-translate|25472|output|> Detected ISO-8859-1 encoding for assets/stylesheets/sef-form.css
+2020-07-17T15:25:07.759307Z|cov-translate|25472|output|> Detected ISO-8859-1 encoding for web.config
+2020-07-17T15:25:07.788309Z|cov-translate|25472|output|> cov-internal-emit-misc.exe took 0s
+2020-07-17T15:25:07.788309Z|cov-translate|25472|output|> 
+2020-07-17T15:25:07.807308Z|cov-translate|25472|output|> 
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> cov-translate exited with code 0
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> BEGIN source files (20) for template-javascript-config-0 (^.*\.(js|xsjs|xsjslib|map)$ -> cov-filesystem-capture-javascript-0)
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/WebResource389f.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/WebResourceec57.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/ResourceHandlermerge91d2.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/bxsliderb7f8.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/color-box9007.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/colorboxc126.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/contact-color-box.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/contact-us05be.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/current-opportunities8630.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/datefunction1e94.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/datepicker98c2.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/drop-captionad7c.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/form-validation525d.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/gatag.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/landing-slider-banner8218.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/market-data-form.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/market-data-form83cf.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/products47a5.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/slider4c54.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/javascripts/sugar701c.js
+2020-07-17T15:25:07.818305Z|cov-build|27036|info|> END source files for template-javascript-config-0 (^.*\.(js|xsjs|xsjslib|map)$ -> cov-filesystem-capture-javascript-0)
+2020-07-17T15:25:08.241337Z|cov-translate|25972|output|> * Configuring JavaScript Filesystem Capture (javascript)
+2020-07-17T15:25:08.300306Z|cov-translate|25972|output|> Added template compiler configuration instance C:/Projects/michael/icap/cov-int/emit/SNG00XW05744/config/c8f9de1601ea66885a3e53408842da4f/coverity_config.xml
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\c8f9de1601ea66885a3e53408842da4f\coverity_config.xml
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|> Node: coverity
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>   Node: config
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>     Node: include Value: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\c8f9de1601ea66885a3e53408842da4f\javascript-config-0\coverity_config.xml
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\c8f9de1601ea66885a3e53408842da4f\javascript-config-0\coverity_config.xml
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|> Node: coverity
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>   Node: config
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>     Node: build
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>       Node: compiler
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_name Value: cov-filesystem-capture-javascript-0
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_translator Value: javascript
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_front_end Value: cov-internal-emit-misc
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_desc Value: JavaScript Filesystem Capture (javascript)
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-c8f9de1601ea66885a3e53408842da4f-0
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: is_compiler Value: true
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: is_linker Value: false
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>       Node: options
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: id Value: javascript-cov-filesystem-capture-javascript-0-c8f9de1601ea66885a3e53408842da4f-0
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: template_config_option_id Value: javascript-cov-filesystem-capture-javascript-0-.*
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: prepend_arg Value: --language=javascript
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: split
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>           Node: options
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>             Node: prepend_arg Value: -coverity_source=non_compiled
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: expand
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>           Node: options
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>             Node: intern_split_response_file_fn Value: line_split
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>         Node: begin_command_line_config
+2020-07-17T15:25:08.309339Z|cov-translate|25972|output|>   Node: md5 Value: 1bfa3eaf5f97d00d4622856495495037
+2020-07-17T15:25:08.319340Z|cov-translate|25972|output|> COV_TRANSLATE EXPANDED ARGS: "--fs-capture-search" "./" "C:/Projects/michael/icap/assets/WebResource389f.js" "C:/Projects/michael/icap/assets/WebResourceec57.js" "C:/Projects/michael/icap/assets/javascripts/ResourceHandlermerge91d2.js" "C:/Projects/michael/icap/assets/javascripts/bxsliderb7f8.js" "C:/Projects/michael/icap/assets/javascripts/color-box9007.js" "C:/Projects/michael/icap/assets/javascripts/colorboxc126.js" "C:/Projects/michael/icap/assets/javascripts/contact-color-box.js" "C:/Projects/michael/icap/assets/javascripts/contact-us05be.js" "C:/Projects/michael/icap/assets/javascripts/current-opportunities8630.js" "C:/Projects/michael/icap/assets/javascripts/datefunction1e94.js" "C:/Projects/michael/icap/assets/javascripts/datepicker98c2.js" "C:/Projects/michael/icap/assets/javascripts/drop-captionad7c.js" "C:/Projects/michael/icap/assets/javascripts/form-validation525d.js" "C:/Projects/michael/icap/assets/javascripts/gatag.js" "C:/Projects/michael/icap/assets/javascripts/landing-slider-banner8218.js" "C:/Projects/michael/icap/assets/javascripts/market-data-form.js" "C:/Projects/michael/icap/assets/javascripts/market-data-form83cf.js" "C:/Projects/michael/icap/assets/javascripts/products47a5.js" "C:/Projects/michael/icap/assets/javascripts/slider4c54.js" "C:/Projects/michael/icap/assets/javascripts/sugar701c.js"
+2020-07-17T15:25:08.360339Z|cov-translate|25972|output|> [STATUS] Compiling 20 Non compiled source files.
+2020-07-17T15:25:08.360339Z|cov-translate|25972|output|> [STATUS] Compiling assets\WebResource389f.js, assets\WebResourceec57.js, assets\javascripts\ResourceHandlermerge91d2.js, assets\javascripts\bxsliderb7f8.js, assets\javascripts\color-box9007.js, assets\javascripts\colorboxc126.js, assets\javascripts\contact-color-box.js, assets\javascripts\contact-us05be.js, assets\javascripts\current-opportunities8630.js, assets\javascripts\datefunction1e94.js, assets\javascripts\datepicker98c2.js, assets\javascripts\drop-captionad7c.js, assets\javascripts\form-validation525d.js, assets\javascripts\gatag.js, assets\javascripts\landing-slider-banner8218.js, assets\javascripts\market-data-form.js, assets\javascripts\market-data-form83cf.js, assets\javascripts\products47a5.js, assets\javascripts\slider4c54.js, assets\javascripts\sugar701c.js
+2020-07-17T15:25:08.360339Z|cov-translate|25972|output|> C:/Projects/ca/bin/cov-internal-emit-misc.exe --dir=C:\Projects\michael\icap\cov-int --language=javascript --fs-capture-search ./ assets/WebResource389f.js assets/WebResourceec57.js assets/javascripts/ResourceHandlermerge91d2.js assets/javascripts/bxsliderb7f8.js assets/javascripts/color-box9007.js assets/javascripts/colorboxc126.js assets/javascripts/contact-color-box.js assets/javascripts/contact-us05be.js assets/javascripts/current-opportunities8630.js assets/javascripts/datefunction1e94.js assets/javascripts/datepicker98c2.js assets/javascripts/drop-captionad7c.js assets/javascripts/form-validation525d.js assets/javascripts/gatag.js assets/javascripts/landing-slider-banner8218.js assets/javascripts/market-data-form.js assets/javascripts/market-data-form83cf.js assets/javascripts/products47a5.js assets/javascripts/slider4c54.js assets/javascripts/sugar701c.js 
+2020-07-17T15:25:08.363341Z|cov-translate|25972|output|> Command line with response file: C:/Projects/ca/bin/cov-internal-emit-misc.exe @utf8@C:\Projects\michael\icap\cov-int\tmp\cov-internal-emit-misc-8c54dc30b725e98955325ca9a41d8623-0.cmd_args.txt
+2020-07-17T15:25:08.400333Z|cov-translate|25972|output|> Coverity Internal Misc Emit version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:08.400333Z|cov-translate|25972|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:08.400333Z|cov-translate|25972|output|> 
+2020-07-17T15:25:08.923371Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/WebResource389f.js'
+2020-07-17T15:25:08.971370Z|cov-translate|25972|output|> [info]: Total functions: 48
+2020-07-17T15:25:09.814417Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/WebResourceec57.js'
+2020-07-17T15:25:09.858418Z|cov-translate|25972|output|> [info]: Total functions: 34
+2020-07-17T15:25:10.519335Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:10.605275Z|cov-translate|25972|output|> [info]: Total functions: 199
+2020-07-17T15:25:10.622275Z|cov-translate|25972|output|> [info]: Human-unreadable functions: 12
+2020-07-17T15:25:12.275242Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/bxsliderb7f8.js'
+2020-07-17T15:25:12.336887Z|cov-translate|25972|output|> [info]: Total functions: 76
+2020-07-17T15:25:13.283852Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/color-box9007.js'
+2020-07-17T15:25:13.336849Z|cov-translate|25972|output|> [info]: Total functions: 80
+2020-07-17T15:25:14.272853Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/colorboxc126.js'
+2020-07-17T15:25:14.324073Z|cov-translate|25972|output|> [info]: Total functions: 66
+2020-07-17T15:25:15.178073Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/contact-color-box.js'
+2020-07-17T15:25:15.231451Z|cov-translate|25972|output|> [info]: Total functions: 80
+2020-07-17T15:25:16.161449Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/contact-us05be.js'
+2020-07-17T15:25:16.187449Z|cov-translate|25972|output|> [info]: Total functions: 10
+2020-07-17T15:25:16.594825Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/current-opportunities8630.js'
+2020-07-17T15:25:16.625505Z|cov-translate|25972|output|> [info]: Total functions: 25
+2020-07-17T15:25:17.170503Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/datefunction1e94.js'
+2020-07-17T15:25:17.193932Z|cov-translate|25972|output|> [info]: Total functions: 6
+2020-07-17T15:25:17.558501Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/datepicker98c2.js'
+2020-07-17T15:25:17.644501Z|cov-translate|25972|output|> [info]: Total functions: 132
+2020-07-17T15:25:17.660500Z|cov-translate|25972|output|> [info]: Minified, human-unreadable
+2020-07-17T15:25:19.190586Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/drop-captionad7c.js'
+2020-07-17T15:25:19.212584Z|cov-translate|25972|output|> [info]: Total functions: 4
+2020-07-17T15:25:19.563789Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/form-validation525d.js'
+2020-07-17T15:25:19.594177Z|cov-translate|25972|output|> [info]: Total functions: 5
+2020-07-17T15:25:19.977179Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/gatag.js'
+2020-07-17T15:25:20.002642Z|cov-translate|25972|output|> [info]: Total functions: 10
+2020-07-17T15:25:20.403642Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/landing-slider-banner8218.js'
+2020-07-17T15:25:20.426641Z|cov-translate|25972|output|> [info]: Total functions: 5
+2020-07-17T15:25:20.778643Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/market-data-form.js'
+2020-07-17T15:25:20.807673Z|cov-translate|25972|output|> [info]: Total functions: 12
+2020-07-17T15:25:21.261643Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/market-data-form83cf.js'
+2020-07-17T15:25:21.289639Z|cov-translate|25972|output|> [info]: Total functions: 12
+2020-07-17T15:25:21.739640Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/products47a5.js'
+2020-07-17T15:25:21.766638Z|cov-translate|25972|output|> [info]: Total functions: 17
+2020-07-17T15:25:22.225033Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/slider4c54.js'
+2020-07-17T15:25:22.261054Z|cov-translate|25972|output|> [info]: Total functions: 37
+2020-07-17T15:25:22.851025Z|cov-translate|25972|output|> [info]: JavaScript source file: 'assets/javascripts/sugar701c.js'
+2020-07-17T15:25:22.931061Z|cov-translate|25972|output|> [ERROR] SyntaxError: missing ) after argument list line:126 column:497
+2020-07-17T15:25:22.945025Z|cov-translate|25972|output|> [ERROR] Source to JSON failed.
+2020-07-17T15:25:26.887407Z|cov-translate|25972|output|> [WARNING] 1 source file(s) failed to parse. Check for front-end errors.
+2020-07-17T15:25:29.590362Z|cov-translate|25972|output|> [ERROR] SyntaxError: missing ) after argument list line:742 column:526
+2020-07-17T15:25:29.605361Z|cov-translate|25972|output|> [ERROR] Source to JSON failed.
+2020-07-17T15:25:29.786360Z|cov-translate|25972|output|> [WARNING] 1 source file(s) failed to parse. Check for front-end errors.
+2020-07-17T15:25:29.799361Z|cov-translate|25972|output|> cov-internal-emit-misc.exe took 21s
+2020-07-17T15:25:29.799361Z|cov-translate|25972|output|> 
+2020-07-17T15:25:29.956615Z|cov-translate|25972|output|> 
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> cov-translate exited with code 0
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> BEGIN source files (12) for template-html-config-0 (^.*\.(html|htm)$ -> cov-filesystem-capture-html-0)
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/images/controls.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/assets/stylesheets/images/loading.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/accessibility.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/career-landing.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/disclaimer.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/group-sites-black-theme.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/privacy-policy.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/site-map.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> C:/Projects/michael/icap/site-services/terms-of-use-agreement.html
+2020-07-17T15:25:29.967613Z|cov-build|27036|info|> END source files for template-html-config-0 (^.*\.(html|htm)$ -> cov-filesystem-capture-html-0)
+2020-07-17T15:25:30.412646Z|cov-translate|27180|output|> * Configuring JavaScript Filesystem Capture (html)
+2020-07-17T15:25:30.421612Z|cov-translate|27180|output|> Added template compiler configuration instance C:/Projects/michael/icap/cov-int/emit/SNG00XW05744/config/e256a35d9ed9bc024a26874e678bc5dd/coverity_config.xml
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\e256a35d9ed9bc024a26874e678bc5dd\coverity_config.xml
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|> Node: coverity
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>   Node: config
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>     Node: include Value: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\e256a35d9ed9bc024a26874e678bc5dd\html-config-0\coverity_config.xml
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|> Configuration read from: C:\Projects\michael\icap\cov-int\emit\SNG00XW05744\config\e256a35d9ed9bc024a26874e678bc5dd\html-config-0\coverity_config.xml
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|> Node: coverity
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>   Node: cit_version Value: 1
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>   Node: config
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>     Node: build
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>       Node: compiler
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_name Value: cov-filesystem-capture-html-0
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_translator Value: html
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_lang Value: Non Compiled
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_front_end Value: cov-internal-emit-misc
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_desc Value: JavaScript Filesystem Capture (html)
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: comp_generic Value: javascript
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: id Value: html-cov-filesystem-capture-html-0-e256a35d9ed9bc024a26874e678bc5dd-0
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: is_compiler Value: true
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: is_linker Value: false
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>       Node: options
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: id Value: html-cov-filesystem-capture-html-0-e256a35d9ed9bc024a26874e678bc5dd-0
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: template_config_option_id Value: html-cov-filesystem-capture-html-0-.*
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: prepend_arg Value: --language=html
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: split
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>           Node: options
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>             Node: prepend_arg Value: -coverity_source=non_compiled
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: expand
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>           Node: options
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>             Node: intern_split_response_file_fn Value: line_split
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>         Node: begin_command_line_config
+2020-07-17T15:25:30.430647Z|cov-translate|27180|output|>   Node: md5 Value: 058cd976eabcc4a76659465c85de7e25
+2020-07-17T15:25:30.443612Z|cov-translate|27180|output|> COV_TRANSLATE EXPANDED ARGS: "--fs-capture-search" "./" "C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html" "C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html" "C:/Projects/michael/icap/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html" "C:/Projects/michael/icap/assets/stylesheets/images/controls.html" "C:/Projects/michael/icap/assets/stylesheets/images/loading.html" "C:/Projects/michael/icap/site-services/accessibility.html" "C:/Projects/michael/icap/site-services/career-landing.html" "C:/Projects/michael/icap/site-services/disclaimer.html" "C:/Projects/michael/icap/site-services/group-sites-black-theme.html" "C:/Projects/michael/icap/site-services/privacy-policy.html" "C:/Projects/michael/icap/site-services/site-map.html" "C:/Projects/michael/icap/site-services/terms-of-use-agreement.html"
+2020-07-17T15:25:30.472646Z|cov-translate|27180|output|> [STATUS] Compiling 12 Non compiled source files.
+2020-07-17T15:25:30.472646Z|cov-translate|27180|output|> [STATUS] Compiling assets\images\mainsite\tab-menu\down.html, assets\images\mainsite\tab-menu\up.html, assets\stylesheets\_\media\Images\I\ICAP-Corp-V3\css\main-nav-selected-bg.html, assets\stylesheets\images\controls.html, assets\stylesheets\images\loading.html, site-services\accessibility.html, site-services\career-landing.html, site-services\disclaimer.html, site-services\group-sites-black-theme.html, site-services\privacy-policy.html, site-services\site-map.html, site-services\terms-of-use-agreement.html
+2020-07-17T15:25:30.472646Z|cov-translate|27180|output|> C:/Projects/ca/bin/cov-internal-emit-misc.exe --dir=C:\Projects\michael\icap\cov-int --language=html --fs-capture-search ./ assets/images/mainsite/tab-menu/down.html assets/images/mainsite/tab-menu/up.html assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html assets/stylesheets/images/controls.html assets/stylesheets/images/loading.html site-services/accessibility.html site-services/career-landing.html site-services/disclaimer.html site-services/group-sites-black-theme.html site-services/privacy-policy.html site-services/site-map.html site-services/terms-of-use-agreement.html 
+2020-07-17T15:25:30.475611Z|cov-translate|27180|output|> Command line with response file: C:/Projects/ca/bin/cov-internal-emit-misc.exe @utf8@C:\Projects\michael\icap\cov-int\tmp\cov-internal-emit-misc-b613fd4eae79bfd7de2b147042369c59-0.cmd_args.txt
+2020-07-17T15:25:30.517613Z|cov-translate|27180|output|> Coverity Internal Misc Emit version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:30.518612Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:30.518612Z|cov-translate|27180|output|> 
+2020-07-17T15:25:30.793611Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:30.793611Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:30.793611Z|cov-translate|27180|output|> 
+2020-07-17T15:25:30.901670Z|cov-translate|27180|output|> [INFO] down.html:12: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:30.901670Z|cov-translate|27180|output|> [INFO] down.html:18: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:30.902673Z|cov-translate|27180|output|> [INFO] down.html:38: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:30.904672Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html successfully
+2020-07-17T15:25:30.904672Z|cov-translate|27180|output|> 
+2020-07-17T15:25:31.082673Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html'
+2020-07-17T15:25:31.101671Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/ResourceHandlermerge.js' included in file 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html'
+2020-07-17T15:25:31.101671Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/gatag.js' included in file 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/down.html'
+2020-07-17T15:25:31.102670Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:31.381669Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:31.381669Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:31.381669Z|cov-translate|27180|output|> 
+2020-07-17T15:25:31.491670Z|cov-translate|27180|output|> [INFO] up.html:12: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:31.491670Z|cov-translate|27180|output|> [INFO] up.html:18: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:31.491670Z|cov-translate|27180|output|> [INFO] up.html:38: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:31.494670Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html successfully
+2020-07-17T15:25:31.494670Z|cov-translate|27180|output|> 
+2020-07-17T15:25:31.678670Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html'
+2020-07-17T15:25:31.696669Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/ResourceHandlermerge.js' included in file 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html'
+2020-07-17T15:25:31.697669Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/gatag.js' included in file 'C:/Projects/michael/icap/assets/images/mainsite/tab-menu/up.html'
+2020-07-17T15:25:31.697669Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:31.969700Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:31.969700Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:31.969700Z|cov-translate|27180|output|> 
+2020-07-17T15:25:32.075671Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html successfully
+2020-07-17T15:25:32.075671Z|cov-translate|27180|output|> 
+2020-07-17T15:25:32.255603Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/assets/stylesheets/_/media/Images/I/ICAP-Corp-V3/css/main-nav-selected-bg.html'
+2020-07-17T15:25:32.271603Z|cov-translate|27180|output|> [info]: Total functions: 2
+2020-07-17T15:25:32.511600Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:32.511600Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:32.511600Z|cov-translate|27180|output|> 
+2020-07-17T15:25:32.632600Z|cov-translate|27180|output|> [INFO] controls.html:12: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:32.632600Z|cov-translate|27180|output|> [INFO] controls.html:18: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:32.633600Z|cov-translate|27180|output|> [INFO] controls.html:38: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:32.635600Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/assets/stylesheets/images/controls.html successfully
+2020-07-17T15:25:32.635600Z|cov-translate|27180|output|> 
+2020-07-17T15:25:32.812602Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/assets/stylesheets/images/controls.html'
+2020-07-17T15:25:32.830599Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/ResourceHandlermerge.js' included in file 'C:/Projects/michael/icap/assets/stylesheets/images/controls.html'
+2020-07-17T15:25:32.831601Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/gatag.js' included in file 'C:/Projects/michael/icap/assets/stylesheets/images/controls.html'
+2020-07-17T15:25:32.831601Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:33.102521Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:33.102521Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:33.102521Z|cov-translate|27180|output|> 
+2020-07-17T15:25:33.225495Z|cov-translate|27180|output|> [INFO] loading.html:12: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.225495Z|cov-translate|27180|output|> [INFO] loading.html:18: Reference to external content found at "//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.225495Z|cov-translate|27180|output|> [INFO] loading.html:38: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.228494Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/assets/stylesheets/images/loading.html successfully
+2020-07-17T15:25:33.228494Z|cov-translate|27180|output|> 
+2020-07-17T15:25:33.406495Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/assets/stylesheets/images/loading.html'
+2020-07-17T15:25:33.424496Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/ResourceHandlermerge.js' included in file 'C:/Projects/michael/icap/assets/stylesheets/images/loading.html'
+2020-07-17T15:25:33.425495Z|cov-translate|27180|output|> [warning]: Unable to resolve script '/assets/javascripts/gatag.js' included in file 'C:/Projects/michael/icap/assets/stylesheets/images/loading.html'
+2020-07-17T15:25:33.425495Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:33.704494Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:33.704494Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:33.704494Z|cov-translate|27180|output|> 
+2020-07-17T15:25:33.817496Z|cov-translate|27180|output|> [INFO] accessibility.html:15: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.817496Z|cov-translate|27180|output|> [INFO] accessibility.html:21: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.817496Z|cov-translate|27180|output|> [INFO] accessibility.html:41: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:33.819496Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/accessibility.html successfully
+2020-07-17T15:25:33.819496Z|cov-translate|27180|output|> 
+2020-07-17T15:25:33.997818Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/accessibility.html'
+2020-07-17T15:25:34.015821Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:34.016818Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:34.016818Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:34.309076Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:34.309076Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:34.309076Z|cov-translate|27180|output|> 
+2020-07-17T15:25:34.418044Z|cov-translate|27180|output|> [INFO] career-landing.html:15: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:34.419042Z|cov-translate|27180|output|> [INFO] career-landing.html:21: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:34.419042Z|cov-translate|27180|output|> [INFO] career-landing.html:41: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:34.421044Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/career-landing.html successfully
+2020-07-17T15:25:34.421044Z|cov-translate|27180|output|> 
+2020-07-17T15:25:34.599666Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/career-landing.html'
+2020-07-17T15:25:34.617662Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:34.617662Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:34.618662Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:34.914008Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:34.914008Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:34.914008Z|cov-translate|27180|output|> 
+2020-07-17T15:25:35.024011Z|cov-translate|27180|output|> [INFO] disclaimer.html:15: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:35.024011Z|cov-translate|27180|output|> [INFO] disclaimer.html:21: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:35.024011Z|cov-translate|27180|output|> [INFO] disclaimer.html:41: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:35.027014Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/disclaimer.html successfully
+2020-07-17T15:25:35.027014Z|cov-translate|27180|output|> 
+2020-07-17T15:25:35.206007Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/disclaimer.html'
+2020-07-17T15:25:35.223924Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:35.223924Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:35.224925Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:35.513736Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:35.513736Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:35.513736Z|cov-translate|27180|output|> 
+2020-07-17T15:25:35.622709Z|cov-translate|27180|output|> [INFO] group-sites-black-theme.html:76: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:35.622709Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/group-sites-black-theme.html successfully
+2020-07-17T15:25:35.622709Z|cov-translate|27180|output|> 
+2020-07-17T15:25:35.806500Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/group-sites-black-theme.html'
+2020-07-17T15:25:35.825499Z|cov-translate|27180|output|> [info]: Total functions: 3
+2020-07-17T15:25:36.064531Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:36.064531Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:36.064531Z|cov-translate|27180|output|> 
+2020-07-17T15:25:36.178500Z|cov-translate|27180|output|> [INFO] privacy-policy.html:15: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.178500Z|cov-translate|27180|output|> [INFO] privacy-policy.html:21: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.178500Z|cov-translate|27180|output|> [INFO] privacy-policy.html:41: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.180498Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/privacy-policy.html successfully
+2020-07-17T15:25:36.180498Z|cov-translate|27180|output|> 
+2020-07-17T15:25:36.365502Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/privacy-policy.html'
+2020-07-17T15:25:36.383820Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:36.383820Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:36.384821Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:36.679068Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:36.679068Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:36.679068Z|cov-translate|27180|output|> 
+2020-07-17T15:25:36.788069Z|cov-translate|27180|output|> [INFO] site-map.html:19: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.788069Z|cov-translate|27180|output|> [INFO] site-map.html:25: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.788069Z|cov-translate|27180|output|> [INFO] site-map.html:53: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:36.791067Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/site-map.html successfully
+2020-07-17T15:25:36.791067Z|cov-translate|27180|output|> 
+2020-07-17T15:25:37.001073Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/site-map.html'
+2020-07-17T15:25:37.020066Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:37.020066Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:37.021066Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:37.311068Z|cov-translate|27180|output|> Coverity Internal Extract JavaScript From HTML version 2019.03 on Windows 10 Enterprise, 64-bit (build 17134)
+2020-07-17T15:25:37.311068Z|cov-translate|27180|output|> Internal version numbers: 2c0f9c8cf4 p-pacific1-push-35439.872
+2020-07-17T15:25:37.311068Z|cov-translate|27180|output|> 
+2020-07-17T15:25:37.421066Z|cov-translate|27180|output|> [INFO] terms-of-use-agreement.html:15: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:37.421066Z|cov-translate|27180|output|> [INFO] terms-of-use-agreement.html:21: Reference to external content found at "https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:37.421066Z|cov-translate|27180|output|> [INFO] terms-of-use-agreement.html:41: Reference to external content found at "https://www.googletagmanager.com/gtag/js?id=UA-136334120-1". For best analysis results, ensure that this file is included in the input to the analysis, for example by ensuring that a copy of it appears in a directory searched by cov-build --fs-capture-search.
+2020-07-17T15:25:37.424065Z|cov-translate|27180|output|> JavaScript extracted from C:/Projects/michael/icap/site-services/terms-of-use-agreement.html successfully
+2020-07-17T15:25:37.424065Z|cov-translate|27180|output|> 
+2020-07-17T15:25:37.601820Z|cov-translate|27180|output|> [info]: JavaScript transpiled from source file: 'C:/Projects/michael/icap/site-services/terms-of-use-agreement.html'
+2020-07-17T15:25:37.620820Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/ResourceHandlermerge91d2.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/ResourceHandlermerge91d2.js'
+2020-07-17T15:25:37.620820Z|cov-translate|27180|output|> [info]: Resolved HTML include '../assets/javascripts/gatag.js' to file 'C:/Projects/michael/icap/site-services/../assets/javascripts/gatag.js'
+2020-07-17T15:25:37.621819Z|cov-translate|27180|output|> [info]: Total functions: 6
+2020-07-17T15:25:37.890638Z|cov-translate|27180|output|> cov-internal-emit-misc.exe took 7s
+2020-07-17T15:25:37.890638Z|cov-translate|27180|output|> 
+2020-07-17T15:25:38.004655Z|cov-translate|27180|output|> 
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> cov-translate exited with code 0
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-typescript-config-0 (^.*(\.ts(x?)|tsconfig.json)$ -> cov-filesystem-capture-typescript-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-jsx-config-0 (^.*\.jsx$ -> cov-filesystem-capture-jsx-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-vue-config-0 (^.*\.vue$ -> cov-filesystem-capture-vue-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-ruby-config-0 (^.*(\.rb|Gemfile)$ -> cov-filesystem-capture-ruby-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-php-config-0 (^.*\.ph(p|p3|p4|p5|p7|tml)$ -> cov-filesystem-capture-php-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> No source files for template-python-config-0 (^.*\.py$ -> cov-filesystem-capture-python-0)
+2020-07-17T15:25:38.016684Z|cov-build|27036|info|> Invoking cov-security-da with commands: C:/Projects/ca/bin/cov-security-da.exe --dir C:/Projects/michael/icap/cov-int
+2020-07-17T15:25:38.330654Z|cov-build|27036|info|> 
+2020-07-17T15:25:38.330654Z|cov-build|27036|info|> Build time (cov-build overall): 00:00:33.984583
+2020-07-17T15:25:38.330654Z|cov-build|27036|info|> 
+2020-07-17T15:25:38.333687Z|cov-build|27036|info|> Build time (JavaScript/Text emits total): 00:00:32.216325
+2020-07-17T15:25:38.333687Z|cov-build|27036|info|> 
+2020-07-17T15:25:38.336687Z|cov-build|27036|info|> Emitted 31 JavaScript compilation units (96%) successfully
+2020-07-17T15:25:38.337657Z|cov-build|27036|info|> 
+2020-07-17T15:25:38.338689Z|cov-build|27036|info|> 31 JavaScript compilation units (96%) are ready for analysis
+2020-07-17T15:25:38.339688Z|cov-build|27036|info|> The cov-build utility completed successfully.
+2020-07-17T15:25:38.355655Z|cov-build|27036|info|> 

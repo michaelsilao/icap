@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverity SYSTEM "config.dtd">
+<coverity>
+
+<metrics>
+    <metric>
+        <name>time</name>
+        <value>34</value>
+    </metric>
+    <metric>
+        <name>args</name>
+        <value>cov-build --dir cov-int --no-command --fs-capture-search ./</value>
+    </metric>
+    <metric>
+        <name>host</name>
+        <value>SNG00XW05744</value>
+    </metric>
+    <metric>
+        <name>short-platform</name>
+        <value>win64</value>
+    </metric>
+    <metric>
+        <name>platform</name>
+        <value>Windows 10 Enterprise, 64-bit (build 17134)</value>
+    </metric>
+    <metric>
+        <name>ident</name>
+        <value>2019.03 (build 2c0f9c8cf4 p-pacific1-push-35439.872)</value>
+    </metric>
+    <metric>
+        <name>user</name>
+        <value>msilao-a</value>
+    </metric>
+    <metric>
+        <name>cwd</name>
+        <value>C:\Projects\michael\icap</value>
+    </metric>
+    <metric>
+        <name>config</name>
+        <value>C:\Projects\ca\config\coverity_config.xml</value>
+    </metric>
+    <metric>
+        <name>intermediatedir</name>
+        <value>C:\Projects\michael\icap\cov-int</value>
+    </metric>
+    <metric>
+        <name>outputdir</name>
+        <value>C:\Projects\michael\icap\cov-int\output</value>
+    </metric>
+    <metric>
+        <name>emitdir</name>
+        <value>C:\Projects\michael\icap\cov-int\emit</value>
+    </metric>
+    <metric>
+        <name>force</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>cygwin</name>
+        <value>no</value>
+    </metric>
+    <metric>
+        <name>failures</name>
+        <value>1</value>
+    </metric>
+    <metric>
+        <name>successes</name>
+        <value>31</value>
+    </metric>
+    <metric>
+        <name>recoverable-errors</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapps-detected</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-successes</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>dotnet-webapp-compilation-secs</name>
+        <value>0</value>
+    </metric>
+    <metric>
+        <name>buildcmd</name>
+        <value>cov-build.exe</value>
+    </metric>
+</metrics>
+</coverity>
